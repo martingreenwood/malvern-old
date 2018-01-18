@@ -1,0 +1,78 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/9/2014
+* Sass Version by Seth Coelen https://github.com/whatsnewsaes
+*/
+
+#site-navigation {
+
+	.menu-primary-container {
+		display: none;
+
+		ul {
+			list-style: none;
+			text-align: right;
+			margin-bottom: 0;
+
+			li {
+				display: inline-block;
+				margin-bottom: 0;
+
+				a {
+					text-decoration: none;
+					color: white;
+					font-family: $nav-font-family;
+					padding: 10px 15px;
+				}
+
+				&:last-of-type {
+					a {
+						text-transform: uppercase;
+						border: 1px solid white; 
+					}
+				}
+			}
+
+			.sub-menu {
+				position: absolute;
+				width: auto;
+				z-index: 1;
+				display: none;
+				margin: 0;
+				padding-top: 10px;
+				text-align: left;
+
+				li {
+					display: block;
+
+					a {
+						display: block;
+					}
+
+					&:last-of-type {
+						a {
+							text-transform: capitalize;
+							border: none; 
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	@media (#{$bp-larger-than-tablet}) {
+		.menu-toggle {
+			display: none;
+		}
+
+		.menu-primary-container {
+			display: block;
+		}
+	}
+
+}

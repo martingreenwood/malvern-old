@@ -1,0 +1,248 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/9/2014
+* Sass Version by Seth Coelen https://github.com/whatsnewsaes
+*/
+
+#content {
+	background-color: $light-grey;
+}
+
+#primary {
+	padding: 60px 0;
+}
+
+#quicklink {
+	padding: 60px 0;
+	background-color: $secondary-color;
+
+	.links {
+		list-style: none;
+		margin: 0;
+
+		li {
+			margin: 0;
+			float: left;
+			width: 16.666%;
+			vertical-align: top;
+			text-align: center;
+
+			.icon {
+				display: inline-block;
+				width: 140px;
+				height: 140px;
+				margin-bottom: 20px;
+				background-size: auto 78px;
+				background-repeat: no-repeat;
+				background-position: center;
+				border: 2px solid white;
+				border-radius: 50%;
+			}
+
+			h3, {
+				display: block;
+				font-size: 20px;
+				color: white;
+			}
+
+			.outline {
+				border: 2px solid white;
+				color: white;
+				padding: 7px 15px;
+				text-transform: uppercase;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+/*============================
+=            HOME            =
+============================*/
+
+.home {
+
+	#primary {
+		text-align: center;
+		background-color: $light-grey;
+	}
+
+	#banner {
+		.blurb {
+			
+			.after {
+			}
+		}
+	}
+
+	#twitter {
+		text-align: center;
+		background-color: $light-grey;
+		padding: 0 0 60px 0;
+
+		h2 {
+			margin-bottom: 30px;
+			color: $primary-color;
+		}
+
+		.tweet {
+			padding: 0 100px;
+		}
+
+		.slick-prev, 
+		.slick-next {
+			&:before {
+				display: none;
+			}
+
+			width: 30px;
+			height: 50px;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		.slick-prev {
+			background-image: url(assets/img/left-chevron.svg);
+		}
+
+		.slick-next {
+			background-image: url(assets/img/right-chevron.svg);
+		}
+	}
+
+	.menu-course-container {
+		padding-bottom: 60px;
+		border-bottom: 2px solid $primary-color;
+	}
+
+	#course-menu {
+		display: inline-block;
+		margin: 0;
+		list-style: none;
+
+		li {
+			display: inline-block;
+			margin: 0 10px;
+
+			a {
+				display: inline-block;
+				padding: 10px 40px;
+				text-transform: uppercase;
+				background-color: $secondary-color;
+				color: white;
+				text-decoration: none;
+			}
+
+			&:last-of-type {
+
+				a {
+					background-color: $primary-color;
+				}
+			}
+		}
+	}
+}
+
+/*============================
+=            PAGE            =
+============================*/
+
+.page {
+
+	#primary {
+		text-align: center;
+	}
+
+	.maincopy {
+		border-bottom: 2px solid $primary-color;
+		padding-bottom: 40px;
+		margin-bottom: 60px;
+	}
+
+	.sections {
+
+		.element {
+			text-align: left;
+
+			.link {
+				background: $primary-color;
+				display: block;
+				padding: 10px 15px;
+				text-decoration: none;
+				text-align: center;
+				text-transform: uppercase;
+				color: white;  
+			}
+		}
+	}
+
+	/*============================
+	=            TEAM            =
+	============================*/
+
+	&.our-team {
+
+		.sections {
+
+			&.support-staff {
+				background: $primary-color;
+				padding: 60px 0; 
+				color: white;
+				margin-top: 60px;
+
+				h1, h2, h3, h4, h5, p {
+					color: white;
+				}
+
+				.maincopy {
+					border-color: white;
+				}
+			}
+
+			&.additional-support {
+				padding: 60px 0; 
+
+				.maincopy {
+					border-color: $primary-color;
+				}
+			}
+		}
+
+		.element {
+
+			h2 {
+				font-size: 3.2rem;
+				margin-bottom: 0
+			}
+
+			h3 {
+				font-size: 1.6rem;
+				color: $secondary-color;
+				font-weight: 400;
+			}
+		}
+	}
+
+	/*===============================
+	=            COURSES            =
+	===============================*/
+
+	&.our-courses {
+
+		.element {
+
+			.text {
+				margin-top: 20px;
+
+				h1, h2, h3 {
+					font-size: 1.6em;
+				}
+			}
+		}
+
+	}
+}

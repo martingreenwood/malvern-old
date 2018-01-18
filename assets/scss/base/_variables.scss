@@ -1,0 +1,40 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Breakpoints
+$bp-larger-than-mobile    : "min-width: 400px" !default;
+$bp-larger-than-phablet   : "min-width: 550px" !default;
+$bp-larger-than-tablet    : "min-width: 750px" !default;
+$bp-smaller-than-tablet    : "max-width: 750px" !default;
+$bp-larger-than-desktop   : "min-width: 1160px" !default;
+$bp-smaller-than-desktop   : "max-width: 1160px" !default;
+$bp-larger-than-desktophd : "min-width: 1200px" !default;
+
+// Colors
+$light-grey: #eeeeee !default;
+$dark-grey: #3d3d3d !default;
+$primary-color: #4a3c77 !default;
+$secondary-color: #784987 !default;
+$border-color: #eee !default;
+$link-color: $primary-color !default;
+$font-color: $dark-grey !default;
+
+// Typography
+
+$base-font: "Zona Pro Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$heading-font: "Zona Pro Semi Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+$font-family: $base-font !default;
+$heading-font-family: $heading-font !default;
+$nav-font-family: $heading-font !default;
+
+//Grid Variables
+$container-width: 1200px !default;
+$container-width-larger-than-mobile: 85% !default;
+$container-width-larger-than-phablet: 80% !default;
+$total-columns: 12 !default;
+$column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
+$column-margin: 4% !default; // space between columns
+
+// Misc
+$global-radius: 4px !default;
