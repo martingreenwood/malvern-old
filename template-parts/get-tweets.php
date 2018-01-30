@@ -48,7 +48,7 @@
 					<p><?php echo $tweet->text; ?></p>
 					<p><?php echo ShowDate($tweet_time); ?></p>
 				</div>
-				<?php $tc++; ?>
+				<?php //$tc++; ?>
 			<?php endforeach;
 			?>
 			</div>

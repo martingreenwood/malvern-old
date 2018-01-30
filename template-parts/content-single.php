@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * Template part for displaying posts
  *
@@ -9,9 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('columns three'); ?>>
-
-	<?php malvern_post_thumbnail(); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class('columns twelve'); ?>>
 	
 	<header class="entry-header">
 		<?php
@@ -23,15 +21,22 @@
 		?>
 	</header>
 
-	<div class="entry-content">
-		<?php 
-		/**
-		* Custom Excerpt Length WordPress using wp_trim_excerpt()
-		* Use directly in template
-		*/
+	<?php malvern_post_thumbnail(); ?>
 
-		$content = get_the_content();
-		echo wp_trim_words( $content , '20' ); 
+	<div class="entry-content">
+		<?php
+			the_content( sprintf(
+				wp_kses(
+					/* translators: %s: Name of current post. Only visible to screen readers */
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'malvern' ),
+					array(
+						'span' => array(
+							'class' => array(),
+						),
+					)
+				),
+				get_the_title()
+			) );
 		?>
 		<a class="more" href="<?php the_permalink( ) ?>" title="Read More">Read More</a>
 	</div>

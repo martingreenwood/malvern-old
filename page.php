@@ -74,6 +74,17 @@ get_header(); ?>
 												</div>
 												<?php
 
+											elseif( get_row_layout() == 'map' ): 
+
+												$location = get_sub_field('map');
+												if( !empty($location) ):
+												?>
+												<div class="map">
+													<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+												</div>
+												<?php 
+												endif; 
+
 											endif;
 
 										endwhile;

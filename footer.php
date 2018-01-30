@@ -20,7 +20,7 @@
 
 				<div class="four columns company-info">
 					
-					<?<?php the_custom_logo(  ) ?>
+					<?php the_custom_logo(); ?>
 
 					<?php the_field( 'company_info', 'options' ); ?>
 

@@ -213,3 +213,11 @@ function staff_cpt_taxonomies() {
     );
 }
 add_action( 'init', 'staff_cpt_taxonomies', 0 );
+
+
+function my_acf_init() {
+	
+	acf_update_setting('google_api_key', 'AIzaSyDxP3OTTogYZecLv64jOhYRh4ZLHm28wqg');
+}
+
+add_action('acf/init', 'my_acf_init');

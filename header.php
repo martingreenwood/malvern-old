@@ -63,6 +63,18 @@
 			<div class="table">
 				<div class="cell middle">
 
+				<?php if (is_page(get_option( 'page_for_posts' )) || is_single() ): ?>
+					
+
+					<?php if (get_field( 'banner_text', get_option( 'page_for_posts' ) )): ?>
+					<h2><?php the_field( 'banner_text', get_option( 'page_for_posts' ) ); ?></h2>
+					<?php endif; ?>
+					<?php if (get_field( 'banner_link', get_option( 'page_for_posts' ) )): ?>
+					<a href="<?php the_field( 'banner_link', get_option( 'page_for_posts' ) ); ?>" title="Find out more">Find out more</a>
+					<?php endif; ?>
+
+				<?php else: ?>
+
 					<?php if (get_field( 'banner_text' )): ?>
 					<h2><?php the_field( 'banner_text' ); ?></h2>
 					<?php endif; ?>
@@ -70,6 +82,8 @@
 					<a href="<?php the_field( 'banner_link' ); ?>" title="Find out more">Find out more</a>
 					<?php endif; ?>
 
+				<?php endif ?>
+					
 				</div>
 			</div>
 			<div class="after">

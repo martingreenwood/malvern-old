@@ -198,6 +198,34 @@
                                     ],
                                     "min": "",
                                     "max": ""
+                                },
+                                "5a69cbb6e9905": {
+                                    "key": "5a69cbb6e9905",
+                                    "name": "map",
+                                    "label": "Map",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5a69cbbbe9906",
+                                            "label": "Map",
+                                            "name": "map",
+                                            "type": "google_map",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "center_lat": "",
+                                            "center_lng": "",
+                                            "zoom": "",
+                                            "height": ""
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
                                 }
                             },
                             "button_label": "Add Item",
@@ -236,5 +264,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1516191241
+    "modified": 1516882884
 }

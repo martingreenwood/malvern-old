@@ -31,8 +31,11 @@ get_header(); ?>
 
 				<?php
 				endif;
-
+				?>
+				<div class="row">
+				<?php
 				/* Start the Loop */
+				$counter = 1;
 				while ( have_posts() ) : the_post();
 
 					/*
@@ -42,15 +45,19 @@ get_header(); ?>
 					 */
 					get_template_part( 'template-parts/content', get_post_format() );
 
-				endwhile;
+					if ($counter % 4 === 0) echo '</div><div class="row">';
 
-				the_posts_navigation();
-
-			else :
-
-				get_template_part( 'template-parts/content', 'none' );
-
+				$counter++; endwhile;
+				?>
+				</div>
+				<?php
 			endif; ?>
+		</div>
+
+		<div class="container maincopy">
+			<div class="row">
+				<?php the_posts_navigation(); ?>
+			</div>
 		</div>
 
 		</main>

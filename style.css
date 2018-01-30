@@ -337,6 +337,10 @@ th:last-child, td:last-child { padding-right: 0; }
 #banner .blurb a { padding: 10px 40px; text-decoration: none; border: 1px solid white; text-transform: uppercase; color: white; display: inline-block; }
 
 /* Skeleton V2.0.4 Copyright 2014, Dave Gamache www.getskeleton.com Free to use under the MIT license. http://www.opensource.org/licenses/mit-license.php 12/9/2014 Sass Version by Seth Coelen https://github.com/whatsnewsaes */
+.map { width: 100%; height: 400px; border: #ccc solid 1px; margin: 20px 0; /* fixes potential theme css conflict */ }
+
+.map img { max-width: inherit !important; }
+
 #content { background-color: #eeeeee; }
 
 #primary { padding: 60px 0; }
@@ -412,6 +416,43 @@ th:last-child, td:last-child { padding-right: 0; }
 .page.our-courses .element .text { margin-top: 20px; }
 
 .page.our-courses .element .text h1, .page.our-courses .element .text h2, .page.our-courses .element .text h3 { font-size: 1.6em; }
+
+/*===============================
+=            COURSES            =
+===============================*/
+.blog .page-title { margin-bottom: 60px; }
+
+.blog article h2 { font-size: 1.6rem; margin: 20px 0; }
+
+.blog article h2 a { color: black; text-decoration: none; }
+
+.blog article .more { text-transform: uppercase; color: black; text-decoration: none; font-weight: 700; margin-top: 15px; display: block; }
+
+.blog .posts-navigation h2 { display: none; }
+
+.blog .posts-navigation .nav-previous { float: left; }
+
+.blog .posts-navigation .nav-next { float: right; }
+
+.blog .posts-navigation .nav-next a { background-color: #784987; }
+
+.blog .posts-navigation a { background-color: #4a3c77; color: white; padding: 10px 24px; text-transform: uppercase; text-decoration: none; }
+
+.single .entry-header { text-align: center; margin-bottom: 40px; }
+
+.single .entry-header h1, .single .entry-header h2 { margin-bottom: 0; }
+
+.single .post-thumbnail { margin-bottom: 30px; }
+
+.single .post-navigation h2 { display: none; }
+
+.single .post-navigation .nav-previous { float: left; }
+
+.single .post-navigation .nav-next { float: right; }
+
+.single .post-navigation .nav-next a { background-color: #784987; content: "Next Story"; }
+
+.single .post-navigation a { content: "Previous Story"; background-color: #4a3c77; color: white; padding: 10px 24px; text-transform: uppercase; text-decoration: none; }
 
 /* Skeleton V2.0.4 Copyright 2014, Dave Gamache www.getskeleton.com Free to use under the MIT license. http://www.opensource.org/licenses/mit-license.php 12/9/2014 Sass Version by Seth Coelen https://github.com/whatsnewsaes */
 #prefooter { padding: 60px 0; background-color: #4a3c77; color: white; }

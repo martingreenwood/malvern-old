@@ -7,7 +7,7 @@
 		"uuidString": "5D91B198-5421-47A9-B7CB-A2A2AE977F58"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26261",
 "files": {
 	"\/404.php": {
 		"cB": 0,
@@ -15,6 +15,14 @@
 		"oA": 0,
 		"oAP": "\/404.php",
 		"oF": 0
+		},
+	"\/acf-json\/group_5a56042ac8295.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_5a56042ac8295-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"\/acf-json\/group_5a5dfea160505.json": {
 		"ft": 524288,
@@ -1098,6 +1106,13 @@
 		"oAP": "\/template-parts\/content-search.php",
 		"oF": 0
 		},
+	"\/template-parts\/content-single.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-single.php",
+		"oF": 0
+		},
 	"\/template-parts\/content.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1699,6 +1714,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
