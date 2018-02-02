@@ -1,4 +1,7 @@
 <?php
+
+my_force_login();
+
 /**
  * Template Name: Protect
  *
