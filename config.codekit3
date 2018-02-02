@@ -1099,6 +1099,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/template-parts\/content-login.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-login.php",
+		"oF": 0
+		},
 	"\/template-parts\/content-none.php": {
 		"cB": 0,
 		"ft": 8192,

@@ -1,7 +1,4 @@
 <?php
-
-my_force_login();
-
 /**
  * Template Name: Protect
  *
@@ -14,6 +11,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+
+			<?php 
+			if ( is_user_logged_in() ):
+			?>
 
 			<?php if (have_posts()): ?>
 			<div class="container maincopy">
@@ -109,6 +110,16 @@ get_header(); ?>
 				</div>
 			</div>
 			<?php
+			endif;
+			?>
+
+
+			<?php
+			//user is logged in, put your regular codes
+			else:
+			
+				get_template_part ( 'content', 'login' );
+			
 			endif;
 			?>
 
