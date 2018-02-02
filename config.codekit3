@@ -1001,6 +1001,13 @@
 		"oAP": "\/page-our-team.php",
 		"oF": 0
 		},
+	"\/page-protect.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-protect.php",
+		"oF": 0
+		},
 	"\/page.php": {
 		"cB": 0,
 		"ft": 8192,
