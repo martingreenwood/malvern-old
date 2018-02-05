@@ -221,3 +221,187 @@ function my_acf_init() {
 }
 
 add_action('acf/init', 'my_acf_init');
+
+
+
+add_action( 'show_user_profile', 'extra_user_profile_fields' );
+add_action( 'edit_user_profile', 'extra_user_profile_fields' );
+
+function extra_user_profile_fields( $user ) { ?>
+    <h3><?php _e("Personal Information", "blank"); ?></h3>
+
+    <table class="form-table">
+    <tr>
+        <th><label for="homephone"><?php _e("Home Phone"); ?></label></th>
+        <td>
+            <input type="text" name="homephone" id="homephone" value="<?php echo esc_attr( get_the_author_meta( 'homephone', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your home phone."); ?></span>
+        </td>
+    </tr>
+    <tr>
+        <th><label for="mobile"><?php _e("Mobile"); ?></label></th>
+        <td>
+            <input type="text" name="mobile" id="mobile" value="<?php echo esc_attr( get_the_author_meta( 'mobile', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your mobile."); ?></span>
+        </td>
+    </tr>
+    <tr>
+    <th><label for="childsname"><?php _e("Childs Name"); ?></label></th>
+        <td>
+            <input type="text" name="childsname" id="childsname" value="<?php echo esc_attr( get_the_author_meta( 'childsname', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your childs name."); ?></span>
+        </td>
+    </tr>
+    <tr>
+    <th><label for="dob"><?php _e("Date of Birth"); ?></label></th>
+        <td>
+            <input type="text" name="dob" id="dob" value="<?php echo esc_attr( get_the_author_meta( 'dob', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your childs date of birth."); ?></span>
+        </td>
+    </tr>
+    <tr>
+    <th><label for="schoolyear"><?php _e("School Year"); ?></label></th>
+        <td>
+            <input type="text" name="schoolyear" id="schoolyear" value="<?php echo esc_attr( get_the_author_meta( 'schoolyear', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your childs school year."); ?></span>
+        </td>
+    </tr>
+    <tr>
+    <th><label for="gender"><?php _e("Gender"); ?></label></th>
+        <td>
+            <input type="text" name="gender" id="gender" value="<?php echo esc_attr( get_the_author_meta( 'gender', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your childs gender."); ?></span>
+        </td>
+    </tr>
+    <tr>
+    <th><label for="schoolattended"><?php _e("School Attended"); ?></label></th>
+        <td>
+            <input type="text" name="schoolattended" id="schoolattended" value="<?php echo esc_attr( get_the_author_meta( 'schoolattended', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your childs school attended."); ?></span>
+        </td>
+    </tr>
+    <tr>
+    <th><label for="headteacher"><?php _e("Head Teacher"); ?></label></th>
+        <td>
+            <input type="text" name="headteacher" id="headteacher" value="<?php echo esc_attr( get_the_author_meta( 'headteacher', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your childs head teacher."); ?></span>
+        </td>
+    </tr>
+    <tr>
+    <th><label for="headteacheremail"><?php _e("Head Teacher Email"); ?></label></th>
+        <td>
+            <input type="text" name="headteacheremail" id="headteacheremail" value="<?php echo esc_attr( get_the_author_meta( 'headteacheremail', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your childs head teacher email."); ?></span>
+        </td>
+    </tr>
+    <tr>
+    <th><label for="headofmusic"><?php _e("Head of Music"); ?></label></th>
+        <td>
+            <input type="text" name="headofmusic" id="headofmusic" value="<?php echo esc_attr( get_the_author_meta( 'headofmusic', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your childs head of music."); ?></span>
+        </td>
+    </tr>
+    <tr>
+    <th><label for="headofmusicemail"><?php _e("Head of Music Email"); ?></label></th>
+        <td>
+            <input type="text" name="headofmusicemail" id="headofmusicemail" value="<?php echo esc_attr( get_the_author_meta( 'headofmusicemail', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your childs head of music email."); ?></span>
+        </td>
+    </tr>
+    <tr>
+    <th><label for="instrumentalteacher"><?php _e("Instrumental Teacer"); ?></label></th>
+        <td>
+            <input type="text" name="instrumentalteacher" id="instrumentalteacher" value="<?php echo esc_attr( get_the_author_meta( 'instrumentalteacher', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your childs instrumental teacher."); ?></span>
+        </td>
+    </tr>
+    <tr>
+    <th><label for="instrumentalteacheremail"><?php _e("Instrumental Teacer Email"); ?></label></th>
+        <td>
+            <input type="text" name="instrumentalteacheremail" id="instrumentalteacheremail" value="<?php echo esc_attr( get_the_author_meta( 'instrumentalteacheremail', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your childs instrumental teacher email."); ?></span>
+        </td>
+    </tr>
+    <tr>
+    <th><label for="maininstrument"><?php _e("Main Instrument"); ?></label></th>
+        <td>
+            <input type="text" name="maininstrument" id="maininstrument" value="<?php echo esc_attr( get_the_author_meta( 'maininstrument', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your childs main instrument."); ?></span>
+        </td>
+    </tr>
+    <tr>
+    <th><label for="lastgradetaken"><?php _e("Last Grade Taken"); ?></label></th>
+        <td>
+            <input type="text" name="lastgradetaken" id="lastgradetaken" value="<?php echo esc_attr( get_the_author_meta( 'lastgradetaken', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your childs last grade taken."); ?></span>
+        </td>
+    </tr>
+    <tr>
+    <th><label for="dateofexam"><?php _e("Date of Ecam"); ?></label></th>
+        <td>
+            <input type="text" name="dateofexam" id="dateofexam" value="<?php echo esc_attr( get_the_author_meta( 'dateofexam', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your childs date of exam."); ?></span>
+        </td>
+    </tr>
+    <tr>
+    <th><label for="result"><?php _e("Date of Ecam"); ?></label></th>
+        <td>
+            <input type="text" name="result" id="result" value="<?php echo esc_attr( get_the_author_meta( 'result', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your childs result."); ?></span>
+        </td>
+    </tr>
+    <tr>
+    <th><label for="currentstandard"><?php _e("Current Standard"); ?></label></th>
+        <td>
+            <input type="text" name="currentstandard" id="currentstandard" value="<?php echo esc_attr( get_the_author_meta( 'currentstandard', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your childs current standard."); ?></span>
+        </td>
+    </tr>
+    <th><label for="additionalinstruments"><?php _e("Additional Instruemnts"); ?></label></th>
+        <td>
+        	<textarea name="additionalinstruments" id="additionalinstruments" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'additionalinstruments', $user->ID ) ); ?></textarea>
+        	<br />
+            <span class="description"><?php _e("Please enter your childs additional instruments."); ?></span>
+        </td>
+    </tr>
+    <tr>
+    <th><label for="orchestralexp"><?php _e("Recent Orchestral Experience"); ?></label></th>
+        <td>
+        	<textarea name="orchestralexp" id="orchestralexp" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'orchestralexp', $user->ID ) ); ?></textarea>
+        	<br />
+            <span class="description"><?php _e("Please enter your childs orchestral experience."); ?></span>
+        </td>
+    </tr>
+    </table>
+<?php 
+}
+
+
+add_action( 'personal_options_update', 'save_extra_user_profile_fields' );
+add_action( 'edit_user_profile_update', 'save_extra_user_profile_fields' );
+
+function save_extra_user_profile_fields( $user_id ) {
+	if ( !current_user_can( 'edit_user', $user_id ) ) { 
+		return false; 
+	}
+	update_user_meta( $user_id, 'homephone', $_POST['homephone'] );
+	update_user_meta( $user_id, 'mobile', $_POST['mobile'] );
+	update_user_meta( $user_id, 'childsname', $_POST['childsname'] );
+	update_user_meta( $user_id, 'dob', $_POST['dob'] );
+	update_user_meta( $user_id, 'schoolyear', $_POST['schoolyear'] );
+	update_user_meta( $user_id, 'gender', $_POST['gender'] ); 
+	update_user_meta( $user_id, 'schoolattended', $_POST['schoolattended'] ); 
+	update_user_meta( $user_id, 'headteacher', $_POST['headteacher'] ); 
+	update_user_meta( $user_id, 'headteacheremail', $_POST['headteacheremail'] ); 
+	update_user_meta( $user_id, 'headofmusic', $_POST['headofmusic'] ); 
+	update_user_meta( $user_id, 'headofmusicemail', $_POST['headofmusicemail'] ); 
+	update_user_meta( $user_id, 'instrumentalteacher', $_POST['instrumentalteacher'] ); 
+	update_user_meta( $user_id, 'instrumentalteacheremail', $_POST['instrumentalteacheremail'] ); 
+	update_user_meta( $user_id, 'maininstrument', $_POST['maininstrument'] ); 
+	update_user_meta( $user_id, 'lastgradetaken', $_POST['lastgradetaken'] ); 
+	update_user_meta( $user_id, 'result', $_POST['result'] ); 
+	update_user_meta( $user_id, 'dateofexam', $_POST['dateofexam'] ); 
+	update_user_meta( $user_id, 'currentstandard', $_POST['currentstandard'] ); 
+	update_user_meta( $user_id, 'additionalinstruments', $_POST['additionalinstruments'] ); 
+	update_user_meta( $user_id, 'orchestralexp', $_POST['orchestralexp'] ); 
+}
