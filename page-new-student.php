@@ -12,30 +12,17 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-			<?php 
-			if ( is_user_logged_in() ):
-			?>
-
-				<?php if (have_posts()): ?>
-				<div class="container maincopy">
-				<?php
-				while ( have_posts() ) : the_post();
-
-					get_template_part( 'template-parts/content', 'enroll-new' );
-
-				endwhile; // End of the loop.
-				?>
-				</div>
-				<?php endif ?>
-
+			<?php if (have_posts()): ?>
+			<div class="container maincopy left">
 			<?php
-			//user is logged in, put your regular codes
-			else:
-			
-				get_template_part ( 'content', 'login' );
-			
-			endif;
+			while ( have_posts() ) : the_post();
+
+				get_template_part( 'template-parts/content', 'enroll' );
+
+			endwhile; // End of the loop.
 			?>
+			</div>
+			<?php endif ?>
 
 		</main>
 	</div>
