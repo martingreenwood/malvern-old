@@ -274,6 +274,109 @@
 			margin-bottom: 0px;
 		}
 
+		.gform_wrapper {
+			background: white;
+			padding: 40px;
+			margin: 40px 0 0 0;
+
+			.gf_page_steps {
+				margin-bottom: 40px;
+				padding-bottom: 20px;
+			}
+
+			ul.gfield_checkbox, ul.gfield_radio {
+				margin: auto;
+				padding: 0;
+
+				li {
+					margin: 0;
+					line-height: 2;
+				}
+			}
+
+			input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+				font-size: inherit;
+				font-family: inherit;
+				padding: 7px 12px;
+				letter-spacing: normal;
+			}
+
+			input[type='email'], input[type='number'], input[type='search'], input[type='text'], input[type='tel'], input[type='url'], input[type='password'], textarea, select {
+				min-height: 38px;
+				padding: 7px 12px;
+				background-color: #fff;
+				border: 1px solid #cccccc;
+				border-radius: 0px;
+				box-shadow: none;
+				box-sizing: border-box;
+				height: auto;
+			}
+
+			ul {
+
+				li.gfield {
+					margin-top: 0;
+					padding-top: 0;
+					margin-bottom: 40px;
+				}
+			}
+
+			.top_label .gfield_label {
+				display: -moz-inline-stack;
+				display: inline-block;
+				line-height: 1;
+				clear: both;
+				margin-bottom: 15px;
+				border-bottom: 1px solid #eee;
+				display: block;
+				padding-bottom: 10px;
+				text-transform: uppercase;
+				font-family: "Zona Pro Semi Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+				font-size: 17px;
+			}
+
+
+			.gform_page_footer {
+				margin: 20px 0 0 0;
+				padding: 40px 0 0 0;
+				width: 100%;
+				border-top: 1px dotted black;
+
+				input[type="submit"], input[type="reset"], input[type="button"] {
+					display: inline-block;
+					color: white;
+					background-color: #784987;
+					border-radius: 0px;
+					border: none;
+
+					&:hover {
+						color: white;
+					}
+
+					&.gform_previous_button {
+						
+					}
+
+					&.gform_next_button {
+
+					}
+				}
+			}
+
+			 &.gf_browser_chrome {
+			 	
+			 	.gfield_radio {
+			 		
+			 		li {
+
+			 			input[type=radio] {
+							margin-top: 0px;
+						}
+					}
+				}
+			}
+		}
+
 		.logmein {
 			float: left;
 			width: 48%;
