@@ -266,7 +266,13 @@
 	=            ENROL            =
 	=============================*/
 
-	&.enroll {
+	&.enroll, &.new-studnet {
+
+		.maincopy {
+			border-bottom: 0;
+			padding-bottom: 0px;
+			margin-bottom: 0px;
+		}
 
 		.logmein {
 			float: left;
