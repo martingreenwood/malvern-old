@@ -312,6 +312,19 @@
 				height: auto;
 			}
 
+			select {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				padding: 7px 12px;
+				background-color: #fff;
+				border: 1px solid #cccccc;
+				box-shadow: none;
+				box-sizing: border-box;
+				height: auto;
+				background-image: url(assets/img/down-chevron.svg);
+			}
+
 			ul {
 
 				li.gfield {
