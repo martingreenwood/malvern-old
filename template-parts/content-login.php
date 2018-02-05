@@ -1,4 +1,4 @@
-]<?php
+<?php
 /**
  * Template part for displaying page content in page.php
  *
@@ -12,6 +12,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="entry-content">
+		<center>
+			<h3>Please Login to view this page.</h3>
 		<?php
 			$args = array(
 				'echo'           => true,
@@ -29,6 +31,7 @@
 			);
 			wp_login_form( $args );
 		?>
+		</center>
 	</div>
 
 </article>

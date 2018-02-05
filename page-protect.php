@@ -17,7 +17,7 @@ get_header(); ?>
 			?>
 
 			<?php if (have_posts()): ?>
-			<div class="container maincopy">
+			<div class="container maincopy left">
 			<?php
 			while ( have_posts() ) : the_post();
 
