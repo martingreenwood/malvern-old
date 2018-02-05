@@ -42,7 +42,7 @@ get_header(); ?>
 				endwhile; // End of the loop.
 				?>
 				</div>
-				<?php endif
+				<?php endif;
 			
 			endif;
 			?>
