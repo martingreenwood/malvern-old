@@ -173,6 +173,10 @@
 		border-bottom: 2px solid $primary-color;
 		padding-bottom: 40px;
 		margin-bottom: 60px;
+
+		&.left {
+			text-align: left;
+		}
 	}
 
 	.sections {
@@ -253,6 +257,47 @@
 				h1, h2, h3 {
 					font-size: 1.6em;
 				}
+			}
+		}
+
+	}
+
+	/*=============================
+	=            ENROL            =
+	=============================*/
+
+	&.enroll {
+
+		.logmein {
+			float: left;
+			width: 48%;
+			margin-right: 2%;
+		}
+
+		.new-stu {
+			float: left;
+			width: 48%;
+		    background: $primary-color;
+			padding: 30px;
+			box-sizing: border-box;
+			color: white;
+			text-align: center;
+
+			h1, h2, h3, a {
+				color: white;
+			}
+
+			a {
+				display: block;
+				margin-top: 20px;
+				background: white;
+				color: black;
+				text-decoration: none;
+				font-weight: bolder;
+				text-transform: uppercase;
+				text-align: center;
+				padding: 10px;
+				line-height: 1;
 			}
 		}
 

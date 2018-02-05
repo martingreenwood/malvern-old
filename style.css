@@ -389,11 +389,13 @@ th:last-child, td:last-child { padding-right: 0; }
 /*============================
 =            PAGE            =
 ============================*/
-.page { /*============================ =            TEAM            = ============================*/ /*=============================== =            COURSES            = ===============================*/ }
+.page { /*============================ =            TEAM            = ============================*/ /*=============================== =            COURSES            = ===============================*/ /*============================= =            ENROL            = =============================*/ }
 
 .page #primary { text-align: center; }
 
 .page .maincopy { border-bottom: 2px solid #4a3c77; padding-bottom: 40px; margin-bottom: 60px; }
+
+.page .maincopy.left { text-align: left; }
 
 .page .sections .element { text-align: left; }
 
@@ -416,6 +418,14 @@ th:last-child, td:last-child { padding-right: 0; }
 .page.our-courses .element .text { margin-top: 20px; }
 
 .page.our-courses .element .text h1, .page.our-courses .element .text h2, .page.our-courses .element .text h3 { font-size: 1.6em; }
+
+.page.enroll .logmein { float: left; width: 48%; margin-right: 2%; }
+
+.page.enroll .new-stu { float: left; width: 48%; background: #4a3c77; padding: 30px; box-sizing: border-box; color: white; text-align: center; }
+
+.page.enroll .new-stu h1, .page.enroll .new-stu h2, .page.enroll .new-stu h3, .page.enroll .new-stu a { color: white; }
+
+.page.enroll .new-stu a { display: block; margin-top: 20px; background: white; color: black; text-decoration: none; font-weight: bolder; text-transform: uppercase; text-align: center; padding: 10px; line-height: 1; }
 
 /*===============================
 =            COURSES            =

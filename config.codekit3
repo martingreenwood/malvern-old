@@ -994,6 +994,20 @@
 		"oAP": "\/memberpress\/checkout\/form.php",
 		"oF": 0
 		},
+	"\/page-enroll.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-enroll.php",
+		"oF": 0
+		},
+	"\/page-new-student.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-new-student.php",
+		"oF": 0
+		},
 	"\/page-our-team.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1098,6 +1112,20 @@
 		"oAP": "\/style-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/template-parts\/content-enroll-new.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-enroll-new.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-enroll.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-enroll.php",
+		"oF": 0
 		},
 	"\/template-parts\/content-login.php": {
 		"cB": 0,
