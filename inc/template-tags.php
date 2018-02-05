@@ -604,6 +604,6 @@ function add_login_logout_link($items, $args) {
 	wp_loginout( $_SERVER['REQUEST_URI'] );
 	$loginoutlink = ob_get_contents();
 	ob_end_clean();
-	$items .= '<li>'. $loginoutlink .'</li>';
+	$items .= '<li clas="login menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9999">'. $loginoutlink .'</li>';
 	return $items;  
 }
