@@ -232,6 +232,41 @@ function extra_user_profile_fields( $user ) { ?>
 
     <table class="form-table">
     <tr>
+        <th><label for="addressline1"><?php _e("Address Line 1"); ?></label></th>
+        <td>
+            <input type="text" name="addressline1" id="addressline1" value="<?php echo esc_attr( get_the_author_meta( 'addressline1', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter the first line of your address."); ?></span>
+        </td>
+    </tr>
+    <tr>
+        <th><label for="addressline2"><?php _e("Address Line 2"); ?></label></th>
+        <td>
+            <input type="text" name="addressline2" id="addressline2" value="<?php echo esc_attr( get_the_author_meta( 'addressline2', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter the seconc line of your address."); ?></span>
+        </td>
+    </tr>
+    <tr>
+        <th><label for="city"><?php _e("City"); ?></label></th>
+        <td>
+            <input type="text" name="city" id="city" value="<?php echo esc_attr( get_the_author_meta( 'city', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your city."); ?></span>
+        </td>
+    </tr>
+    <tr>
+        <th><label for="county"><?php _e("County"); ?></label></th>
+        <td>
+            <input type="text" name="county" id="county" value="<?php echo esc_attr( get_the_author_meta( 'county', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your county."); ?></span>
+        </td>
+    </tr>
+    <tr>
+        <th><label for="postcode"><?php _e("Postcode"); ?></label></th>
+        <td>
+            <input type="text" name="postcode" id="postcode" value="<?php echo esc_attr( get_the_author_meta( 'postcode', $user->ID ) ); ?>" class="regular-text" /><br />
+            <span class="description"><?php _e("Please enter your postcode."); ?></span>
+        </td>
+    </tr>
+    <tr>
         <th><label for="homephone"><?php _e("Home Phone"); ?></label></th>
         <td>
             <input type="text" name="homephone" id="homephone" value="<?php echo esc_attr( get_the_author_meta( 'homephone', $user->ID ) ); ?>" class="regular-text" /><br />
@@ -403,5 +438,11 @@ function save_extra_user_profile_fields( $user_id ) {
 	update_user_meta( $user_id, 'dateofexam', $_POST['dateofexam'] ); 
 	update_user_meta( $user_id, 'currentstandard', $_POST['currentstandard'] ); 
 	update_user_meta( $user_id, 'additionalinstruments', $_POST['additionalinstruments'] ); 
-	update_user_meta( $user_id, 'orchestralexp', $_POST['orchestralexp'] ); 
+	update_user_meta( $user_id, 'orchestralexp', $_POST['orchestralexp'] );
+
+	update_user_meta( $user_id, 'addressline1', $_POST['addressline1'] );
+	update_user_meta( $user_id, 'addressline2', $_POST['addressline2'] );
+	update_user_meta( $user_id, 'city', $_POST['city'] );
+	update_user_meta( $user_id, 'county', $_POST['county'] );
+	update_user_meta( $user_id, 'postcode', $_POST['postcode'] );
 }
