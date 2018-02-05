@@ -63,7 +63,7 @@
 			<div class="table">
 				<div class="cell middle">
 
-				<?php if (is_page(get_option( 'page_for_posts' )) || is_single() ): ?>
+				<?php if (is_page(get_option( 'page_for_posts' )) || is_single('posts') ): ?>
 					
 
 					<?php if (get_field( 'banner_text', get_option( 'page_for_posts' ) )): ?>
