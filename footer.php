@@ -48,22 +48,25 @@
 					
 					<div class="stories">
 						
-						<div class="story">
-							<h4>Title Goes Here</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-						</div>
-						<div class="story">
-							<h4>Title Goes Here</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-						</div>
-						<div class="story">
-							<h4>Title Goes Here</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-						</div>
-						<div class="story">
-							<h4>Title Goes Here</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-						</div>
+						<?php
+						$args = array( 
+							'post_type' => 'posts', 
+							'posts_per_page' => 3,
+						);
+						$loop = new WP_Query( $args );
+							while ( $loop->have_posts() ) : $loop->the_post();
+							?>
+							
+							<div class="story">
+								<h4><a href="<?php the_permalink( $post ); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
+								<p><?php the_excerpt(); ?></p>
+							</div>
+
+							<?php
+							// end while has team
+							endwhile;
+						wp_reset_query();
+						?>
 						
 					</div>
 				</div>
