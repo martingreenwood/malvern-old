@@ -762,6 +762,12 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #banner .blurb h1, #banner .blurb h2, #banner .blurb h3, #banner .blurb h4 { color: white; margin-bottom: 60px; }
 
+#banner .blurb br { display: none; }
+
+@media (min-width: 550px) { #banner .blurb br { display: block; } }
+
+#banner .blurb h2 { padding: 0 30px; }
+
 #banner .blurb a { padding: 10px 40px; text-decoration: none; border: 1px solid white; text-transform: uppercase; color: white; display: inline-block; }
 
 /* Skeleton V2.0.4 Copyright 2014, Dave Gamache www.getskeleton.com Free to use under the MIT license. http://www.opensource.org/licenses/mit-license.php 12/9/2014 Sass Version by Seth Coelen https://github.com/whatsnewsaes */
@@ -777,7 +783,11 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #quicklink .links { list-style: none; margin: 0; }
 
-#quicklink .links li { margin: 0; float: left; width: 16.666%; vertical-align: top; text-align: center; }
+#quicklink .links li { margin: 0; float: left; width: 50%; margin-bottom: 30px; vertical-align: top; text-align: center; }
+
+@media (min-width: 1160px) { #quicklink .links li { width: 16.666%; margin-bottom: 0; } }
+
+#quicklink .links li a { text-decoration: none; }
 
 #quicklink .links li .icon { display: inline-block; width: 140px; height: 140px; margin-bottom: 20px; background-size: auto 78px; background-repeat: no-repeat; background-position: center; border: 2px solid white; border-radius: 50%; }
 
@@ -796,7 +806,9 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .home #twitter h2 { margin-bottom: 30px; color: #4a3c77; }
 
-.home #twitter .tweet { padding: 0 100px; }
+.home #twitter .tweet { padding: 0 20px; }
+
+@media (min-width: 550px) { .home #twitter .tweet { padding: 0 100px; } }
 
 .home #twitter .slick-prev, .home #twitter .slick-next { width: 30px; height: 50px; background-repeat: no-repeat; background-size: contain; }
 
@@ -810,7 +822,9 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .home #course-menu { display: inline-block; margin: 0; list-style: none; }
 
-.home #course-menu li { display: inline-block; margin: 0 10px; }
+.home #course-menu li { display: inline-block; margin: 0 10px; margin-bottom: 10px; }
+
+@media (min-width: 550px) { .home #course-menu li { margin-bottom: 0; } }
 
 .home #course-menu li a { display: inline-block; padding: 10px 40px; text-transform: uppercase; background-color: #784987; color: white; text-decoration: none; }
 
@@ -829,6 +843,10 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .page .sections .element { text-align: left; }
 
+.page .sections .element:last-of-type { margin-top: 30px; }
+
+@media (min-width: 750px) { .page .sections .element:last-of-type { margin-top: 0; } }
+
 .page .sections .element .link { background: #4a3c77; display: block; padding: 10px 15px; text-decoration: none; text-align: center; text-transform: uppercase; color: white; }
 
 .page.our-team .sections.support-staff { background: #4a3c77; padding: 60px 0; color: white; margin-top: 60px; }
@@ -840,6 +858,14 @@ th:last-child, td:last-child { padding-right: 0; }
 .page.our-team .sections.additional-support { padding: 60px 0; }
 
 .page.our-team .sections.additional-support .maincopy { border-color: #4a3c77; }
+
+.page.our-team .element.image { display: none; }
+
+@media (min-width: 750px) { .page.our-team .element.image { display: block; } }
+
+.page.our-team .element .avatar { margin-bottom: 30px; }
+
+@media (min-width: 750px) { .page.our-team .element .avatar { display: none; } }
 
 .page.our-team .element h2 { font-size: 3.2rem; margin-bottom: 0; }
 
@@ -935,7 +961,9 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #prefooter .sociallinks ul li { margin: 0 5px 0 0; display: inline-block; }
 
-#prefooter .sociallinks ul li a { background-color: white; color: #4a3c77; padding: 7px 0; font-size: 16px; width: 31px; display: block; text-align: center; border-radius: 50%; line-height: 1; }
+#prefooter .sociallinks ul li a { background-color: white; color: #4a3c77; font-size: 16px; width: 32px; height: 32px; padding: 0; display: block; text-align: center; border-radius: 50%; line-height: 1; }
+
+#prefooter .sociallinks ul li a svg { margin-bottom: 0; padding: 8px 0px; display: inline-block; }
 
 #prefooter .stories .story { margin-bottom: 20px; }
 
@@ -943,8 +971,12 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #colophon { font-size: 13px; padding: 60px 0; background-color: #784987; display: block; color: white; }
 
-#colophon .footer-nav ul { list-style: none; float: right; margin-bottom: 0; }
+#colophon .footer-nav ul { list-style: none; float: left; margin-bottom: 0; margin-top: 30px; }
 
-#colophon .footer-nav ul li { display: inline-block; margin-left: 10px; }
+@media (min-width: 550px) { #colophon .footer-nav ul { float: right; margin-top: 0; } }
+
+#colophon .footer-nav ul li { display: inline-block; margin: 0 10px 0 0; }
+
+@media (min-width: 550px) { #colophon .footer-nav ul li { margin: 0 0 10px 10px; } }
 
 #colophon .footer-nav ul li a { text-decoration: none; color: inherit; }

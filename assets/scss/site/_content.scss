@@ -39,9 +39,19 @@
 		li {
 			margin: 0;
 			float: left;
-			width: 16.666%;
+			width: 50%;
+			margin-bottom: 30px;
 			vertical-align: top;
 			text-align: center;
+
+			@media (#{$bp-larger-than-desktop}) {
+				width: 16.666%;
+				margin-bottom: 0;
+			}
+
+			a {
+				text-decoration: none;
+			}
 
 			.icon {
 				display: inline-block;
@@ -103,7 +113,11 @@
 		}
 
 		.tweet {
-			padding: 0 100px;
+			padding: 0 20px;
+
+			@media (#{$bp-larger-than-phablet}) {
+				padding: 0 100px;
+			}
 		}
 
 		.slick-prev, 
@@ -140,6 +154,11 @@
 		li {
 			display: inline-block;
 			margin: 0 10px;
+			margin-bottom: 10px;
+
+			@media (#{$bp-larger-than-phablet}) {
+				margin-bottom: 0;
+			}
 
 			a {
 				display: inline-block;
@@ -184,6 +203,16 @@
 
 		.element {
 			text-align: left;
+
+			&:last-of-type {
+				margin-top: 30px;
+			}
+
+			@media (#{$bp-larger-than-tablet}) {
+				&:last-of-type {
+					margin-top: 0;
+				}
+			}
 
 			.link {
 				background: $primary-color;
@@ -230,6 +259,22 @@
 		}
 
 		.element {
+
+			&.image {
+				display: none;
+
+				@media (#{$bp-larger-than-tablet}) {
+					display: block;
+				}
+			}
+
+			.avatar {
+				margin-bottom: 30px;
+
+				@media (#{$bp-larger-than-tablet}) {
+					display: none;
+				}
+			}
 
 			h2 {
 				font-size: 3.2rem;

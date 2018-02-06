@@ -39,6 +39,7 @@ get_header(); ?>
 					<?php if ($loop->current_post % 2 == 0): ?>
 					<div class="row">
 						<div class="element columns eight whois">
+							<div class="avatar"><?php the_post_thumbnail( 'full' ) ?></div>
 							<h2><?php the_title(); ?></h2>
 							<h3><?php the_field( 'position' ); ?></h3>
 							<?php the_content(); ?>
@@ -53,6 +54,7 @@ get_header(); ?>
 							<?php the_post_thumbnail( 'full' ) ?>
 						</div>
 						<div class="element columns eight whois">
+							<div class="avatar"><?php the_post_thumbnail( 'full' ) ?></div>
 							<h2><?php the_title(); ?></h2>
 							<h3><?php the_field( 'position' ); ?></h3>
 							<?php the_content(); ?>
@@ -86,6 +88,7 @@ get_header(); ?>
 					<?php if ($loop->current_post % 2 == 0): ?>
 					<div class="row">
 						<div class="element columns eight whois">
+							<div class="avatar"><?php the_post_thumbnail( 'full' ) ?></div>
 							<h2><?php the_title(); ?></h2>
 							<h3><?php the_field( 'position' ); ?></h3>
 							<?php the_content(); ?>
@@ -100,6 +103,7 @@ get_header(); ?>
 							<?php the_post_thumbnail( 'full' ) ?>
 						</div>
 						<div class="element columns eight whois">
+							<div class="avatar"><?php the_post_thumbnail( 'full' ) ?></div>
 							<h2><?php the_title(); ?></h2>
 							<h3><?php the_field( 'position' ); ?></h3>
 							<?php the_content(); ?>
@@ -133,6 +137,7 @@ get_header(); ?>
 					<?php if ($loop->current_post % 2 == 0): ?>
 					<div class="row">
 						<div class="element columns eight whois">
+							<div class="avatar"><?php the_post_thumbnail( 'full' ) ?></div>
 							<h2><?php the_title(); ?></h2>
 							<h3><?php the_field( 'position' ); ?></h3>
 							<?php the_content(); ?>
@@ -147,6 +152,7 @@ get_header(); ?>
 							<?php the_post_thumbnail( 'full' ) ?>
 						</div>
 						<div class="element columns eight whois">
+							<div class="avatar"><?php the_post_thumbnail( 'full' ) ?></div>
 							<h2><?php the_title(); ?></h2>
 							<h3><?php the_field( 'position' ); ?></h3>
 							<?php the_content(); ?>
