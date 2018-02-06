@@ -91,6 +91,24 @@
 		z-index: 102;
 		height: 96px;
 
+		.menu-primary-container {
+
+			ul {
+
+				li {
+
+					a {
+						color: black;
+						border-color: black;
+					}
+
+					ul {
+						background: white;
+					}
+				}
+			}
+		}
+
 		.logo {
 			&.small {
 				display: block;
@@ -102,7 +120,7 @@
 
 		.row {
 			.main-navigation {
-				margin-top: 0;
+				margin-top: 7px;
 			}
 
 			.hamburger {

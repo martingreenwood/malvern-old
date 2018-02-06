@@ -197,20 +197,20 @@ function staff_cpt() {
 add_action( 'init', 'staff_cpt' );
 
 function staff_cpt_taxonomies() {
-    register_taxonomy(
-        'team_type',
-        'team',
-        array(
-            'labels' => array(
-                'name' => 'Team Type',
-                'add_new_item' => 'Add Team Type',
-                'new_item_name' => "New Team Type"
-            ),
-            'show_ui' => true,
-            'show_tagcloud' => false,
-            'hierarchical' => true
-        )
-    );
+	register_taxonomy(
+		'team_type',
+		'team',
+		array(
+			'labels' => array(
+				'name' => 'Team Type',
+				'add_new_item' => 'Add Team Type',
+				'new_item_name' => "New Team Type"
+			),
+			'show_ui' => true,
+			'show_tagcloud' => false,
+			'hierarchical' => true
+		)
+	);
 }
 add_action( 'init', 'staff_cpt_taxonomies', 0 );
 
@@ -228,186 +228,186 @@ add_action( 'show_user_profile', 'extra_user_profile_fields' );
 add_action( 'edit_user_profile', 'extra_user_profile_fields' );
 
 function extra_user_profile_fields( $user ) { ?>
-    <h3><?php _e("Personal Information", "blank"); ?></h3>
+	<h3><?php _e("Personal Information", "blank"); ?></h3>
 
-    <table class="form-table">
-    <tr>
-        <th><label for="addressline1"><?php _e("Address Line 1"); ?></label></th>
-        <td>
-            <input type="text" name="addressline1" id="addressline1" value="<?php echo esc_attr( get_the_author_meta( 'addressline1', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter the first line of your address."); ?></span>
-        </td>
-    </tr>
-    <tr>
-        <th><label for="addressline2"><?php _e("Address Line 2"); ?></label></th>
-        <td>
-            <input type="text" name="addressline2" id="addressline2" value="<?php echo esc_attr( get_the_author_meta( 'addressline2', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter the seconc line of your address."); ?></span>
-        </td>
-    </tr>
-    <tr>
-        <th><label for="city"><?php _e("City"); ?></label></th>
-        <td>
-            <input type="text" name="city" id="city" value="<?php echo esc_attr( get_the_author_meta( 'city', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your city."); ?></span>
-        </td>
-    </tr>
-    <tr>
-        <th><label for="county"><?php _e("County"); ?></label></th>
-        <td>
-            <input type="text" name="county" id="county" value="<?php echo esc_attr( get_the_author_meta( 'county', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your county."); ?></span>
-        </td>
-    </tr>
-    <tr>
-        <th><label for="postcode"><?php _e("Postcode"); ?></label></th>
-        <td>
-            <input type="text" name="postcode" id="postcode" value="<?php echo esc_attr( get_the_author_meta( 'postcode', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your postcode."); ?></span>
-        </td>
-    </tr>
-    <tr>
-        <th><label for="homephone"><?php _e("Home Phone"); ?></label></th>
-        <td>
-            <input type="text" name="homephone" id="homephone" value="<?php echo esc_attr( get_the_author_meta( 'homephone', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your home phone."); ?></span>
-        </td>
-    </tr>
-    <tr>
-        <th><label for="mobile"><?php _e("Mobile"); ?></label></th>
-        <td>
-            <input type="text" name="mobile" id="mobile" value="<?php echo esc_attr( get_the_author_meta( 'mobile', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your mobile."); ?></span>
-        </td>
-    </tr>
-    <tr>
-    <th><label for="childsname"><?php _e("Childs Name"); ?></label></th>
-        <td>
-            <input type="text" name="childsname" id="childsname" value="<?php echo esc_attr( get_the_author_meta( 'childsname', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your childs name."); ?></span>
-        </td>
-    </tr>
-    <tr>
-    <th><label for="dob"><?php _e("Date of Birth"); ?></label></th>
-        <td>
-            <input type="text" name="dob" id="dob" value="<?php echo esc_attr( get_the_author_meta( 'dob', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your childs date of birth."); ?></span>
-        </td>
-    </tr>
-    <tr>
-    <th><label for="schoolyear"><?php _e("School Year"); ?></label></th>
-        <td>
-            <input type="text" name="schoolyear" id="schoolyear" value="<?php echo esc_attr( get_the_author_meta( 'schoolyear', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your childs school year."); ?></span>
-        </td>
-    </tr>
-    <tr>
-    <th><label for="gender"><?php _e("Gender"); ?></label></th>
-        <td>
-            <input type="text" name="gender" id="gender" value="<?php echo esc_attr( get_the_author_meta( 'gender', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your childs gender."); ?></span>
-        </td>
-    </tr>
-    <tr>
-    <th><label for="schoolattended"><?php _e("School Attended"); ?></label></th>
-        <td>
-            <input type="text" name="schoolattended" id="schoolattended" value="<?php echo esc_attr( get_the_author_meta( 'schoolattended', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your childs school attended."); ?></span>
-        </td>
-    </tr>
-    <tr>
-    <th><label for="headteacher"><?php _e("Head Teacher"); ?></label></th>
-        <td>
-            <input type="text" name="headteacher" id="headteacher" value="<?php echo esc_attr( get_the_author_meta( 'headteacher', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your childs head teacher."); ?></span>
-        </td>
-    </tr>
-    <tr>
-    <th><label for="headteacheremail"><?php _e("Head Teacher Email"); ?></label></th>
-        <td>
-            <input type="text" name="headteacheremail" id="headteacheremail" value="<?php echo esc_attr( get_the_author_meta( 'headteacheremail', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your childs head teacher email."); ?></span>
-        </td>
-    </tr>
-    <tr>
-    <th><label for="headofmusic"><?php _e("Head of Music"); ?></label></th>
-        <td>
-            <input type="text" name="headofmusic" id="headofmusic" value="<?php echo esc_attr( get_the_author_meta( 'headofmusic', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your childs head of music."); ?></span>
-        </td>
-    </tr>
-    <tr>
-    <th><label for="headofmusicemail"><?php _e("Head of Music Email"); ?></label></th>
-        <td>
-            <input type="text" name="headofmusicemail" id="headofmusicemail" value="<?php echo esc_attr( get_the_author_meta( 'headofmusicemail', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your childs head of music email."); ?></span>
-        </td>
-    </tr>
-    <tr>
-    <th><label for="instrumentalteacher"><?php _e("Instrumental Teacer"); ?></label></th>
-        <td>
-            <input type="text" name="instrumentalteacher" id="instrumentalteacher" value="<?php echo esc_attr( get_the_author_meta( 'instrumentalteacher', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your childs instrumental teacher."); ?></span>
-        </td>
-    </tr>
-    <tr>
-    <th><label for="instrumentalteacheremail"><?php _e("Instrumental Teacer Email"); ?></label></th>
-        <td>
-            <input type="text" name="instrumentalteacheremail" id="instrumentalteacheremail" value="<?php echo esc_attr( get_the_author_meta( 'instrumentalteacheremail', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your childs instrumental teacher email."); ?></span>
-        </td>
-    </tr>
-    <tr>
-    <th><label for="maininstrument"><?php _e("Main Instrument"); ?></label></th>
-        <td>
-            <input type="text" name="maininstrument" id="maininstrument" value="<?php echo esc_attr( get_the_author_meta( 'maininstrument', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your childs main instrument."); ?></span>
-        </td>
-    </tr>
-    <tr>
-    <th><label for="lastgradetaken"><?php _e("Last Grade Taken"); ?></label></th>
-        <td>
-            <input type="text" name="lastgradetaken" id="lastgradetaken" value="<?php echo esc_attr( get_the_author_meta( 'lastgradetaken', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your childs last grade taken."); ?></span>
-        </td>
-    </tr>
-    <tr>
-    <th><label for="dateofexam"><?php _e("Date of Ecam"); ?></label></th>
-        <td>
-            <input type="text" name="dateofexam" id="dateofexam" value="<?php echo esc_attr( get_the_author_meta( 'dateofexam', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your childs date of exam."); ?></span>
-        </td>
-    </tr>
-    <tr>
-    <th><label for="result"><?php _e("Date of Ecam"); ?></label></th>
-        <td>
-            <input type="text" name="result" id="result" value="<?php echo esc_attr( get_the_author_meta( 'result', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your childs result."); ?></span>
-        </td>
-    </tr>
-    <tr>
-    <th><label for="currentstandard"><?php _e("Current Standard"); ?></label></th>
-        <td>
-            <input type="text" name="currentstandard" id="currentstandard" value="<?php echo esc_attr( get_the_author_meta( 'currentstandard', $user->ID ) ); ?>" class="regular-text" /><br />
-            <span class="description"><?php _e("Please enter your childs current standard."); ?></span>
-        </td>
-    </tr>
-    <th><label for="additionalinstruments"><?php _e("Additional Instruemnts"); ?></label></th>
-        <td>
-        	<textarea name="additionalinstruments" id="additionalinstruments" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'additionalinstruments', $user->ID ) ); ?></textarea>
-        	<br />
-            <span class="description"><?php _e("Please enter your childs additional instruments."); ?></span>
-        </td>
-    </tr>
-    <tr>
-    <th><label for="orchestralexp"><?php _e("Recent Orchestral Experience"); ?></label></th>
-        <td>
-        	<textarea name="orchestralexp" id="orchestralexp" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'orchestralexp', $user->ID ) ); ?></textarea>
-        	<br />
-            <span class="description"><?php _e("Please enter your childs orchestral experience."); ?></span>
-        </td>
-    </tr>
-    </table>
+	<table class="form-table">
+	<tr>
+		<th><label for="addressline1"><?php _e("Address Line 1"); ?></label></th>
+		<td>
+			<input type="text" name="addressline1" id="addressline1" value="<?php echo esc_attr( get_the_author_meta( 'addressline1', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter the first line of your address."); ?></span>
+		</td>
+	</tr>
+	<tr>
+		<th><label for="addressline2"><?php _e("Address Line 2"); ?></label></th>
+		<td>
+			<input type="text" name="addressline2" id="addressline2" value="<?php echo esc_attr( get_the_author_meta( 'addressline2', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter the seconc line of your address."); ?></span>
+		</td>
+	</tr>
+	<tr>
+		<th><label for="city"><?php _e("City"); ?></label></th>
+		<td>
+			<input type="text" name="city" id="city" value="<?php echo esc_attr( get_the_author_meta( 'city', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your city."); ?></span>
+		</td>
+	</tr>
+	<tr>
+		<th><label for="county"><?php _e("County"); ?></label></th>
+		<td>
+			<input type="text" name="county" id="county" value="<?php echo esc_attr( get_the_author_meta( 'county', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your county."); ?></span>
+		</td>
+	</tr>
+	<tr>
+		<th><label for="postcode"><?php _e("Postcode"); ?></label></th>
+		<td>
+			<input type="text" name="postcode" id="postcode" value="<?php echo esc_attr( get_the_author_meta( 'postcode', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your postcode."); ?></span>
+		</td>
+	</tr>
+	<tr>
+		<th><label for="homephone"><?php _e("Home Phone"); ?></label></th>
+		<td>
+			<input type="text" name="homephone" id="homephone" value="<?php echo esc_attr( get_the_author_meta( 'homephone', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your home phone."); ?></span>
+		</td>
+	</tr>
+	<tr>
+		<th><label for="mobile"><?php _e("Mobile"); ?></label></th>
+		<td>
+			<input type="text" name="mobile" id="mobile" value="<?php echo esc_attr( get_the_author_meta( 'mobile', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your mobile."); ?></span>
+		</td>
+	</tr>
+	<tr>
+	<th><label for="childsname"><?php _e("Childs Name"); ?></label></th>
+		<td>
+			<input type="text" name="childsname" id="childsname" value="<?php echo esc_attr( get_the_author_meta( 'childsname', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your childs name."); ?></span>
+		</td>
+	</tr>
+	<tr>
+	<th><label for="dob"><?php _e("Date of Birth"); ?></label></th>
+		<td>
+			<input type="text" name="dob" id="dob" value="<?php echo esc_attr( get_the_author_meta( 'dob', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your childs date of birth."); ?></span>
+		</td>
+	</tr>
+	<tr>
+	<th><label for="schoolyear"><?php _e("School Year"); ?></label></th>
+		<td>
+			<input type="text" name="schoolyear" id="schoolyear" value="<?php echo esc_attr( get_the_author_meta( 'schoolyear', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your childs school year."); ?></span>
+		</td>
+	</tr>
+	<tr>
+	<th><label for="gender"><?php _e("Gender"); ?></label></th>
+		<td>
+			<input type="text" name="gender" id="gender" value="<?php echo esc_attr( get_the_author_meta( 'gender', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your childs gender."); ?></span>
+		</td>
+	</tr>
+	<tr>
+	<th><label for="schoolattended"><?php _e("School Attended"); ?></label></th>
+		<td>
+			<input type="text" name="schoolattended" id="schoolattended" value="<?php echo esc_attr( get_the_author_meta( 'schoolattended', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your childs school attended."); ?></span>
+		</td>
+	</tr>
+	<tr>
+	<th><label for="headteacher"><?php _e("Head Teacher"); ?></label></th>
+		<td>
+			<input type="text" name="headteacher" id="headteacher" value="<?php echo esc_attr( get_the_author_meta( 'headteacher', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your childs head teacher."); ?></span>
+		</td>
+	</tr>
+	<tr>
+	<th><label for="headteacheremail"><?php _e("Head Teacher Email"); ?></label></th>
+		<td>
+			<input type="text" name="headteacheremail" id="headteacheremail" value="<?php echo esc_attr( get_the_author_meta( 'headteacheremail', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your childs head teacher email."); ?></span>
+		</td>
+	</tr>
+	<tr>
+	<th><label for="headofmusic"><?php _e("Head of Music"); ?></label></th>
+		<td>
+			<input type="text" name="headofmusic" id="headofmusic" value="<?php echo esc_attr( get_the_author_meta( 'headofmusic', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your childs head of music."); ?></span>
+		</td>
+	</tr>
+	<tr>
+	<th><label for="headofmusicemail"><?php _e("Head of Music Email"); ?></label></th>
+		<td>
+			<input type="text" name="headofmusicemail" id="headofmusicemail" value="<?php echo esc_attr( get_the_author_meta( 'headofmusicemail', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your childs head of music email."); ?></span>
+		</td>
+	</tr>
+	<tr>
+	<th><label for="instrumentalteacher"><?php _e("Instrumental Teacer"); ?></label></th>
+		<td>
+			<input type="text" name="instrumentalteacher" id="instrumentalteacher" value="<?php echo esc_attr( get_the_author_meta( 'instrumentalteacher', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your childs instrumental teacher."); ?></span>
+		</td>
+	</tr>
+	<tr>
+	<th><label for="instrumentalteacheremail"><?php _e("Instrumental Teacer Email"); ?></label></th>
+		<td>
+			<input type="text" name="instrumentalteacheremail" id="instrumentalteacheremail" value="<?php echo esc_attr( get_the_author_meta( 'instrumentalteacheremail', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your childs instrumental teacher email."); ?></span>
+		</td>
+	</tr>
+	<tr>
+	<th><label for="maininstrument"><?php _e("Main Instrument"); ?></label></th>
+		<td>
+			<input type="text" name="maininstrument" id="maininstrument" value="<?php echo esc_attr( get_the_author_meta( 'maininstrument', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your childs main instrument."); ?></span>
+		</td>
+	</tr>
+	<tr>
+	<th><label for="lastgradetaken"><?php _e("Last Grade Taken"); ?></label></th>
+		<td>
+			<input type="text" name="lastgradetaken" id="lastgradetaken" value="<?php echo esc_attr( get_the_author_meta( 'lastgradetaken', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your childs last grade taken."); ?></span>
+		</td>
+	</tr>
+	<tr>
+	<th><label for="dateofexam"><?php _e("Date of Ecam"); ?></label></th>
+		<td>
+			<input type="text" name="dateofexam" id="dateofexam" value="<?php echo esc_attr( get_the_author_meta( 'dateofexam', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your childs date of exam."); ?></span>
+		</td>
+	</tr>
+	<tr>
+	<th><label for="result"><?php _e("Date of Ecam"); ?></label></th>
+		<td>
+			<input type="text" name="result" id="result" value="<?php echo esc_attr( get_the_author_meta( 'result', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your childs result."); ?></span>
+		</td>
+	</tr>
+	<tr>
+	<th><label for="currentstandard"><?php _e("Current Standard"); ?></label></th>
+		<td>
+			<input type="text" name="currentstandard" id="currentstandard" value="<?php echo esc_attr( get_the_author_meta( 'currentstandard', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter your childs current standard."); ?></span>
+		</td>
+	</tr>
+	<th><label for="additionalinstruments"><?php _e("Additional Instruemnts"); ?></label></th>
+		<td>
+			<textarea name="additionalinstruments" id="additionalinstruments" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'additionalinstruments', $user->ID ) ); ?></textarea>
+			<br />
+			<span class="description"><?php _e("Please enter your childs additional instruments."); ?></span>
+		</td>
+	</tr>
+	<tr>
+	<th><label for="orchestralexp"><?php _e("Recent Orchestral Experience"); ?></label></th>
+		<td>
+			<textarea name="orchestralexp" id="orchestralexp" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'orchestralexp', $user->ID ) ); ?></textarea>
+			<br />
+			<span class="description"><?php _e("Please enter your childs orchestral experience."); ?></span>
+		</td>
+	</tr>
+	</table>
 <?php 
 }
 
@@ -458,152 +458,168 @@ function save_extra_user_profile_fields( $user_id ) {
 * @link      https://gravitywiz.com/multi-page-navigation/
 */
 class GWMultipageNavigation {
-    public $_args = array();
-    private static $script_displayed;
-    private static $non_global_forms = array();
-    function __construct( $args = array() ) {
-        // set our default arguments, parse against the provided arguments, and store for use throughout the class
-        $this->_args = wp_parse_args( $args, array(
-            'form_id' => false,
-            'form_ids' => false,
-            'activate_on_last_page' => true
-        ) );
-        if( $this->_args['form_ids'] ) {
-            $form_ids = $this->_args['form_ids'];
-        } else if( $this->_args['form_id'] ) {
-            $form_ids = $this->_args['form_id'];
-        } else {
-            $form_ids = array();
-        }
-        $this->_args['form_ids'] = is_array( $form_ids ) ? $form_ids : array( $form_ids );
-        if( ! empty( $this->_args['form_ids'] ) )
-            self::$non_global_forms = array_merge( self::$non_global_forms, $this->_args['form_ids'] );
-        add_filter( 'gform_pre_render', array( $this, 'output_navigation_script' ), 10, 2 );
-    }
-    function output_navigation_script( $form, $is_ajax ) {
-        // only apply this to multi-page forms
-        if( count($form['pagination']['pages']) <= 1 )
-            return $form;
-        if( ! $this->is_applicable_form( $form['id'] ) )
-            return $form;
-        $this->register_script( $form );
-        if( ! $this->_args['activate_on_last_page'] || $this->is_last_page( $form ) || $this->is_last_page_reached() ) {
-            $input = '<input id="gw_last_page_reached" name="gw_last_page_reached" value="1" type="hidden" />';
-            add_filter( "gform_form_tag_{$form['id']}", create_function('$a', 'return $a . \'' . $input . '\';' ) );
-        }
-        // only output the gwmpn object once regardless of how many forms are being displayed
-        // also do not output again on ajax submissions
-        if( self::$script_displayed || ( $is_ajax && rgpost('gform_submit') ))
-            return $form;
-        ?>
+	public $_args = array();
+	private static $script_displayed;
+	private static $non_global_forms = array();
+	function __construct( $args = array() ) {
+		// set our default arguments, parse against the provided arguments, and store for use throughout the class
+		$this->_args = wp_parse_args( $args, array(
+			'form_id' => false,
+			'form_ids' => false,
+			'activate_on_last_page' => true
+		) );
+		if( $this->_args['form_ids'] ) {
+			$form_ids = $this->_args['form_ids'];
+		} else if( $this->_args['form_id'] ) {
+			$form_ids = $this->_args['form_id'];
+		} else {
+			$form_ids = array();
+		}
+		$this->_args['form_ids'] = is_array( $form_ids ) ? $form_ids : array( $form_ids );
+		if( ! empty( $this->_args['form_ids'] ) )
+			self::$non_global_forms = array_merge( self::$non_global_forms, $this->_args['form_ids'] );
+		add_filter( 'gform_pre_render', array( $this, 'output_navigation_script' ), 10, 2 );
+	}
+	function output_navigation_script( $form, $is_ajax ) {
+		// only apply this to multi-page forms
+		if( count($form['pagination']['pages']) <= 1 )
+			return $form;
+		if( ! $this->is_applicable_form( $form['id'] ) )
+			return $form;
+		$this->register_script( $form );
+		if( ! $this->_args['activate_on_last_page'] || $this->is_last_page( $form ) || $this->is_last_page_reached() ) {
+			$input = '<input id="gw_last_page_reached" name="gw_last_page_reached" value="1" type="hidden" />';
+			add_filter( "gform_form_tag_{$form['id']}", create_function('$a', 'return $a . \'' . $input . '\';' ) );
+		}
+		// only output the gwmpn object once regardless of how many forms are being displayed
+		// also do not output again on ajax submissions
+		if( self::$script_displayed || ( $is_ajax && rgpost('gform_submit') ))
+			return $form;
+		?>
 
-        <script type="text/javascript">
-            (function($){
-                window.gwmpnObj = function( args ) {
-                    this.formId = args.formId;
-                    this.formElem = jQuery('form#gform_' + this.formId);
-                    this.currentPage = args.currentPage;
-                    this.lastPage = args.lastPage;
-                    this.activateOnLastPage = args.activateOnLastPage;
-                    this.labels = args.labels;
-                    this.init = function() {
-                        // if this form is ajax-enabled, we'll need to get the current page via JS
-                        if( this.isAjax() )
-                            this.currentPage = this.getCurrentPage();
-                        if( !this.isLastPage() && !this.isLastPageReached() )
-                            return;
-                        var gwmpn = this;
-                        var steps = $('form#gform_' + this.formId + ' .gf_step');
-                        steps.each(function(){
-                            var stepNumber = parseInt( $(this).find('span.gf_step_number').text() );
-                            if( stepNumber != gwmpn.currentPage ) {
-                                $(this).html( gwmpn.createPageLink( stepNumber, $(this).html() ) )
-                                    .addClass('gw-step-linked');
-                            } else {
-                                $(this).addClass('gw-step-current');
-                            }
-                        });
-                        if( !this.isLastPage() && this.activateOnLastPage )
-                            this.addBackToLastPageButton();
-                        $(document).on('click', '#gform_' + this.formId + ' a.gwmpn-page-link', function(event){
-                            event.preventDefault();
-                            var hrefArray = $(this).attr('href').split('#');
-                            if( hrefArray.length >= 2 ) {
-                                var pageNumber = hrefArray.pop();
-                                gwmpn.postToPage( pageNumber, ! $( this ).hasClass( 'gwmp-default' ) );
-                            }
-                        });
-                    }
-                    this.createPageLink = function( stepNumber, HTML ) {
-                        return '<a href="#' + stepNumber + '" class="gwmpn-page-link gwmpn-default">' + HTML + '</a>';
-                    }
-                    this.postToPage = function( page ) {
-                        this.formElem.append('<input type="hidden" name="gw_page_change" value="1" />');
-                        this.formElem.find( 'input[name="gform_target_page_number_' + this.formId + '"]' ).val( page );
-                        this.formElem.submit();
-                    }
-                    this.addBackToLastPageButton = function() {
-                        this.formElem.find('#gform_page_' + this.formId + '_' + this.currentPage + ' .gform_page_footer')
-                            .append('<input type="button" onclick="gwmpn.postToPage(' + this.lastPage + ')" value="' + this.labels.lastPageButton + '" class="button gform_last_page_button">');
-                    }
-                    this.getCurrentPage = function() {
-                        return this.formElem.find( 'input#gform_source_page_number_' + this.formId ).val();
-                    }
-                    this.isLastPage = function() {
-                        return this.currentPage >= this.lastPage;
-                    }
-                    this.isLastPageReached = function() {
-                        return this.formElem.find('input[name="gw_last_page_reached"]').val() == true;
-                    }
-                    this.isAjax = function() {
-                        return this.formElem.attr('target') == 'gform_ajax_frame_' + this.formId;
-                    }
-                    this.init();
-                }
-            })(jQuery);
-        </script>
+		<script type="text/javascript">
+			(function($){
+				window.gwmpnObj = function( args ) {
+					this.formId = args.formId;
+					this.formElem = jQuery('form#gform_' + this.formId);
+					this.currentPage = args.currentPage;
+					this.lastPage = args.lastPage;
+					this.activateOnLastPage = args.activateOnLastPage;
+					this.labels = args.labels;
+					this.init = function() {
+						// if this form is ajax-enabled, we'll need to get the current page via JS
+						if( this.isAjax() )
+							this.currentPage = this.getCurrentPage();
+						if( !this.isLastPage() && !this.isLastPageReached() )
+							return;
+						var gwmpn = this;
+						var steps = $('form#gform_' + this.formId + ' .gf_step');
+						steps.each(function(){
+							var stepNumber = parseInt( $(this).find('span.gf_step_number').text() );
+							if( stepNumber != gwmpn.currentPage ) {
+								$(this).html( gwmpn.createPageLink( stepNumber, $(this).html() ) )
+									.addClass('gw-step-linked');
+							} else {
+								$(this).addClass('gw-step-current');
+							}
+						});
+						if( !this.isLastPage() && this.activateOnLastPage )
+							this.addBackToLastPageButton();
+						$(document).on('click', '#gform_' + this.formId + ' a.gwmpn-page-link', function(event){
+							event.preventDefault();
+							var hrefArray = $(this).attr('href').split('#');
+							if( hrefArray.length >= 2 ) {
+								var pageNumber = hrefArray.pop();
+								gwmpn.postToPage( pageNumber, ! $( this ).hasClass( 'gwmp-default' ) );
+							}
+						});
+					}
+					this.createPageLink = function( stepNumber, HTML ) {
+						return '<a href="#' + stepNumber + '" class="gwmpn-page-link gwmpn-default">' + HTML + '</a>';
+					}
+					this.postToPage = function( page ) {
+						this.formElem.append('<input type="hidden" name="gw_page_change" value="1" />');
+						this.formElem.find( 'input[name="gform_target_page_number_' + this.formId + '"]' ).val( page );
+						this.formElem.submit();
+					}
+					this.addBackToLastPageButton = function() {
+						this.formElem.find('#gform_page_' + this.formId + '_' + this.currentPage + ' .gform_page_footer')
+							.append('<input type="button" onclick="gwmpn.postToPage(' + this.lastPage + ')" value="' + this.labels.lastPageButton + '" class="button gform_last_page_button">');
+					}
+					this.getCurrentPage = function() {
+						return this.formElem.find( 'input#gform_source_page_number_' + this.formId ).val();
+					}
+					this.isLastPage = function() {
+						return this.currentPage >= this.lastPage;
+					}
+					this.isLastPageReached = function() {
+						return this.formElem.find('input[name="gw_last_page_reached"]').val() == true;
+					}
+					this.isAjax = function() {
+						return this.formElem.attr('target') == 'gform_ajax_frame_' + this.formId;
+					}
+					this.init();
+				}
+			})(jQuery);
+		</script>
 
-        <?php
-        self::$script_displayed = true;
-        return $form;
-    }
-    function register_script( $form ) {
-        $page_number = GFFormDisplay::get_current_page($form['id']);
-        $last_page = count($form['pagination']['pages']);
-        $args = array(
-            'formId' => $form['id'],
-            'currentPage' => $page_number,
-            'lastPage' => $last_page,
-            'activateOnLastPage' => $this->_args['activate_on_last_page'],
-            'labels' => array(
-                'lastPageButton' => __( 'Back to Last Page' )
-            )
-        );
-        $script = "window.gwmpn = new gwmpnObj(" . json_encode( $args ) . ");";
-        GFFormDisplay::add_init_script( $form['id'], 'gwmpn', GFFormDisplay::ON_PAGE_RENDER, $script );
-    }
-    function is_last_page( $form ) {
-        $page_number = GFFormDisplay::get_current_page($form['id']);
-        $last_page = count($form['pagination']['pages']);
-        return $page_number >= $last_page;
-    }
-    function is_last_page_reached() {
-        return rgpost('gw_last_page_reached');
-    }
-    function is_applicable_form( $form_id ) {
-        $is_global_form = ! in_array( $form_id, self::$non_global_forms );
-        $is_current_non_global_form = ! $is_global_form && in_array( $form_id, $this->_args['form_ids'] );
-        return $is_global_form || $is_current_non_global_form;
-    }
+		<?php
+		self::$script_displayed = true;
+		return $form;
+	}
+	function register_script( $form ) {
+		$page_number = GFFormDisplay::get_current_page($form['id']);
+		$last_page = count($form['pagination']['pages']);
+		$args = array(
+			'formId' => $form['id'],
+			'currentPage' => $page_number,
+			'lastPage' => $last_page,
+			'activateOnLastPage' => $this->_args['activate_on_last_page'],
+			'labels' => array(
+				'lastPageButton' => __( 'Back to Last Page' )
+			)
+		);
+		$script = "window.gwmpn = new gwmpnObj(" . json_encode( $args ) . ");";
+		GFFormDisplay::add_init_script( $form['id'], 'gwmpn', GFFormDisplay::ON_PAGE_RENDER, $script );
+	}
+	function is_last_page( $form ) {
+		$page_number = GFFormDisplay::get_current_page($form['id']);
+		$last_page = count($form['pagination']['pages']);
+		return $page_number >= $last_page;
+	}
+	function is_last_page_reached() {
+		return rgpost('gw_last_page_reached');
+	}
+	function is_applicable_form( $form_id ) {
+		$is_global_form = ! in_array( $form_id, self::$non_global_forms );
+		$is_current_non_global_form = ! $is_global_form && in_array( $form_id, $this->_args['form_ids'] );
+		return $is_global_form || $is_current_non_global_form;
+	}
 }
 
 
-add_filter('wp_nav_menu_items', 'add_login_logout_link', 10, 2);
-function add_login_logout_link($items, $args) {
-	ob_start();
-	wp_loginout( $_SERVER['REQUEST_URI'] );
-	$loginoutlink = ob_get_contents();
-	ob_end_clean();
-	$items .= '<li clas="login menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9999">'. $loginoutlink .'</li>';
-	return $items;  
+// add_filter('wp_nav_menu_items', 'add_login_logout_link', 10, 2);
+// function add_login_logout_link($items, $args) {
+// 	ob_start();
+// 	wp_loginout( $_SERVER['REQUEST_URI'] );
+// 	$loginoutlink = ob_get_contents();
+// 	ob_end_clean();
+// 	$items .= '<li clas="login menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9999">'. $loginoutlink .'</li>';
+// 	return $items;  
+// }
+
+function add_last_nav_item($items, $args) {
+	if( $args->theme_location == 'menu-1') {
+    
+		if (is_user_logged_in()) {
+			$homelink = '<a href="'. home_url( '/account' ) .'" title="my Account">My Account</a>';
+		} else {
+			$homelink = '<a href="'. wp_login_url( get_permalink() ) .'" title="Login">Login</a>';
+		}
+		$items = $items;
+		$items .= '<li class="login menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9999">'.$homelink.'</li>';
+		return $items;
+	}
+	return $items;
 }
+add_filter( 'wp_nav_menu_items', 'add_last_nav_item', 10, 2 );

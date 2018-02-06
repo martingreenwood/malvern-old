@@ -736,11 +736,15 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #masthead.fixed { position: fixed; top: 0px; background-color: #fff; z-index: 102; height: 96px; }
 
+#masthead.fixed .menu-primary-container ul li a { color: black; border-color: black; }
+
+#masthead.fixed .menu-primary-container ul li ul { background: white; }
+
 #masthead.fixed .logo.small { display: block; }
 
 #masthead.fixed .logo.desktop { display: none; }
 
-#masthead.fixed .row .main-navigation { margin-top: 0; }
+#masthead.fixed .row .main-navigation { margin-top: 7px; }
 
 #masthead.fixed .row .hamburger { margin-top: 8px; }
 
@@ -949,6 +953,11 @@ th:last-child, td:last-child { padding-right: 0; }
 .single .post-navigation .nav-next a { background-color: #784987; content: "Next Story"; }
 
 .single .post-navigation a { content: "Previous Story"; background-color: #4a3c77; color: white; padding: 10px 24px; text-transform: uppercase; text-decoration: none; }
+
+/*===============================
+=            Account            =
+===============================*/
+.account #banner, .privacy #banner, .terms-conditions #banner { height: 30vh; }
 
 /* Skeleton V2.0.4 Copyright 2014, Dave Gamache www.getskeleton.com Free to use under the MIT license. http://www.opensource.org/licenses/mit-license.php 12/9/2014 Sass Version by Seth Coelen https://github.com/whatsnewsaes */
 #prefooter { padding: 60px 0; background-color: #4a3c77; color: white; }
