@@ -350,11 +350,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/assets\/img\/bottom-strip.png": {
+	"\/assets\/img\/bottom-strip-old.png": {
 		"ft": 32768,
 		"iS": 36363,
 		"oA": 0,
-		"oAP": "\/assets\/img\/bottom-strip.png",
+		"oAP": "\/assets\/img\/bottom-strip-old.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -447,6 +447,17 @@
 		"iS": 17804,
 		"oA": 0,
 		"oAP": "\/assets\/img\/top-strip.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/TornPaper-3000x50.png": {
+		"ft": 32768,
+		"iS": 39467,
+		"oA": 0,
+		"oAP": "\/assets\/img\/TornPaper-3000x50.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
