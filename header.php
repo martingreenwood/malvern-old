@@ -35,13 +35,22 @@
 			<div class="row">
 
 				<div class="site-branding">
-					<?php
-						the_custom_logo();
-					?>
+					<div class="logo desktop">
+						<?php $logo = get_field( 'logo', 'options' ); ?>
+						<img src="<?php echo $logo['url']; ?>" alt="">
+					</div>
+					<div class="logo small">
+						<?php $logo_sticky_mobile = get_field( 'logo_sticky_mobile', 'options' ); ?>
+						<img src="<?php echo $logo_sticky_mobile['url']; ?>" alt="">
+					</div>
 				</div>
 
 				<nav id="site-navigation" class="main-navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'malvern' ); ?></button>
+					<button class="hamburger menu-toggle hamburger--spin" type="button" aria-controls="primary-menu" aria-expanded="false">
+						<span class="hamburger-box ">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
 					<?php
 						wp_nav_menu( array(
 							'theme_location' => 'menu-1',

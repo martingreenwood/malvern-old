@@ -178,35 +178,48 @@ $(document).ready(function(){
 
 })(jQuery);
 
+/*===========================
+=            NAV            =
+===========================*/
+
+(function($){
+
+    $('.hamburger').on('click', function(event) {
+    	event.preventDefault();
+    	$(this).toggleClass('is-active');
+    });
+	
+})(jQuery);
+
 /*===================================
 =            SCG REPLACE            =
 ===================================*/
 
-(function($){
+// (function($){
 
-    $('img[src$=".svg"]').each(function() {
-        var $img = jQuery(this);
-        var imgURL = $img.attr('src');
-        var attributes = $img.prop("attributes");
+//     $('img[src$=".svg"]').each(function() {
+//         var $img = jQuery(this);
+//         var imgURL = $img.attr('src');
+//         var attributes = $img.prop("attributes");
 
-        $.get(imgURL, function(data) {
-            // Get the SVG tag, ignore the rest
-            var $svg = jQuery(data).find('svg');
+//         $.get(imgURL, function(data) {
+//             // Get the SVG tag, ignore the rest
+//             var $svg = jQuery(data).find('svg');
 
-            // Remove any invalid XML tags
-            $svg = $svg.removeAttr('xmlns:a');
+//             // Remove any invalid XML tags
+//             $svg = $svg.removeAttr('xmlns:a');
 
-            // Loop through IMG attributes and apply on SVG
-            $.each(attributes, function() {
-                $svg.attr(this.name, this.value);
-            });
+//             // Loop through IMG attributes and apply on SVG
+//             $.each(attributes, function() {
+//                 $svg.attr(this.name, this.value);
+//             });
 
-            // Replace IMG with SVG
-            $img.replaceWith($svg);
-        }, 'xml');
-    });
+//             // Replace IMG with SVG
+//             $img.replaceWith($svg);
+//         }, 'xml');
+//     });
 	
-})(jQuery);
+// })(jQuery);
 
 /*==============================
 =            LOADER            =
@@ -253,14 +266,34 @@ $(document).ready(function(){
 =            HEADER             =
 ===============================*/
 
+// (function($) {
+
+// 	var $document = $(document),
+// 	$element = $('#masthead'),
+// 	className = 'scrolled';
+
+// 	$document.scroll(function() {
+// 		$element.toggleClass(className, $document.scrollTop() >= 10);
+// 	});
+
+// })(jQuery);
+
+/*===============================
+=            HEADER             =
+===============================*/
+
 (function($) {
 
 	var $document = $(document),
 	$element = $('#masthead'),
-	className = 'scrolled';
+	header = $('#masthead');
 
 	$document.scroll(function() {
-		$element.toggleClass(className, $document.scrollTop() >= 10);
+		$element.toggleClass('hidden', $document.scrollTop() >= 99);
+	});
+
+	$document.scroll(function() {
+		$element.toggleClass('fixed', $document.scrollTop() >= $(window).height());
 	});
 
 })(jQuery);
