@@ -58,7 +58,7 @@
 							?>
 							
 							<div class="story">
-								<h4><a href="<?php the_permalink( $post ); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
+								<h4><a href="<?php the_permalink( $post ); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a> <small><?php echo get_the_date(); ?></small></h4>
 								<p><?php the_excerpt(); ?></p>
 							</div>
 
