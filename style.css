@@ -680,6 +680,10 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #site-navigation .menu-primary-container ul li { display: inline-block; margin-bottom: 0; }
 
+#site-navigation .menu-primary-container ul li:hover a { background-color: #4a3c77; border-color: #4a3c77 !important; }
+
+#site-navigation .menu-primary-container ul li:hover .sub-menu { background-color: #4a3c77; }
+
 #site-navigation .menu-primary-container ul li a { text-decoration: none; color: white; font-family: "Zona Pro Semi Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; padding: 10px 15px; }
 
 #site-navigation .menu-primary-container ul li:last-of-type a { text-transform: uppercase; border: 1px solid white; }
@@ -735,6 +739,10 @@ th:last-child, td:last-child { padding-right: 0; }
 #masthead.hidden { top: -234px; -webkit-transition: top .5s linear 0s, background 0.5s linear 0s; -moz-transition: top .5s linear 0s, background 0.5s linear 0s; -ms-transition: top .5s linear 0s, background 0.5s linear 0s; -o-transition: top .5s linear 0s, background 0.5s linear 0s; transition: top .5s linear 0s, background 0.5s linear 0s; }
 
 #masthead.fixed { position: fixed; top: 0px; background-color: #fff; z-index: 102; height: 96px; }
+
+#masthead.fixed .menu-primary-container ul li:hover a { background-color: transparent; border-color: black !important; }
+
+#masthead.fixed .menu-primary-container ul li:hover .sub-menu { background-color: transparent; }
 
 #masthead.fixed .menu-primary-container ul li a { color: black; border-color: black; }
 

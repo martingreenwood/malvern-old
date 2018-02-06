@@ -22,6 +22,18 @@
 				display: inline-block;
 				margin-bottom: 0;
 
+				&:hover {
+
+					a {
+						background-color: $primary-color;
+						border-color: $primary-color !important;
+					}
+
+					.sub-menu {
+						background-color: $primary-color;
+					}
+				}
+
 				a {
 					text-decoration: none;
 					color: white;

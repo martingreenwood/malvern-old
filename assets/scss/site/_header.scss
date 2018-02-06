@@ -97,6 +97,18 @@
 
 				li {
 
+					&:hover {
+
+						a {
+							background-color: transparent;
+							border-color: black !important;
+						}
+
+						.sub-menu {
+							background-color: transparent;
+						}
+					}
+
 					a {
 						color: black;
 						border-color: black;
