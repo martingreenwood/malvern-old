@@ -88,7 +88,7 @@ function mepr_add_tabs_content($action) {
   if($action == 'personal-information'): //Update this 'premium-support' to match what you put above (?action=premium-support)
   ?>
     <div id="personal-information-form">
-      <?php do_shortcode( '[gravityform id="6" title="false" description="false" ajax="true"]' ); ?>
+      <?php echo do_shortcode( '[gravityform id="6" title="false" description="false" ajax="true"]' ); ?>
     </div>
   <?php
   endif;
