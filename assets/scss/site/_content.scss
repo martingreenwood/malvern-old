@@ -595,4 +595,32 @@
 	#banner {
 		// height: 30vh;
 	}
+
+	.mepr-nav-item {
+		background: $primary-color;
+		margin: 0 3px;
+		display: inline-block;
+		line-height: 1;
+		padding: 0;
+
+		a {
+			text-decoration: none;
+			color: white;
+			text-transform: uppercase;
+			line-height: 1;
+			padding: 9px 15px;
+			display: block;
+			font-size: 14px;
+		}
+	}
+
+	.mepr-submit.mepr-share-button {
+		background: purple;
+		color: $primary-color;
+		font-size: inherit;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
 }

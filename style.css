@@ -965,6 +965,14 @@ th:last-child, td:last-child { padding-right: 0; }
 /*===============================
 =            Account            =
 ===============================*/
+.account .mepr-nav-item { background: #4a3c77; margin: 0 3px; display: inline-block; line-height: 1; padding: 0; }
+
+.account .mepr-nav-item a { text-decoration: none; color: white; text-transform: uppercase; line-height: 1; padding: 9px 15px; display: block; font-size: 14px; }
+
+.account .mepr-submit.mepr-share-button { background: purple; color: #4a3c77; font-size: inherit; }
+
+.account .mepr-submit.mepr-share-button:hover { color: #4a3c77; }
+
 /* Skeleton V2.0.4 Copyright 2014, Dave Gamache www.getskeleton.com Free to use under the MIT license. http://www.opensource.org/licenses/mit-license.php 12/9/2014 Sass Version by Seth Coelen https://github.com/whatsnewsaes */
 #prefooter { padding: 60px 0; background-color: #4a3c77; color: white; }
 
