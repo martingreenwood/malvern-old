@@ -9,19 +9,6 @@
 
 get_header(); ?>
 
-	<div id="accnav">
-		<div class="cotainer">
-			<div class="row">
-				<?php
-					wp_nav_menu( array(
-						'theme_location' => 'menu-4',
-						'menu_id'        => 'account-menu',
-					) );
-				?>
-			</div>
-		</div>
-	</div>
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -36,6 +23,15 @@ get_header(); ?>
 			?>
 			</div>
 			<?php endif ?>
+
+			<div id="accnav">
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-4',
+						'menu_id'        => 'account-menu',
+					) );
+				?>
+			</div>
 
 			<?php
 			// rows

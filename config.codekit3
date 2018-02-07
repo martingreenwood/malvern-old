@@ -1495,6 +1495,13 @@
 		"oAP": "\/memberpress\/checkout\/form.php",
 		"oF": 0
 		},
+	"\/page-account-information.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-account-information.php",
+		"oF": 0
+		},
 	"\/page-account.php": {
 		"cB": 0,
 		"ft": 8192,
