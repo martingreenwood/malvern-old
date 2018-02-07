@@ -15,7 +15,7 @@ get_header(); ?>
 			<?php if (have_posts()): ?>
 			<div class="container maincopy">
 				<?php 
-				if ($_GET['action']) {
+				if (isset($_GET['action'])) {
 					$section_title = $_GET['action'];
 				} else {
 					$section_title = 'account-details';
@@ -23,23 +23,23 @@ get_header(); ?>
 
 				switch ($section_title) {
 					case 'account-details':
-						$title = 'Account Detials'
+						$title = 'Account Detials';
 						break;
 
 					case 'home':
-						$title = 'Account Detials'
+						$title = 'Account Detials';
 						break;
 
 					case 'subscriptions':
-						$title = 'Subscription Detials'
+						$title = 'Subscription Detials';
 						break;
 					
 					case 'payments':
-						$title = 'Payment Detials'
+						$title = 'Payment Detials';
 						break;
 					
 					default:
-						$title = 'Account Detials'
+						$title = 'Account Detials';
 						break;
 				}
 				?>
