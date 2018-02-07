@@ -1495,6 +1495,20 @@
 		"oAP": "\/memberpress\/checkout\/form.php",
 		"oF": 0
 		},
+	"\/page-account.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-account.php",
+		"oF": 0
+		},
+	"\/page-current-subscriptions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-current-subscriptions.php",
+		"oF": 0
+		},
 	"\/page-enroll.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1514,6 +1528,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/page-our-team.php",
+		"oF": 0
+		},
+	"\/page-personal-information.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-personal-information.php",
 		"oF": 0
 		},
 	"\/page-protect.php": {
