@@ -51,6 +51,16 @@ get_header(); ?>
 			</div>
 			<?php endif ?>
 
+			<div class="accinfo">
+			<?php
+			while ( have_posts() ) : the_post();
+
+				get_template_part( 'template-parts/content', 'page' );
+
+			endwhile; // End of the loop.
+			?>
+			</div>
+
 			<?php
 			// rows
 			if( have_rows('page_builder') ):
