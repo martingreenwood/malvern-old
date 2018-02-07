@@ -281,6 +281,13 @@ function extra_user_profile_fields( $user ) { ?>
 		</td>
 	</tr>
 	<tr>
+	<th><label for="courseinterestedin"><?php _e("Course interested in"); ?></label></th>
+		<td>
+			<input type="text" name="courseinterestedin" id="courseinterestedin" value="<?php echo esc_attr( get_the_author_meta( 'courseinterestedin', $user->ID ) ); ?>" class="regular-text" /><br />
+			<span class="description"><?php _e("Please enter the course your child is interested in."); ?></span>
+		</td>
+	</tr>
+	<tr>
 	<th><label for="childsname"><?php _e("Childs Name"); ?></label></th>
 		<td>
 			<input type="text" name="childsname" id="childsname" value="<?php echo esc_attr( get_the_author_meta( 'childsname', $user->ID ) ); ?>" class="regular-text" /><br />
@@ -372,14 +379,14 @@ function extra_user_profile_fields( $user ) { ?>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="dateofexam"><?php _e("Date of Ecam"); ?></label></th>
+	<th><label for="dateofexam"><?php _e("Date of Exam"); ?></label></th>
 		<td>
 			<input type="text" name="dateofexam" id="dateofexam" value="<?php echo esc_attr( get_the_author_meta( 'dateofexam', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs date of exam."); ?></span>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="result"><?php _e("Date of Ecam"); ?></label></th>
+	<th><label for="result"><?php _e("Result"); ?></label></th>
 		<td>
 			<input type="text" name="result" id="result" value="<?php echo esc_attr( get_the_author_meta( 'result', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs result."); ?></span>
@@ -439,6 +446,7 @@ function save_extra_user_profile_fields( $user_id ) {
 	update_user_meta( $user_id, 'currentstandard', $_POST['currentstandard'] ); 
 	update_user_meta( $user_id, 'additionalinstruments', $_POST['additionalinstruments'] ); 
 	update_user_meta( $user_id, 'orchestralexp', $_POST['orchestralexp'] );
+	update_user_meta( $user_id, 'courseinterestedin', $_POST['courseinterestedin'] );
 
 	update_user_meta( $user_id, 'addressline1', $_POST['addressline1'] );
 	update_user_meta( $user_id, 'addressline2', $_POST['addressline2'] );
