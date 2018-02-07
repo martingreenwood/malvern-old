@@ -26,6 +26,10 @@ get_header(); ?>
 						$title = 'Account Detials';
 						break;
 
+					case 'personal-information':
+						$title = 'Personal Information';
+						break;
+
 					case 'home':
 						$title = 'Account Detials';
 						break;
