@@ -14,24 +14,38 @@ get_header(); ?>
 
 			<?php if (have_posts()): ?>
 			<div class="container maincopy">
-			<?php
-			while ( have_posts() ) : the_post();
+				<?php 
+				if ($_GET['action']) {
+					$section_title = $_GET['action'];
+				} else {
+					$section_title = 'account-details';
+				}
 
-				get_template_part( 'template-parts/content', 'page' );
+				switch ($section_title) {
+					case 'account-details':
+						$title = 'Account Detials'
+						break;
 
-			endwhile; // End of the loop.
-			?>
+					case 'home':
+						$title = 'Account Detials'
+						break;
+
+					case 'subscriptions':
+						$title = 'Subscription Detials'
+						break;
+					
+					case 'payments':
+						$title = 'Payment Detials'
+						break;
+					
+					default:
+						$title = 'Account Detials'
+						break;
+				}
+				?>
+				<h1><?php echo $title; ?></h1>
 			</div>
 			<?php endif ?>
-
-			<div id="accnav">
-				<?php
-					wp_nav_menu( array(
-						'theme_location' => 'menu-4',
-						'menu_id'        => 'account-menu',
-					) );
-				?>
-			</div>
 
 			<?php
 			// rows
