@@ -67,3 +67,30 @@ function my_force_login() {
 		auth_redirect();
 	}
 } 
+
+
+
+//ADD A SUPPORT TAB TO THE NAV MENU
+function mepr_add_some_tabs($user) {
+  $support_active = (isset($_GET['action']) && $_GET['action'] == 'personal-information')?'mepr-active-nav-tab':'';
+  ?>
+    <span class="mepr-nav-item personal-information <?php echo $support_active; ?>">
+      <a href="/account/?action=personal-information">Personal Information</a>
+    </span>
+  <?php
+}
+add_action('mepr_account_nav', 'mepr_add_some_tabs');
+
+//YOU CAN DELETE EVERYTHING BELOW THIS LINE -- IF YOU PLAN TO REDIRECT
+//THE USER TO A DIFFERENT PAGE INSTEAD OF KEEPING THEM ON THE SAME PAGE
+//ADD THE CONTENT FOR THE NEW SUPPORT TAB ABOVE
+function mepr_add_tabs_content($action) {
+  if($action == 'personal-information'): //Update this 'premium-support' to match what you put above (?action=premium-support)
+  ?>
+    <div id="personal-information-form">
+      <?php do_shortcode( '[gravityform id="6" title="false" description="false" ajax="true"]' ); ?>
+    </div>
+  <?php
+  endif;
+}
+add_action('mepr_account_nav_content', 'mepr_add_tabs_content');
