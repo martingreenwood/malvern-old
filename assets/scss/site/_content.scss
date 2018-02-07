@@ -623,4 +623,15 @@
 			color: $primary-color;
 		}
 	}
+
+	.mepr-account-change-password {
+		float: right;
+		line-height: 1;
+
+		a {
+			background: $secondary-color;
+			text-decoration: none;
+			color: white;
+		}
+	}
 }

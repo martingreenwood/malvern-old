@@ -973,6 +973,10 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .account .mepr-submit.mepr-share-button:hover { color: #4a3c77; }
 
+.account .mepr-account-change-password { float: right; line-height: 1; }
+
+.account .mepr-account-change-password a { background: #784987; text-decoration: none; color: white; }
+
 /* Skeleton V2.0.4 Copyright 2014, Dave Gamache www.getskeleton.com Free to use under the MIT license. http://www.opensource.org/licenses/mit-license.php 12/9/2014 Sass Version by Seth Coelen https://github.com/whatsnewsaes */
 #prefooter { padding: 60px 0; background-color: #4a3c77; color: white; }
 
