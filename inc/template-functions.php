@@ -75,7 +75,7 @@ function mepr_add_some_tabs($user) {
   $support_active = (isset($_GET['action']) && $_GET['action'] == 'personal-information')?'mepr-active-nav-tab':'';
   ?>
     <span class="mepr-nav-item personal-information <?php echo $support_active; ?>">
-      <a href="/account/?action=personal-information">Personal Information</a>
+      <a href="<?php echo home_url( '/' ); ?>account/?action=personal-information">Personal Information</a>
     </span>
   <?php
 }
