@@ -615,12 +615,12 @@
 	}
 
 	.mepr-submit.mepr-share-button {
-		background: purple;
-		color: $primary-color;
+		background: $primary-color;
+		color: white;
 		font-size: inherit;
 
 		&:hover {
-			color: $primary-color;
+			color: white;
 		}
 	}
 
@@ -632,6 +632,7 @@
 			background: $secondary-color;
 			text-decoration: none;
 			color: white;
+			padding: 10px 14px;
 		}
 	}
 }
