@@ -965,8 +965,6 @@ th:last-child, td:last-child { padding-right: 0; }
 /*===============================
 =            Account            =
 ===============================*/
-.account #banner, .privacy #banner, .terms-conditions #banner { height: 30vh; }
-
 /* Skeleton V2.0.4 Copyright 2014, Dave Gamache www.getskeleton.com Free to use under the MIT license. http://www.opensource.org/licenses/mit-license.php 12/9/2014 Sass Version by Seth Coelen https://github.com/whatsnewsaes */
 #prefooter { padding: 60px 0; background-color: #4a3c77; color: white; }
 
