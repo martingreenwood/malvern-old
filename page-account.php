@@ -51,14 +51,16 @@ get_header(); ?>
 			</div>
 			<?php endif ?>
 
-			<div class="accinfo">
-			<?php
-			while ( have_posts() ) : the_post();
+			<div class="accinfo container">
+				<div class="row">
+				<?php
+				while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'page' );
+					get_template_part( 'template-parts/content', 'page' );
 
-			endwhile; // End of the loop.
-			?>
+				endwhile; // End of the loop.
+				?>
+				</div>
 			</div>
 
 			<?php
