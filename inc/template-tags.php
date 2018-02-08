@@ -669,57 +669,57 @@ function personal_profile_fields( $user ) { ?>
 	<tr>
 		<th><label for="Asthma"><?php _e("Asthma Information"); ?></label></th>
 		<td>
-			<input type="checkbox" name="Asthma" value="Yes" <?php if(get_the_author_meta( 'Asthma', $user->ID )): ?>checked<?php endif; ?>>
+			<input type="checkbox" name="Asthma" value="Yes" <?php if(get_the_author_meta( 'Asthma', $user->ID )): ?>checked<?php endif; ?>><br>
 			<textarea name="MoreInformationonAsthma" id="MoreInformationonAsthma" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'MoreInformationonAsthma', $user->ID ) ); ?></textarea>
 		</td>
 	</tr>
 	<tr>
 		<th><label for="Diabetes"><?php _e("Diabetes Information"); ?></label></th>
 		<td>
-			<input type="checkbox" name="Diabetes" value="Yes" <?php if(get_the_author_meta( 'Diabetes', $user->ID )): ?>checked<?php endif; ?>>
+			<input type="checkbox" name="Diabetes" value="Yes" <?php if(get_the_author_meta( 'Diabetes', $user->ID )): ?>checked<?php endif; ?>><br>
 			<textarea name="MoreInformationonDiabetes" id="MoreInformationonDiabetes" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'MoreInformationonDiabetes', $user->ID ) ); ?></textarea>
 		</td>
 	</tr>
 	<tr>
 		<th><label for="Epilepsy"><?php _e("Epilepsy Information"); ?></label></th>
 		<td>
-			<input type="checkbox" name="Epilepsy" value="Yes" <?php if(get_the_author_meta( 'Epilepsy', $user->ID )): ?>checked<?php endif; ?>>
+			<input type="checkbox" name="Epilepsy" value="Yes" <?php if(get_the_author_meta( 'Epilepsy', $user->ID )): ?>checked<?php endif; ?>><br>
 			<textarea name="MoreInformationonEpilepsy" id="MoreInformationonEpilepsy" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'MoreInformationonEpilepsy', $user->ID ) ); ?></textarea>
 		</td>
 	</tr>
 	<tr>
 		<th><label for="AnyOtherConditions"><?php _e("Any Other Conditions"); ?></label></th>
 		<td>
-			<input type="checkbox" name="AnyOtherConditions" value="Yes" <?php if(get_the_author_meta( 'AnyOtherConditions', $user->ID )): ?>checked<?php endif; ?>>
+			<input type="checkbox" name="AnyOtherConditions" value="Yes" <?php if(get_the_author_meta( 'AnyOtherConditions', $user->ID )): ?>checked<?php endif; ?>><br>
 			<textarea name="OtherConditionsInformation" id="OtherConditionsInformation" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'OtherConditionsInformation', $user->ID ) ); ?></textarea>
 		</td>
 	</tr>
 	<tr>
 		<th><label for="AllergiestoMedication"><?php _e("Any Allergies to Medication?"); ?></label></th>
 		<td>
-			<input type="checkbox" name="AllergiestoMedication" value="Yes" <?php if(get_the_author_meta( 'AllergiestoMedication', $user->ID )): ?>checked<?php endif; ?>>
+			<input type="checkbox" name="AllergiestoMedication" value="Yes" <?php if(get_the_author_meta( 'AllergiestoMedication', $user->ID )): ?>checked<?php endif; ?>><br>
 			<textarea name="MedicalAllergiesInformation" id="MedicalAllergiesInformation" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'MedicalAllergiesInformation', $user->ID ) ); ?></textarea>
 		</td>
 	</tr>
 	<tr>
 		<th><label for="AnyOtherAllergies"><?php _e("Any Other Allergies?"); ?></label></th>
 		<td>
-			<input type="checkbox" name="AnyOtherAllergies" value="Yes" <?php if(get_the_author_meta( 'AnyOtherAllergies', $user->ID )): ?>checked<?php endif; ?>>
+			<input type="checkbox" name="AnyOtherAllergies" value="Yes" <?php if(get_the_author_meta( 'AnyOtherAllergies', $user->ID )): ?>checked<?php endif; ?>><br>
 			<textarea name="OtherAllergiesInformation" id="OtherAllergiesInformation" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'OtherAllergiesInformation', $user->ID ) ); ?></textarea>
 		</td>
 	</tr>
 	<tr>
 		<th><label for="SpecialDietaryRequirements"><?php _e("Special Dietary Requirements?"); ?></label></th>
 		<td>
-			<input type="checkbox" name="SpecialDietaryRequirements" value="Yes" <?php if(get_the_author_meta( 'SpecialDietaryRequirements', $user->ID )): ?>checked<?php endif; ?>>
+			<input type="checkbox" name="SpecialDietaryRequirements" value="Yes" <?php if(get_the_author_meta( 'SpecialDietaryRequirements', $user->ID )): ?>checked<?php endif; ?>><br>
 			<textarea name="DietaryRequirementsInformation" id="DietaryRequirementsInformation" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'DietaryRequirementsInformation', $user->ID ) ); ?></textarea>
 		</td>
 	</tr>
 	<tr>
 		<th><label for="RecentTetanusInjection"><?php _e("Recent Tetanus Injection?"); ?></label></th>
 		<td>
-			<input type="checkbox" name="RecentTetanusInjection" value="Yes" <?php if(get_the_author_meta( 'RecentTetanusInjection', $user->ID )): ?>checked<?php endif; ?>>
-			<input type="text" name="TetanusInjectionDate" id="TetanusInjectionDate" value="<?php echo esc_attr( get_the_author_meta( 'TetanusInjectionDate', $user->ID ) ); ?>)" class="regular-text" /><br />
+			<input type="checkbox" name="RecentTetanusInjection" value="Yes" <?php if(get_the_author_meta( 'RecentTetanusInjection', $user->ID )): ?>checked<?php endif; ?>><br>
+			<input type="text" name="TetanusInjectionDate" id="TetanusInjectionDate" value="<?php echo esc_attr( get_the_author_meta( 'TetanusInjectionDate', $user->ID ) ); ?>" class="regular-text" /><br />
 		</td>
 	</tr>
 	<tr>
@@ -761,7 +761,7 @@ function personal_profile_fields( $user ) { ?>
 	<tr>
 		<th><label for="MinibusPickup"><?php _e("Minibus Pick up Requreed?"); ?></label></th>
 		<td>
-			<input type="checkbox" name="MinibusPickup" value="Yes" <?php if(get_the_author_meta( 'MinibusPickup', $user->ID )): ?>checked<?php endif; ?>>
+			<input type="checkbox" name="MinibusPickup" value="Yes" <?php if(get_the_author_meta( 'MinibusPickup', $user->ID )): ?>checked<?php endif; ?>><br>
 			<input type="text" name="TrainFrom" id="TrainFrom" value="<?php echo esc_attr( get_the_author_meta( 'TrainFrom', $user->ID ) ); ?>" class="regular-text" /><br />
 			<input type="text" name="ArrivalTime" id="ArrivalTime" value="<?php echo esc_attr( get_the_author_meta( 'ArrivalTime', $user->ID ) ); ?>" class="regular-text" />
 		</td>
@@ -769,7 +769,7 @@ function personal_profile_fields( $user ) { ?>
 	<tr>
 		<th><label for="AnyOtherInformation"><?php _e("Any Other Information?"); ?></label></th>
 		<td>
-			<input type="checkbox" name="AnyOtherInformation" value="Yes" <?php if(get_the_author_meta( 'AnyOtherInformation', $user->ID )): ?>checked<?php endif; ?>>
+			<input type="checkbox" name="AnyOtherInformation" value="Yes" <?php if(get_the_author_meta( 'AnyOtherInformation', $user->ID )): ?>checked<?php endif; ?>><br>
 			<textarea name="AnyOtherInformationText" id="AnyOtherInformationText" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'AnyOtherInformationText', $user->ID ) ); ?></textarea>
 		</td>
 	</tr>
