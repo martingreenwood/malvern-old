@@ -845,6 +845,17 @@ th:last-child, td:last-child { padding-right: 0; }
 .home #course-menu li:last-of-type a { background-color: #4a3c77; }
 
 /*============================
+=            MEMB            =
+============================*/
+.single-memberpressproduct .mepr-signup-form.mepr-form { padding: 40px; background: white; margin: 40px 0 0 0; }
+
+.single-memberpressproduct .mp_wrapper .mepr_payment_method { margin-bottom: 0 !important; }
+
+.single-memberpressproduct input.mepr-submit { display: inline-block; color: white; background-color: #784987; border-radius: 0px; border: none; font-size: inherit; }
+
+.single-memberpressproduct input.mepr-submit:hover { color: white; }
+
+/*============================
 =            PAGE            =
 ============================*/
 .page { /*============================ =            TEAM            = ============================*/ /*=============================== =            COURSES            = ===============================*/ /*=========================================== =            ENROL / NEW STUDENT            = ===========================================*/ }

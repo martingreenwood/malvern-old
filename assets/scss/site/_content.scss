@@ -95,7 +95,7 @@
 
 	#banner {
 		height: 100vh;
-		
+
 		.blurb {
 			
 			.after {
@@ -176,6 +176,36 @@
 					background-color: $primary-color;
 				}
 			}
+		}
+	}
+}
+
+/*============================
+=            MEMB            =
+============================*/
+
+.single-memberpressproduct {
+
+	.mepr-signup-form.mepr-form {
+		padding: 40px;
+		background: white;
+		margin: 40px 0 0 0;
+	}
+
+	.mp_wrapper .mepr_payment_method {
+		margin-bottom: 0 !important;
+	}
+
+	input.mepr-submit {
+		display: inline-block;
+		color: white;
+		background-color: #784987;
+		border-radius: 0px;
+		border: none;
+		font-size: inherit;
+
+		&:hover {
+			color: white;
 		}
 	}
 }
