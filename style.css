@@ -963,6 +963,17 @@ th:last-child, td:last-child { padding-right: 0; }
 .single .post-navigation a { content: "Previous Story"; background-color: #4a3c77; color: white; padding: 10px 24px; text-transform: uppercase; text-decoration: none; }
 
 /*===============================
+=            Contact            =
+===============================*/
+.contact .gform_wrapper { margin: 0; }
+
+.contact .gform_wrapper ul .gfield { margin-top: 0; padding-top: 0; margin-bottom: 15px; }
+
+.contact .gform_wrapper .gform_page_footer input[type="submit"], .contact .gform_wrapper .gform_page_footer input[type="reset"], .contact .gform_wrapper .gform_page_footer input[type="button"] { display: inline-block; color: white; background-color: #784987; border-radius: 0px; border: none; }
+
+.contact .gform_wrapper .gform_page_footer input[type="submit"]:hover, .contact .gform_wrapper .gform_page_footer input[type="reset"]:hover, .contact .gform_wrapper .gform_page_footer input[type="button"]:hover { color: white; }
+
+/*===============================
 =            Account            =
 ===============================*/
 .account #personal-information-form .gform_wrapper { background: white; padding: 40px; margin: 40px 0 0 0; }

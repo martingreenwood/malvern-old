@@ -587,6 +587,41 @@
 }
 
 /*===============================
+=            Contact            =
+===============================*/
+
+.contact {
+
+	.gform_wrapper {
+	    margin: 0;
+
+		ul {
+
+			.gfield {
+				margin-top: 0;
+				padding-top: 0;
+				margin-bottom: 15px;
+			}
+		}
+
+		.gform_page_footer {
+
+			input[type="submit"], input[type="reset"], input[type="button"] {
+				display: inline-block;
+				color: white;
+				background-color: #784987;
+				border-radius: 0px;
+				border: none;
+
+				&:hover {
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+/*===============================
 =            Account            =
 ===============================*/
 
