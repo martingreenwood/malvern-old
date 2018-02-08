@@ -83,7 +83,7 @@
 
 				<div class="copyright five columns">
 					<p>2010 — <?php echo date("Y"); ?> <?php echo bloginfo( 'name' ); ?></p>
-					<p><?php echo bloginfo( 'name' ); ?> (NSSO) id operated<br>
+					<p><?php echo bloginfo( 'name' ); ?> (NSSO) is operated<br>
 					by Malvern College, registered charity no 527528</p>
 				</div>
 
