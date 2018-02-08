@@ -228,9 +228,14 @@ add_action( 'show_user_profile', 'extra_user_profile_fields' );
 add_action( 'edit_user_profile', 'extra_user_profile_fields' );
 
 function extra_user_profile_fields( $user ) { ?>
-	<h3><?php _e("Application / Enrolment Details", "blank"); ?></h3>
+	<h2><?php _e("Application / Enrolment Details", "blank"); ?></h2>
 
 	<table class="form-table">
+	<tr>
+		<th>
+			<h3><?php _e("Contact Information", "blank"); ?></h3>
+		</th>
+	</tr>
 	<tr>
 		<th><label for="addressline1"><?php _e("Address Line 1"); ?></label></th>
 		<td>
@@ -281,125 +286,128 @@ function extra_user_profile_fields( $user ) { ?>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="courseinterestedin"><?php _e("Course interested in"); ?></label></th>
-		<td>
-			<input type="text" name="courseinterestedin" id="courseinterestedin" value="<?php echo esc_attr( get_the_author_meta( 'courseinterestedin', $user->ID ) ); ?>" class="regular-text" /><br />
-			<span class="description"><?php _e("Please enter the course your child is interested in."); ?></span>
-		</td>
+		<th>
+			<h3><?php _e("Child Information", "blank"); ?></h3>
+		</th>
 	</tr>
 	<tr>
-	<th><label for="childsname"><?php _e("Childs Name"); ?></label></th>
+		<th><label for="childsname"><?php _e("Childs Name"); ?></label></th>
 		<td>
 			<input type="text" name="childsname" id="childsname" value="<?php echo esc_attr( get_the_author_meta( 'childsname', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs name."); ?></span>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="dob"><?php _e("Date of Birth"); ?></label></th>
+		<th><label for="dob"><?php _e("Date of Birth"); ?></label></th>
 		<td>
 			<input type="text" name="dob" id="dob" value="<?php echo esc_attr( get_the_author_meta( 'dob', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs date of birth."); ?></span>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="schoolyear"><?php _e("School Year"); ?></label></th>
+		<th><label for="schoolyear"><?php _e("School Year"); ?></label></th>
 		<td>
 			<input type="text" name="schoolyear" id="schoolyear" value="<?php echo esc_attr( get_the_author_meta( 'schoolyear', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs school year."); ?></span>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="gender"><?php _e("Gender"); ?></label></th>
+		<th><label for="gender"><?php _e("Gender"); ?></label></th>
 		<td>
 			<input type="text" name="gender" id="gender" value="<?php echo esc_attr( get_the_author_meta( 'gender', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs gender."); ?></span>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="schoolattended"><?php _e("School Attended"); ?></label></th>
+		<th>
+			<h3><?php _e("School Information", "blank"); ?></h3>
+		</th>
+	</tr>
+	<tr>
+		<th><label for="schoolattended"><?php _e("School Attended"); ?></label></th>
 		<td>
 			<input type="text" name="schoolattended" id="schoolattended" value="<?php echo esc_attr( get_the_author_meta( 'schoolattended', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs school attended."); ?></span>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="headteacher"><?php _e("Head Teacher"); ?></label></th>
+		<th><label for="headteacher"><?php _e("Head Teacher"); ?></label></th>
 		<td>
 			<input type="text" name="headteacher" id="headteacher" value="<?php echo esc_attr( get_the_author_meta( 'headteacher', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs head teacher."); ?></span>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="headteacheremail"><?php _e("Head Teacher Email"); ?></label></th>
+		<th><label for="headteacheremail"><?php _e("Head Teacher Email"); ?></label></th>
 		<td>
 			<input type="text" name="headteacheremail" id="headteacheremail" value="<?php echo esc_attr( get_the_author_meta( 'headteacheremail', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs head teacher email."); ?></span>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="headofmusic"><?php _e("Head of Music"); ?></label></th>
+		<th><label for="headofmusic"><?php _e("Head of Music"); ?></label></th>
 		<td>
 			<input type="text" name="headofmusic" id="headofmusic" value="<?php echo esc_attr( get_the_author_meta( 'headofmusic', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs head of music."); ?></span>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="headofmusicemail"><?php _e("Head of Music Email"); ?></label></th>
+		<th><label for="headofmusicemail"><?php _e("Head of Music Email"); ?></label></th>
 		<td>
 			<input type="text" name="headofmusicemail" id="headofmusicemail" value="<?php echo esc_attr( get_the_author_meta( 'headofmusicemail', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs head of music email."); ?></span>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="instrumentalteacher"><?php _e("Instrumental Teacer"); ?></label></th>
+		<th><label for="instrumentalteacher"><?php _e("Instrumental Teacer"); ?></label></th>
 		<td>
 			<input type="text" name="instrumentalteacher" id="instrumentalteacher" value="<?php echo esc_attr( get_the_author_meta( 'instrumentalteacher', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs instrumental teacher."); ?></span>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="instrumentalteacheremail"><?php _e("Instrumental Teacer Email"); ?></label></th>
+		<th><label for="instrumentalteacheremail"><?php _e("Instrumental Teacer Email"); ?></label></th>
 		<td>
 			<input type="text" name="instrumentalteacheremail" id="instrumentalteacheremail" value="<?php echo esc_attr( get_the_author_meta( 'instrumentalteacheremail', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs instrumental teacher email."); ?></span>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="maininstrument"><?php _e("Main Instrument"); ?></label></th>
+		<th><label for="maininstrument"><?php _e("Main Instrument"); ?></label></th>
 		<td>
 			<input type="text" name="maininstrument" id="maininstrument" value="<?php echo esc_attr( get_the_author_meta( 'maininstrument', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs main instrument."); ?></span>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="lastgradetaken"><?php _e("Last Grade Taken"); ?></label></th>
+		<th><label for="lastgradetaken"><?php _e("Last Grade Taken"); ?></label></th>
 		<td>
 			<input type="text" name="lastgradetaken" id="lastgradetaken" value="<?php echo esc_attr( get_the_author_meta( 'lastgradetaken', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs last grade taken."); ?></span>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="dateofexam"><?php _e("Date of Exam"); ?></label></th>
+		<th><label for="dateofexam"><?php _e("Date of Exam"); ?></label></th>
 		<td>
 			<input type="text" name="dateofexam" id="dateofexam" value="<?php echo esc_attr( get_the_author_meta( 'dateofexam', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs date of exam."); ?></span>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="result"><?php _e("Result"); ?></label></th>
+		<th><label for="result"><?php _e("Result"); ?></label></th>
 		<td>
 			<input type="text" name="result" id="result" value="<?php echo esc_attr( get_the_author_meta( 'result', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs result."); ?></span>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="currentstandard"><?php _e("Current Standard"); ?></label></th>
+		<th><label for="currentstandard"><?php _e("Current Standard"); ?></label></th>
 		<td>
 			<input type="text" name="currentstandard" id="currentstandard" value="<?php echo esc_attr( get_the_author_meta( 'currentstandard', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs current standard."); ?></span>
 		</td>
 	</tr>
-	<th><label for="additionalinstruments"><?php _e("Additional Instruemnts"); ?></label></th>
+		<th><label for="additionalinstruments"><?php _e("Additional Instruemnts"); ?></label></th>
 		<td>
 			<textarea name="additionalinstruments" id="additionalinstruments" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'additionalinstruments', $user->ID ) ); ?></textarea>
 			<br />
@@ -407,7 +415,7 @@ function extra_user_profile_fields( $user ) { ?>
 		</td>
 	</tr>
 	<tr>
-	<th><label for="orchestralexp"><?php _e("Recent Orchestral Experience"); ?></label></th>
+		<th><label for="orchestralexp"><?php _e("Recent Orchestral Experience"); ?></label></th>
 		<td>
 			<textarea name="orchestralexp" id="orchestralexp" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'orchestralexp', $user->ID ) ); ?></textarea>
 			<br />
@@ -639,11 +647,13 @@ add_action( 'show_user_profile', 'personal_profile_fields' );
 add_action( 'edit_user_profile', 'personal_profile_fields' );
 
 function personal_profile_fields( $user ) { ?>
-	<h3><?php _e("Personal Information", "blank"); ?></h3>
+	<h2><?php _e("Personal Information", "blank"); ?></h2>
 
 	<table class="form-table">
 	<tr>
-		<h4><?php _e("Emergancy Contact Information", "blank"); ?></h4>
+		<th>
+			<h3><?php _e("Emergancy Contact Information", "blank"); ?></h3>
+		</th>
 	</tr>
 	<tr>
 		<th><label for="EmergencyContactName"><?php _e("Emergency Contact Name"); ?></label></th>
@@ -664,7 +674,9 @@ function personal_profile_fields( $user ) { ?>
 		</td>
 	</tr>
 	<tr>
-		<h4><?php _e("Medical Information", "blank"); ?></h4>
+		<th>
+			<h3><?php _e("Medical Information", "blank"); ?></h3>
+		</th>
 	</tr>
 	<tr>
 		<th><label for="Asthma"><?php _e("Asthma Information"); ?></label></th>
@@ -723,7 +735,9 @@ function personal_profile_fields( $user ) { ?>
 		</td>
 	</tr>
 	<tr>
-		<h4><?php _e("GP Information", "blank"); ?></h4>
+		<th>
+			<h3><?php _e("GP / Doctor Information", "blank"); ?></h3>
+		</th>
 	</tr>
 	<tr>
 		<th><label for="GPName"><?php _e("Name Of GP / Doctor"); ?></label></th>
@@ -744,7 +758,9 @@ function personal_profile_fields( $user ) { ?>
 		</td>
 	</tr>
 	<tr>
-		<h4><?php _e("Other Information", "blank"); ?></h4>
+		<th>
+			<h3><?php _e("Other Information", "blank"); ?></h3>
+		</th>
 	</tr>
 	<tr>
 		<th><label for="SupervisedSwimming"><?php _e("Supervised Swimming"); ?></label></th>
