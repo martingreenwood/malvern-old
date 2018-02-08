@@ -162,9 +162,13 @@
 
 #banner {
     // min-height: 800px;
-    height: 60vh;
+    height: 100vh;
     background: transparent;
 	position: relative;
+
+	@media (#{$bp-larger-than-tablet}) {
+		height: 60vh;
+	}
 
 	.blurb {
 		position: absolute;
