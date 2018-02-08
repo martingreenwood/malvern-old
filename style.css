@@ -847,6 +847,8 @@ th:last-child, td:last-child { padding-right: 0; }
 /*============================
 =            MEMB            =
 ============================*/
+.single-memberpressproduct #banner { height: 40vh; background: url(assets/img/inner-bg.jpg); background-size: cover; }
+
 .single-memberpressproduct .mepr-signup-form.mepr-form { padding: 40px; background: white; margin: 40px 0 0 0; }
 
 .single-memberpressproduct .mp_wrapper .mepr_payment_method { margin-bottom: 0 !important; }

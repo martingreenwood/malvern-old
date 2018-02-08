@@ -185,6 +185,12 @@
 ============================*/
 
 .single-memberpressproduct {
+	
+	#banner {
+		height: 40vh;
+		background: url(assets/img/inner-bg.jpg);
+		background-size: cover;
+	}
 
 	.mepr-signup-form.mepr-form {
 		padding: 40px;
