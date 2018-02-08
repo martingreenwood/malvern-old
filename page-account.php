@@ -23,7 +23,7 @@ get_header(); ?>
 
 				switch ($section_title) {
 					case 'account-details':
-						$title = 'Account Detials';
+						$title = 'Account Details';
 						break;
 
 					case 'personal-information':
@@ -31,19 +31,19 @@ get_header(); ?>
 						break;
 
 					case 'home':
-						$title = 'Account Detials';
+						$title = 'Account Details';
 						break;
 
 					case 'subscriptions':
-						$title = 'Subscription Detials';
+						$title = 'Subscription Details';
 						break;
 					
 					case 'payments':
-						$title = 'Payment Detials';
+						$title = 'Payment Details';
 						break;
 					
 					default:
-						$title = 'Account Detials';
+						$title = 'Account Details';
 						break;
 				}
 				?>
