@@ -656,7 +656,7 @@ function personal_profile_fields( $user ) { ?>
 		<td>
 			<input type="text" name="RelationshiptoChild" id="RelationshiptoChild" value="<?php echo esc_attr( get_the_author_meta( 'RelationshiptoChild', $user->ID ) ); ?>" class="regular-text" />
 		</td>
-	</tr></table>
+	</tr>
 	<tr>
 		<th><label for="EmergencyContactPhone"><?php _e("Emergency Contact Phone"); ?></label></th>
 		<td>
@@ -826,6 +826,7 @@ function save_personal_profile_fields( $user_id ) {
 	update_user_meta( $user_id, 'MinibusPickup', $_POST['MinibusPickup'] );
 	update_user_meta( $user_id, 'TrainFrom', $_POST['TrainFrom'] );
 	update_user_meta( $user_id, 'ArrivalTime', $_POST['ArrivalTime'] );
+
 	update_user_meta( $user_id, 'AnyOtherInformation', $_POST['AnyOtherInformation'] );
 	update_user_meta( $user_id, 'AnyOtherInformationText', $_POST['AnyOtherInformationText'] );
 }
