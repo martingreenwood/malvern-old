@@ -228,7 +228,7 @@ add_action( 'show_user_profile', 'extra_user_profile_fields' );
 add_action( 'edit_user_profile', 'extra_user_profile_fields' );
 
 function extra_user_profile_fields( $user ) { ?>
-	<h3><?php _e("Personal Information", "blank"); ?></h3>
+	<h3><?php _e("Application / Enrolment Details", "blank"); ?></h3>
 
 	<table class="form-table">
 	<tr>
@@ -631,3 +631,201 @@ function add_last_nav_item($items, $args) {
 	return $items;
 }
 add_filter( 'wp_nav_menu_items', 'add_last_nav_item', 10, 2 );
+
+
+
+
+add_action( 'show_user_profile', 'personal_profile_fields' );
+add_action( 'edit_user_profile', 'personal_profile_fields' );
+
+function personal_profile_fields( $user ) { ?>
+	<h3><?php _e("Personal Information", "blank"); ?></h3>
+
+	<table class="form-table">
+	<tr>
+		<h4><?php _e("Emergancy Contact Information", "blank"); ?></h4>
+	</tr>
+	<tr>
+		<th><label for="EmergencyContactName"><?php _e("Emergency Contact Name"); ?></label></th>
+		<td>
+			<input type="text" name="EmergencyContactName" id="EmergencyContactName" value="<?php echo esc_attr( get_the_author_meta( 'EmergencyContactName', $user->ID ) ); ?>" class="regular-text" />
+		</td>
+	</tr>
+	<tr>
+		<th><label for="RelationshiptoChild"><?php _e("Relationship to Child"); ?></label></th>
+		<td>
+			<input type="text" name="RelationshiptoChild" id="RelationshiptoChild" value="<?php echo esc_attr( get_the_author_meta( 'RelationshiptoChild', $user->ID ) ); ?>" class="regular-text" />
+		</td>
+	</tr></table>
+	<tr>
+		<th><label for="EmergencyContactPhone"><?php _e("Emergency Contact Phone"); ?></label></th>
+		<td>
+			<input type="text" name="EmergencyContactPhone" id="EmergencyContactPhone" value="<?php echo esc_attr( get_the_author_meta( 'EmergencyContactPhone', $user->ID ) ); ?>" class="regular-text" />
+		</td>
+	</tr>
+	<tr>
+		<h4><?php _e("Medical Information", "blank"); ?></h4>
+	</tr>
+	<tr>
+		<th><label for="Asthma"><?php _e("Asthma Information"); ?></label></th>
+		<td>
+			<input type="checkbox" name="Asthma" value="Yes" <?php if(get_the_author_meta( 'Asthma', $user->ID )): ?>checked<?php endif; ?>>
+			<textarea name="MoreInformationonAsthma" id="MoreInformationonAsthma" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'MoreInformationonAsthma', $user->ID ) ); ?></textarea>
+		</td>
+	</tr>
+	<tr>
+		<th><label for="Diabetes"><?php _e("Diabetes Information"); ?></label></th>
+		<td>
+			<input type="checkbox" name="Diabetes" value="Yes" <?php if(get_the_author_meta( 'Diabetes', $user->ID )): ?>checked<?php endif; ?>>
+			<textarea name="MoreInformationonDiabetes" id="MoreInformationonDiabetes" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'MoreInformationonDiabetes', $user->ID ) ); ?></textarea>
+		</td>
+	</tr>
+	<tr>
+		<th><label for="Epilepsy"><?php _e("Epilepsy Information"); ?></label></th>
+		<td>
+			<input type="checkbox" name="Epilepsy" value="Yes" <?php if(get_the_author_meta( 'Epilepsy', $user->ID )): ?>checked<?php endif; ?>>
+			<textarea name="MoreInformationonEpilepsy" id="MoreInformationonEpilepsy" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'MoreInformationonEpilepsy', $user->ID ) ); ?></textarea>
+		</td>
+	</tr>
+	<tr>
+		<th><label for="AnyOtherConditions"><?php _e("Any Other Conditions"); ?></label></th>
+		<td>
+			<input type="checkbox" name="AnyOtherConditions" value="Yes" <?php if(get_the_author_meta( 'AnyOtherConditions', $user->ID )): ?>checked<?php endif; ?>>
+			<textarea name="OtherConditionsInformation" id="OtherConditionsInformation" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'OtherConditionsInformation', $user->ID ) ); ?></textarea>
+		</td>
+	</tr>
+	<tr>
+		<th><label for="AllergiestoMedication"><?php _e("Any Allergies to Medication?"); ?></label></th>
+		<td>
+			<input type="checkbox" name="AllergiestoMedication" value="Yes" <?php if(get_the_author_meta( 'AllergiestoMedication', $user->ID )): ?>checked<?php endif; ?>>
+			<textarea name="MedicalAllergiesInformation" id="MedicalAllergiesInformation" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'MedicalAllergiesInformation', $user->ID ) ); ?></textarea>
+		</td>
+	</tr>
+	<tr>
+		<th><label for="AnyOtherAllergies"><?php _e("Any Other Allergies?"); ?></label></th>
+		<td>
+			<input type="checkbox" name="AnyOtherAllergies" value="Yes" <?php if(get_the_author_meta( 'AnyOtherAllergies', $user->ID )): ?>checked<?php endif; ?>>
+			<textarea name="OtherAllergiesInformation" id="OtherAllergiesInformation" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'OtherAllergiesInformation', $user->ID ) ); ?></textarea>
+		</td>
+	</tr>
+	<tr>
+		<th><label for="SpecialDietaryRequirements"><?php _e("Special Dietary Requirements?"); ?></label></th>
+		<td>
+			<input type="checkbox" name="SpecialDietaryRequirements" value="Yes" <?php if(get_the_author_meta( 'SpecialDietaryRequirements', $user->ID )): ?>checked<?php endif; ?>>
+			<textarea name="DietaryRequirementsInformation" id="DietaryRequirementsInformation" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'DietaryRequirementsInformation', $user->ID ) ); ?></textarea>
+		</td>
+	</tr>
+	<tr>
+		<th><label for="RecentTetanusInjection"><?php _e("Recent Tetanus Injection?"); ?></label></th>
+		<td>
+			<input type="checkbox" name="RecentTetanusInjection" value="Yes" <?php if(get_the_author_meta( 'RecentTetanusInjection', $user->ID )): ?>checked<?php endif; ?>>
+			<input type="text" name="TetanusInjectionDate" id="TetanusInjectionDate" value="<?php echo esc_attr( get_the_author_meta( 'TetanusInjectionDate', $user->ID ) ); ?>)" class="regular-text" /><br />
+		</td>
+	</tr>
+	<tr>
+		<h4><?php _e("GP Information", "blank"); ?></h4>
+	</tr>
+	<tr>
+		<th><label for="GPName"><?php _e("Name Of GP / Doctor"); ?></label></th>
+		<td>
+			<input type="text" name="GPName" id="GPName" value="<?php echo esc_attr( get_the_author_meta( 'GPName', $user->ID ) ); ?>" class="regular-text" /><br />
+		</td>
+	</tr>
+	<tr>
+		<th><label for="GPPhoneNumber"><?php _e("GP Surgery Phone Number"); ?></label></th>
+		<td>
+			<input type="text" name="GPPhoneNumber" id="GPPhoneNumber" value="<?php echo esc_attr( get_the_author_meta( 'GPPhoneNumber', $user->ID ) ); ?>" class="regular-text" /><br />
+		</td>
+	</tr>
+	<tr>
+		<th><label for="GPAddress"><?php _e("GP Surgery Address"); ?></label></th>
+		<td>
+			<textarea name="GPAddress" id="GPAddress" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'GPAddress', $user->ID ) ); ?></textarea>
+		</td>
+	</tr>
+	<tr>
+		<h4><?php _e("Other Information", "blank"); ?></h4>
+	</tr>
+	<tr>
+		<th><label for="SupervisedSwimming"><?php _e("Supervised Swimming"); ?></label></th>
+		<td>
+			<input type="checkbox" name="SupervisedSwimming" value="Yes" <?php if(get_the_author_meta( 'SupervisedSwimming', $user->ID )): ?>checked<?php endif; ?>>
+		</td>
+	</tr>
+	<tr>
+		<th><label for="RoomShareRequest"><?php _e("Room Share Request"); ?></label></th>
+		<td>
+			<input type="text" name="RoomShareRequest" id="RoomShareRequest" value="<?php echo esc_attr( get_the_author_meta( 'RoomShareRequest', $user->ID ) ); ?>" class="regular-text" /><br />
+		</td>
+	</tr>
+	<tr>
+		<th><label for="MinibusPickup"><?php _e("Minibus Pick up Requreed?"); ?></label></th>
+		<td>
+			<input type="checkbox" name="MinibusPickup" value="Yes" <?php if(get_the_author_meta( 'MinibusPickup', $user->ID )): ?>checked<?php endif; ?>>
+			<input type="text" name="TrainFrom" id="TrainFrom" value="<?php echo esc_attr( get_the_author_meta( 'TrainFrom', $user->ID ) ); ?>" class="regular-text" /><br />
+			<input type="text" name="ArrivalTime" id="ArrivalTime" value="<?php echo esc_attr( get_the_author_meta( 'ArrivalTime', $user->ID ) ); ?>" class="regular-text" />
+		</td>
+	</tr>
+	<tr>
+		<th><label for="AnyOtherInformation"><?php _e("Any Other Information?"); ?></label></th>
+		<td>
+			<input type="checkbox" name="AnyOtherInformation" value="Yes" <?php if(get_the_author_meta( 'AnyOtherInformation', $user->ID )): ?>checked<?php endif; ?>>
+			<textarea name="AnyOtherInformationText" id="AnyOtherInformationText" class="regular-text"><?php echo esc_attr( get_the_author_meta( 'AnyOtherInformationText', $user->ID ) ); ?></textarea>
+		</td>
+	</tr>
+	
+	</table>
+<?php 
+}
+
+
+add_action( 'personal_options_update', 'save_personal_profile_fields' );
+add_action( 'edit_user_profile_update', 'save_personal_profile_fields' );
+
+function save_personal_profile_fields( $user_id ) {
+	if ( !current_user_can( 'edit_user', $user_id ) ) { 
+		return false; 
+	}
+	
+	update_user_meta( $user_id, 'EmergencyContactName', $_POST['EmergencyContactName'] ); 
+	update_user_meta( $user_id, 'RelationshiptoChild', $_POST['RelationshiptoChild'] ); 
+	update_user_meta( $user_id, 'EmergencyContactPhone', $_POST['EmergencyContactPhone'] ); 
+
+	update_user_meta( $user_id, 'Asthma', $_POST['Asthma'] ); 
+	update_user_meta( $user_id, 'MoreInformationonAsthma', $_POST['MoreInformationonAsthma'] ); 
+
+	update_user_meta( $user_id, 'Diabetes', $_POST['Diabetes'] ); 
+	update_user_meta( $user_id, 'MoreInformationonDiabetes', $_POST['MoreInformationonDiabetes'] ); 
+
+	update_user_meta( $user_id, 'Epilepsy', $_POST['Epilepsy'] ); 
+	update_user_meta( $user_id, 'MoreInformationonEpilepsy', $_POST['MoreInformationonEpilepsy'] ); 
+
+	update_user_meta( $user_id, 'AnyOtherConditions', $_POST['AnyOtherConditions'] ); 
+	update_user_meta( $user_id, 'OtherConditionsInformation', $_POST['OtherConditionsInformation'] ); 
+
+	update_user_meta( $user_id, 'AllergiestoMedication', $_POST['AllergiestoMedication'] ); 
+	update_user_meta( $user_id, 'MedicalAllergiesInformation', $_POST['MedicalAllergiesInformation'] ); 
+
+	update_user_meta( $user_id, 'AnyOtherAllergies', $_POST['AnyOtherAllergies'] ); 
+	update_user_meta( $user_id, 'OtherAllergiesInformation', $_POST['OtherAllergiesInformation'] ); 
+	
+	update_user_meta( $user_id, 'SpecialDietaryRequirements', $_POST['SpecialDietaryRequirements'] ); 
+	update_user_meta( $user_id, 'DietaryRequirementsInformation', $_POST['DietaryRequirementsInformation'] ); 
+	
+	update_user_meta( $user_id, 'RecentTetanusInjection', $_POST['RecentTetanusInjection'] ); 
+	update_user_meta( $user_id, 'TetanusInjectionDate', $_POST['TetanusInjectionDate'] ); 
+	
+	update_user_meta( $user_id, 'GPName', $_POST['GPName'] ); 
+	update_user_meta( $user_id, 'GPPhoneNumber', $_POST['GPPhoneNumber'] ); 
+	update_user_meta( $user_id, 'GPAddress', $_POST['GPAddress'] ); 
+	
+	update_user_meta( $user_id, 'SupervisedSwimming', $_POST['SupervisedSwimming'] );
+	
+	update_user_meta( $user_id, 'RoomShareRequest', $_POST['RoomShareRequest'] );
+
+	update_user_meta( $user_id, 'MinibusPickup', $_POST['MinibusPickup'] );
+	update_user_meta( $user_id, 'TrainFrom', $_POST['TrainFrom'] );
+	update_user_meta( $user_id, 'ArrivalTime', $_POST['ArrivalTime'] );
+	update_user_meta( $user_id, 'AnyOtherInformation', $_POST['AnyOtherInformation'] );
+	update_user_meta( $user_id, 'AnyOtherInformationText', $_POST['AnyOtherInformationText'] );
+}
