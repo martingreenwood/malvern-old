@@ -5,7 +5,7 @@
         {
             "key": "field_5a7d92cffddad",
             "label": "Who Can View These Files",
-            "name": "",
+            "name": "role_lock",
             "type": "role_selector",
             "instructions": "",
             "required": 0,
@@ -42,5 +42,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1518179892
+    "modified": 1518184878
 }
