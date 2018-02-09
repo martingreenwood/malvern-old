@@ -705,21 +705,25 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #site-navigation.toggled .hamburger { bottom: 36px; }
 
-#site-navigation.toggled .hamburger .hamburger-inner, #site-navigation.toggled .hamburger .hamburger-inner::before, #site-navigation.toggled .hamburger .hamburger-inner::after { background-color: black; }
+#site-navigation.toggled .hamburger .hamburger-inner, #site-navigation.toggled .hamburger .hamburger-inner::before, #site-navigation.toggled .hamburger .hamburger-inner::after { background-color: white; }
 
-#site-navigation.toggled .menu-primary-container { position: fixed; top: 0; left: 0; display: table; width: 100vw; height: 100vh; background: rgba(255, 255, 255, 0.9); }
+#site-navigation.toggled .menu-primary-container { position: fixed; top: 0; left: 0; display: table; width: 100vw; height: 100vh; background: rgba(74, 60, 119, 0.9); }
 
 #site-navigation.toggled .menu-primary-container #primary-menu { display: table-cell; width: 100%; height: 100%; vertical-align: middle; text-align: center; }
 
-#site-navigation.toggled .menu-primary-container #primary-menu li { display: block; line-height: 3; }
+#site-navigation.toggled .menu-primary-container #primary-menu li { display: block; line-height: 3; max-width: 320px; margin: 0 auto; }
 
-#site-navigation.toggled .menu-primary-container #primary-menu li a { color: black; border-color: black; }
+#site-navigation.toggled .menu-primary-container #primary-menu li:hover a { background-color: #784987; border-color: #784987 !important; color: white; }
+
+#site-navigation.toggled .menu-primary-container #primary-menu li:hover .sub-menu { background-color: #784987; }
+
+#site-navigation.toggled .menu-primary-container #primary-menu li a { color: white; border-color: white; }
 
 #site-navigation.toggled .menu-primary-container #primary-menu li .sub-menu { position: relative; text-align: center; padding: 0; margin: 0; }
 
 #site-navigation.toggled .menu-primary-container #primary-menu li .sub-menu li { line-height: 1.5; }
 
-#site-navigation.toggled .menu-primary-container #primary-menu li .sub-menu li a { color: #4a3c77; }
+#site-navigation.toggled .menu-primary-container #primary-menu li .sub-menu li a { color: white; }
 
 /* Skeleton V2.0.4 Copyright 2014, Dave Gamache www.getskeleton.com Free to use under the MIT license. http://www.opensource.org/licenses/mit-license.php 12/9/2014 Sass Version by Seth Coelen https://github.com/whatsnewsaes */
 #loader { background-color: #eeeeee; background-image: url(assets/img/logo.svg); background-repeat: no-repeat; background-size: 200px; background-position: 50%; width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 99999; transition: all 500ms; }
@@ -740,9 +744,11 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #masthead.fixed { position: fixed; top: 0px; background-color: #fff; z-index: 102; height: 96px; }
 
+#masthead.fixed .toggled .hamburger .hamburger-inner, #masthead.fixed .toggled .hamburger .hamburger-inner::before, #masthead.fixed .toggled .hamburger .hamburger-inner::after { background-color: white; }
+
 #masthead.fixed .menu-primary-container ul li:hover a { background-color: transparent; border-color: black !important; }
 
-#masthead.fixed .menu-primary-container ul li:hover .sub-menu { background-color: transparent; }
+#masthead.fixed .menu-primary-container ul li:hover .sub-menu { background-color: white; }
 
 #masthead.fixed .menu-primary-container ul li a { color: black; border-color: black; }
 

@@ -105,7 +105,7 @@
 			bottom: 36px;
 
 			.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-				background-color: black;
+				background-color: white;
 			}
 		}
 
@@ -116,7 +116,7 @@
 			display: table;
 			width: 100vw;
 			height: 100vh;
-			background: rgba(255,255,255,0.9);
+			background: rgba($primary-color,0.9);
 
 			#primary-menu {
 				display: table-cell;
@@ -128,10 +128,25 @@
 				li {
 				 	display: block;
 					line-height: 3;
+					max-width: 320px;
+					margin: 0 auto;
+
+					&:hover {
+
+						a {
+							background-color: $secondary-color;
+							border-color: $secondary-color !important;
+							color: white;
+						}
+
+						.sub-menu {
+							background-color: $secondary-color;
+						}
+					}
 
 					a {
-						color: black;
-						border-color: black;
+						color: white;
+						border-color: white;
 					}
 
 					.sub-menu {
@@ -144,7 +159,7 @@
 							line-height: 1.5;
 
 							a {
-								color: $primary-color;
+								color: white;
 							}
 						}
 					}
