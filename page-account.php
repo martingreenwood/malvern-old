@@ -41,6 +41,10 @@ get_header(); ?>
 					case 'payments':
 						$title = 'Payment Details';
 						break;
+
+					case 'member-assets':
+						$title = 'Member Assets';
+						break;
 					
 					default:
 						$title = 'Account Details';

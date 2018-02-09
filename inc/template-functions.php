@@ -69,28 +69,90 @@ function my_force_login() {
 } 
 
 
+// Snippet from PHP Share: http://www.phpshare.org
+
+function filesize_formatted($path)
+{
+    $size = filesize($path);
+    $units = array( 'B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB');
+    $power = $size > 0 ? floor(log($size, 1024)) : 0;
+    return number_format($size / pow(1024, $power), 2, '.', ',') . ' ' . $units[$power];
+}
+
 
 //ADD A SUPPORT TAB TO THE NAV MENU
-function mepr_add_some_tabs($user) {
-  $support_active = (isset($_GET['action']) && $_GET['action'] == 'personal-information')?'mepr-active-nav-tab':'';
-  ?>
-    <span class="mepr-nav-item personal-information <?php echo $support_active; ?>">
-      <a href="<?php echo home_url( '/' ); ?>account/?action=personal-information">Personal Information</a>
-    </span>
-  <?php
+function mepr_add_personalinformation_tab($user) {
+	$support_active = (isset($_GET['action']) && $_GET['action'] == 'personal-information')?'mepr-active-nav-tab':'';
+	?>
+	<span class="mepr-nav-item personal-information <?php echo $support_active; ?>">
+		<a href="<?php echo home_url( '/' ); ?>account/?action=personal-information">Personal Information</a>
+	</span>
+	<?php
 }
-add_action('mepr_account_nav', 'mepr_add_some_tabs');
+add_action('mepr_account_nav', 'mepr_add_personalinformation_tab');
+
+//ADD A SUPPORT TAB TO THE NAV MENU
+function mepr_add_memberassets_tab($user) {
+	$support_active = (isset($_GET['action']) && $_GET['action'] == 'member-assets')?'mepr-active-nav-tab':'';
+	?>
+	<span class="mepr-nav-item member-assets <?php echo $support_active; ?>">
+		<a href="<?php echo home_url( '/' ); ?>account/?action=member-assets">Downloads</a>
+	</span>
+	<?php
+}
+add_action('mepr_account_nav', 'mepr_add_memberassets_tab');
 
 //YOU CAN DELETE EVERYTHING BELOW THIS LINE -- IF YOU PLAN TO REDIRECT
 //THE USER TO A DIFFERENT PAGE INSTEAD OF KEEPING THEM ON THE SAME PAGE
 //ADD THE CONTENT FOR THE NEW SUPPORT TAB ABOVE
-function mepr_add_tabs_content($action) {
-  if($action == 'personal-information'): //Update this 'premium-support' to match what you put above (?action=premium-support)
-  ?>
-    <div id="personal-information-form">
-      <?php echo do_shortcode( '[gravityform id="6" title="false" description="false" ajax="true"]' ); ?>
-    </div>
-  <?php
-  endif;
+function mepr_add_personalinformation_tab_content($action) {
+	if($action == 'personal-information'): //Update this 'premium-support' to match what you put above (?action=premium-support)
+	?>
+	<div id="personal-information-form">
+		<?php echo do_shortcode( '[gravityform id="6" title="false" description="false" ajax="true"]' ); ?>
+	</div>
+	<?php
+	endif;
 }
-add_action('mepr_account_nav_content', 'mepr_add_tabs_content');
+add_action('mepr_account_nav_content', 'mepr_add_personalinformation_tab_content');
+
+function mepr_add_memberassets_tab_content($action) {
+	if($action == 'member-assets'): //Update this 'premium-support' to match what you put above (?action=premium-support)
+	?>
+	<div id="member-assets-form">
+
+
+		<?php $user_info = get_userdata(get_current_user_id());
+			echo 'User roles: ' . implode(', ', $user_info->roles) . "\n";
+		?>
+
+		<?php $loop = new WP_Query( array( 'post_type' => 'downloads', 'posts_per_page' => -1 ) ); ?>
+		<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		<div class="index">
+			<?php
+			if( have_rows('files') ):
+				while ( have_rows('files') ) : the_row();
+					$file = get_sub_field( 'file' );
+				?>
+				<dl>
+					<dt>
+						<?php the_sub_field( 'name' ); ?>
+					</dt>
+					<dd>
+						<a href="<?php $file['url'] ?>" target="_blank">
+							<i class="fas fa-download"></i> Download File
+						</a>
+					</dd>
+				</dl>
+				<?php
+				endwhile;
+			endif;
+			?>
+		</div>
+		<?php endwhile; wp_reset_query(); ?>
+
+	</div>
+	<?php
+	endif;
+}
+add_action('mepr_account_nav_content', 'mepr_add_memberassets_tab_content');
