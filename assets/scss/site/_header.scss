@@ -227,6 +227,18 @@
 			text-transform: uppercase;
 			color: white;
 			display: inline-block;
+
+			-webkit-transition: all .25s linear;
+			   -moz-transition: all .25s linear;
+			    -ms-transition: all .25s linear;
+			     -o-transition: all .25s linear;
+			        transition: all .25s linear;
+
+			&:hover {
+				color: white;
+				background-color: $primary-color;
+				border-color: $primary-color;
+			}
 		}
 	}
 }
