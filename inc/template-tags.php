@@ -181,6 +181,21 @@ if( function_exists('acf_add_options_page') ) {
 /**
  * Custom Post Typs
  */
+function downloads_cpt() {
+	register_post_type( 'downloads',
+		array(
+			'labels' => array(
+				'name' => __( 'Downloads' ),
+				'singular_name' => __( 'Download' )
+			),
+			'public' => true,
+			'has_archive' => false,
+			'supports' => array('title'),
+		)
+	);
+}
+add_action( 'init', 'downloads_cpt' );
+
 function staff_cpt() {
 	register_post_type( 'team',
 		array(
