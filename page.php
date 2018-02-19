@@ -73,6 +73,44 @@ get_header(); ?>
 													<a class="link" href="<?php the_sub_field('link'); ?>" title="<?php the_sub_field('link_text'); ?>"><?php the_sub_field('link_text'); ?></a>
 												</div>
 												<?php
+											
+											elseif( get_row_layout() == 'social_icons_block' ): 
+
+												?>
+												<div class="text">
+													<div class="sociallinks">
+														<ul>
+															<?php if (get_field( 'facebook', 'options' )): ?>
+															<li><a href="<?php echo get_field( 'facebook', 'options' ); ?>" title="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+															<?php endif; ?>
+															<?php if (get_field( 'twitter', 'options' )): ?>
+															<li><a href="<?php echo get_field( 'twitter', 'options' ); ?>" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a></li>
+															<?php endif; ?>
+															<?php if (get_field( 'youtube', 'options' )): ?>
+															<li><a href="<?php echo get_field( 'youtube', 'options' ); ?>" title="Follow us on YouTube"><i class="fab fa-youtube"></i></a></li>
+															<?php endif; ?>
+															<?php if (get_field( 'google', 'options' )): ?>
+															<li><a href="<?php echo get_field( 'google', 'options' ); ?>" title="Follow us on google plus"><i class="fab fa-google-plus-g"></i></a></li>
+															<?php endif; ?>
+															<?php if (get_field( 'blogger', 'options' )): ?>
+															<li><a href="<?php echo get_field( 'blogger', 'options' ); ?>" title="Follow us on blogger"><i class="fab fa-blogger"></i></a></li>
+															<?php endif; ?>
+															<?php if (get_field( 'flickr', 'options' )): ?>
+															<li><a href="<?php echo get_field( 'flickr', 'options' ); ?>" title="Follow us on Flickr"><i class="fab fa-flickr"></i></a></li>
+															<?php endif; ?>
+															<?php if (get_field( 'linkedin', 'options' )): ?>
+															<li><a href="<?php echo get_field( 'linkedin', 'options' ); ?>" title="Follow us on linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+															<?php endif; ?>
+															<?php if (get_field( 'vimeo', 'options' )): ?>
+															<li><a href="<?php echo get_field( 'vimeo', 'options' ); ?>" title="Follow us on vimeo"><i class="fab fa-vimeo-v"></i></a></li>
+															<?php endif; ?>
+															<?php if (get_field( 'instagram', 'options' )): ?>
+															<li><a href="<?php echo get_field( 'instagram', 'options' ); ?>" title="Follow us on instagram"><i class="fab fa-instagram"></i></a></li>
+															<?php endif; ?>
+														</ul>
+													</div>
+												</div>
+												<?php
 
 											elseif( get_row_layout() == 'map' ): 
 
