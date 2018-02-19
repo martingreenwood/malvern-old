@@ -294,7 +294,7 @@ $(document).ready(function(){
 
 	$document.scroll(function() {
 		//$element.toggleClass('fixed', $document.scrollTop() >= $(window).height());
-		$element.toggleClass('fixed', $document.scrollTop() >= 200);
+		$element.toggleClass('fixed', $document.scrollTop() >= 400);
 	});
 
 })(jQuery);
