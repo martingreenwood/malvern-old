@@ -168,8 +168,9 @@
                                                 "id": ""
                                             },
                                             "post_type": [
-                                                "post",
-                                                "page"
+                                                "memberpressproduct",
+                                                "page",
+                                                "attachment"
                                             ],
                                             "taxonomy": [],
                                             "allow_null": 0,
@@ -226,6 +227,33 @@
                                     ],
                                     "min": "",
                                     "max": ""
+                                },
+                                "5a8aff3383206": {
+                                    "key": "5a8aff3383206",
+                                    "name": "social_icons_block",
+                                    "label": "Social Icons Block",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5a8aff3783207",
+                                            "label": "Attention!",
+                                            "name": "",
+                                            "type": "message",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "message": "Managed in the NSSO options screen.",
+                                            "new_lines": "wpautop",
+                                            "esc_html": 0
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
                                 }
                             },
                             "button_label": "Add Item",
@@ -257,7 +285,7 @@
             {
                 "param": "page",
                 "operator": "!=",
-                "value": "275"
+                "value": "12"
             }
         ]
     ],
@@ -269,5 +297,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1517830115
+    "modified": 1519058786
 }
