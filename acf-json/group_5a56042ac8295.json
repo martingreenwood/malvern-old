@@ -237,6 +237,25 @@
             "delay": 0
         },
         {
+            "key": "field_5a8b0b23d0813",
+            "label": "Signup Heading",
+            "name": "signup_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5a561456055b6",
             "label": "Facebook",
             "name": "facebook",
@@ -398,5 +417,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1519058234
+    "modified": 1519061811
 }

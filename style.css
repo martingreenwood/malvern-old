@@ -809,6 +809,18 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #primary { padding: 60px 0; }
 
+#signup { background-color: white; padding: 60px 0; }
+
+#signup .mc-field-group { display: inline-block; width: 78%; float: left; margin-right: 2%; }
+
+#signup .mc-field-group input[type="email"], #signup .mc-field-group input[type="number"], #signup .mc-field-group input[type="search"], #signup .mc-field-group input[type="text"], #signup .mc-field-group input[type="tel"], #signup .mc-field-group input[type="url"], #signup .mc-field-group input[type="password"] { width: 100%; border-color: #eeeeee; border-radius: 0; }
+
+#signup .mc-button-group { display: inline-block; widows: 20%; float: left; }
+
+#signup .mc-button-group input[type="submit"], #signup .mc-button-group input[type="reset"], #signup .mc-button-group input[type="button"] { widows: 100%; background: #784987; color: white; font-size: inherit; border-color: #784987; border-radius: 0; }
+
+#signup .mc-button-group input[type="submit"]:hover, #signup .mc-button-group input[type="submit"]:focus, #signup .mc-button-group input[type="submit"]:active, #signup .mc-button-group input[type="reset"]:hover, #signup .mc-button-group input[type="reset"]:focus, #signup .mc-button-group input[type="reset"]:active, #signup .mc-button-group input[type="button"]:hover, #signup .mc-button-group input[type="button"]:focus, #signup .mc-button-group input[type="button"]:active { background: #784987; color: white; border-color: #784987; }
+
 #quicklink { padding: 60px 0; background-color: #784987; }
 
 #quicklink .links { list-style: none; margin: 0; }

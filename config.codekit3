@@ -1715,6 +1715,13 @@
 		"oAP": "\/template-parts\/get-quicklink.php",
 		"oF": 0
 		},
+	"\/template-parts\/get-signup.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/get-signup.php",
+		"oF": 0
+		},
 	"\/template-parts\/get-tweets.php": {
 		"cB": 0,
 		"ft": 8192,

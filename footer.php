@@ -13,6 +13,8 @@
 
 	</div><!-- #content -->
 
+	<?php get_template_part( 'template-parts/get', 'signup' ); ?>
+
 	<section id="prefooter">
 
 		<div class="container">
