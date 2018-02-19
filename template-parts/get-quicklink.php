@@ -24,8 +24,6 @@
 
 						<div class="icon" style="background-image: url(<?php echo $image; ?>);"></div>
 						<h3><?php echo $name ?></h3>
-						<span class="outline">Find Out More</span>
-
 
 					<?php if( $link ): ?>
 					</a>

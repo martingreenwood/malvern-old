@@ -7,7 +7,7 @@
 		"uuidString": "5D91B198-5421-47A9-B7CB-A2A2AE977F58"
 		}
 	],
-"creatorBuild": "26261",
+"creatorBuild": "26268",
 "files": {
 	"\/404.php": {
 		"cB": 0,
@@ -1512,6 +1512,13 @@
 		"oAP": "\/LICENSE",
 		"oF": 0
 		},
+	"\/memberpress\/account\/payments.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/memberpress\/account\/payments.php",
+		"oF": 0
+		},
 	"\/memberpress\/checkout\/form.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1732,6 +1739,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
