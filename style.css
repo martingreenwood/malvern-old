@@ -912,6 +912,8 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .page.enroll .maincopy, .page.new-student .maincopy { border-bottom: 0; padding-bottom: 0px; margin-bottom: 0px; }
 
+.page.enroll .ui-datepicker-title select, .page.new-student .ui-datepicker-title select { margin-top: 2.5%; height: auto; padding: inherit; background: inherit; border-radius: 0; }
+
 .page.enroll .gform_wrapper, .page.new-student .gform_wrapper { background: white; padding: 40px; margin: 40px 0 0 0; }
 
 .page.enroll .gform_wrapper .gf_page_steps, .page.new-student .gform_wrapper .gf_page_steps { margin-bottom: 40px; padding-bottom: 20px; }
