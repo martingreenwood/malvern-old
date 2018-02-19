@@ -797,6 +797,14 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .map img { max-width: inherit !important; }
 
+.sociallinks ul { list-style: none; margin: 20px 0 0 0; }
+
+.sociallinks ul li { margin: 0 5px 0 0; display: inline-block; }
+
+.sociallinks ul li a { background-color: white; color: #4a3c77; font-size: 16px; width: 32px; height: 32px; padding: 0; display: block; text-align: center; border-radius: 50%; line-height: 1; }
+
+.sociallinks ul li a svg { margin-bottom: 0; padding: 8px 0px; display: inline-block; }
+
 #content { background-color: #eeeeee; }
 
 #primary { padding: 60px 0; }
@@ -1069,14 +1077,6 @@ th:last-child, td:last-child { padding-right: 0; }
 #prefooter h2, #prefooter a { color: white; }
 
 #prefooter .company-info img, #prefooter .company-info svg { margin-bottom: 20px; width: 75%; display: block; }
-
-#prefooter .sociallinks ul { list-style: none; margin: 20px 0 0 0; }
-
-#prefooter .sociallinks ul li { margin: 0 5px 0 0; display: inline-block; }
-
-#prefooter .sociallinks ul li a { background-color: white; color: #4a3c77; font-size: 16px; width: 32px; height: 32px; padding: 0; display: block; text-align: center; border-radius: 50%; line-height: 1; }
-
-#prefooter .sociallinks ul li a svg { margin-bottom: 0; padding: 8px 0px; display: inline-block; }
 
 #prefooter .stories .story { margin-bottom: 20px; }
 
