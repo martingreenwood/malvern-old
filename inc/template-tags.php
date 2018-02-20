@@ -137,6 +137,27 @@ function malvern_post_thumbnail() {
 endif;
 
 /**
+ * Snippet provided by MemberPress support and modified by Ren Ventura
+ **/
+//* Kick admins out from MemberPress login form
+add_filter( 'mepr-validate-login', 'kick_out_admins' );
+function kick_out_admins( $errors ) {
+	
+	extract( $_POST );
+	// Check for login by email address
+	if ( is_email( $log ) ) {
+		$user = get_user_by( 'email', $log );
+	} else {
+		$user = get_user_by( 'login', $log );
+	}
+	if ( $user !== false && user_can( $user, 'delete_users' ) ) {
+		$errors[] = "Admins cannot login via this form";
+	}
+	return $errors;
+	
+}
+
+/**
  * Twitter style dates
  */
 function ShowDate($date) // $date --> time(); value
