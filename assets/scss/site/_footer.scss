@@ -22,7 +22,7 @@
 		img, svg {
 			margin-bottom: 20px;
 			width: 75%;
-			display: block;
+			display: inline-block;
 		}
 	}
 
@@ -34,7 +34,7 @@
 			h4 {
 				margin-bottom: 0;
 				font-size: 18px;
-				font-family: 'Zona Pro Semi Bold';
+				font-family: $heading-font;
 				color: white;
 			}
 		}

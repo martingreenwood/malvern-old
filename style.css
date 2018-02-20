@@ -106,7 +106,7 @@ td, th { padding: 0; }
 /* Skeleton V2.0.4 Copyright 2014, Dave Gamache www.getskeleton.com Free to use under the MIT license. http://www.opensource.org/licenses/mit-license.php 12/9/2014 Sass Version by Seth Coelen https://github.com/whatsnewsaes */
 html { font-size: 62.5%; }
 
-body { font-size: 1.6em; line-height: 1.6; font-weight: 400; font-family: "Zona Pro Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #3d3d3d; }
+body { font-size: 1.6em; line-height: 1.6; font-weight: 400; font-family: "ZonaPro-Regular", Helvetica, Arial, sans-serif; color: #3d3d3d; }
 
 a { color: #4a3c77; }
 
@@ -124,21 +124,53 @@ hr { margin-top: 3rem; margin-bottom: 3.5rem; border-width: 0; border-top: 1px s
 
 img { display: block; max-width: 100%; height: auto; }
 
-@font-face { font-family: 'Zona Pro Black'; src: url("assets/fonts/Zona Pro Black.eot"); /* IE9 Compat Modes */ src: url("assets/fonts/Zona Pro Black.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Zona Pro Black.woff") format("woff"), url("assets/fonts/Zona Pro Black.ttf") format("truetype"), url("assets/fonts/Zona Pro Black.svg#e06a1b5abe020541116679cfcedb5416") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 400; }
+@font-face { font-family: 'ZonaPro-Black'; src: url("assets/webfonts/35DBB8_0_0.eot"); src: url("assets/webfonts/35DBB8_0_0.eot?#iefix") format("embedded-opentype"), url("assets/webfonts/35DBB8_0_0.woff2") format("woff2"), url("assets/webfonts/35DBB8_0_0.woff") format("woff"), url("assets/webfonts/35DBB8_0_0.ttf") format("truetype"), url("assets/webfonts/35DBB8_0_0.svg#wf") format("svg"); }
 
-@font-face { font-family: 'Zona Pro Bold'; src: url("assets/fonts/Zona Pro Bold.eot"); /* IE9 Compat Modes */ src: url("assets/fonts/Zona Pro Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Zona Pro Bold.woff") format("woff"), url("assets/fonts/Zona Pro Bold.ttf") format("truetype"), url("assets/fonts/Zona Pro Bold.svg#9f382fee952eb88388ebc6cbb2f6f72b") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 700; }
+@font-face { font-family: 'ZonaPro-Bold'; src: url("assets/webfonts/35DBB8_1_0.eot"); src: url("assets/webfonts/35DBB8_1_0.eot?#iefix") format("embedded-opentype"), url("assets/webfonts/35DBB8_1_0.woff2") format("woff2"), url("assets/webfonts/35DBB8_1_0.woff") format("woff"), url("assets/webfonts/35DBB8_1_0.ttf") format("truetype"), url("assets/webfonts/35DBB8_1_0.svg#wf") format("svg"); }
 
-@font-face { font-family: 'Zona Pro Extra Bold'; src: url("assets/fonts/Zona Pro ExtraBold.eot"); /* IE9 Compat Modes */ src: url("assets/fonts/Zona Pro ExtraBold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Zona Pro ExtraBold.woff") format("woff"), url("assets/fonts/Zona Pro ExtraBold.ttf") format("truetype"), url("assets/fonts/Zona Pro ExtraBold.svg#b1685b3bb7bf2cab29af6680c5962cb9") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 700; }
+@font-face { font-family: 'ZonaPro-ExtraBold'; src: url("assets/webfonts/35DBB8_2_0.eot"); src: url("assets/webfonts/35DBB8_2_0.eot?#iefix") format("embedded-opentype"), url("assets/webfonts/35DBB8_2_0.woff2") format("woff2"), url("assets/webfonts/35DBB8_2_0.woff") format("woff"), url("assets/webfonts/35DBB8_2_0.ttf") format("truetype"), url("assets/webfonts/35DBB8_2_0.svg#wf") format("svg"); }
 
-@font-face { font-family: 'Zona Pro Light'; src: url("assets/fonts/Zona Pro Light.eot"); /* IE9 Compat Modes */ src: url("assets/fonts/Zona Pro Light.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Zona Pro Light.woff") format("woff"), url("assets/fonts/Zona Pro Light.ttf") format("truetype"), url("assets/fonts/Zona Pro Light.svg#539f28dff6ab3b175f2fd677663c51c6") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 200; }
+@font-face { font-family: 'ZonaPro-Hairline'; src: url("assets/webfonts/35DBB8_3_0.eot"); src: url("assets/webfonts/35DBB8_3_0.eot?#iefix") format("embedded-opentype"), url("assets/webfonts/35DBB8_3_0.woff2") format("woff2"), url("assets/webfonts/35DBB8_3_0.woff") format("woff"), url("assets/webfonts/35DBB8_3_0.ttf") format("truetype"), url("assets/webfonts/35DBB8_3_0.svg#wf") format("svg"); }
 
-@font-face { font-family: 'Zona Pro Regular'; src: url("assets/fonts/Zona Pro Regular.eot"); /* IE9 Compat Modes */ src: url("assets/fonts/Zona Pro Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Zona Pro Regular.woff") format("woff"), url("assets/fonts/Zona Pro Regular.ttf") format("truetype"), url("assets/fonts/Zona Pro Regular.svg#8c780c05cfda48e645d9c1aae1f41b83") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 400; }
+@font-face { font-family: 'ZonaPro-Light'; src: url("assets/webfonts/35DBB8_4_0.eot"); src: url("assets/webfonts/35DBB8_4_0.eot?#iefix") format("embedded-opentype"), url("assets/webfonts/35DBB8_4_0.woff2") format("woff2"), url("assets/webfonts/35DBB8_4_0.woff") format("woff"), url("assets/webfonts/35DBB8_4_0.ttf") format("truetype"), url("assets/webfonts/35DBB8_4_0.svg#wf") format("svg"); }
 
-@font-face { font-family: 'Zona Pro Semi Bold'; src: url("assets/fonts/Zona Pro SemiBold.eot"); /* IE9 Compat Modes */ src: url("assets/fonts/Zona Pro SemiBold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Zona Pro SemiBold.woff") format("woff"), url("assets/fonts/Zona Pro SemiBold.ttf") format("truetype"), url("assets/fonts/Zona Pro SemiBold.svg#162f7822120324b8c470efd092b0a3f1") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 700; }
+@font-face { font-family: 'ZonaPro-Regular'; src: url("assets/webfonts/35DBB8_5_0.eot"); src: url("assets/webfonts/35DBB8_5_0.eot?#iefix") format("embedded-opentype"), url("assets/webfonts/35DBB8_5_0.woff2") format("woff2"), url("assets/webfonts/35DBB8_5_0.woff") format("woff"), url("assets/webfonts/35DBB8_5_0.ttf") format("truetype"), url("assets/webfonts/35DBB8_5_0.svg#wf") format("svg"); }
 
-@font-face { font-family: 'Zona Pro Thin'; src: url("assets/fonts/Zona Pro Thin.eot"); /* IE9 Compat Modes */ src: url("assets/fonts/Zona Pro Thin.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Zona Pro Thin.woff") format("woff"), url("assets/fonts/Zona Pro Thin.ttf") format("truetype"), url("assets/fonts/Zona Pro Thin.svg#7578feebbccce406800e568eece85043") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 200; }
+@font-face { font-family: 'ZonaPro-SemiBold'; src: url("assets/webfonts/35DBB8_6_0.eot"); src: url("assets/webfonts/35DBB8_6_0.eot?#iefix") format("embedded-opentype"), url("assets/webfonts/35DBB8_6_0.woff2") format("woff2"), url("assets/webfonts/35DBB8_6_0.woff") format("woff"), url("assets/webfonts/35DBB8_6_0.ttf") format("truetype"), url("assets/webfonts/35DBB8_6_0.svg#wf") format("svg"); }
 
-h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 2rem; font-weight: normal; font-family: "Zona Pro Semi Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #4a3c77; }
+@font-face { font-family: 'ZonaPro-Thin'; src: url("assets/webfonts/35DBB8_7_0.eot"); src: url("assets/webfonts/35DBB8_7_0.eot?#iefix") format("embedded-opentype"), url("assets/webfonts/35DBB8_7_0.woff2") format("woff2"), url("assets/webfonts/35DBB8_7_0.woff") format("woff"), url("assets/webfonts/35DBB8_7_0.ttf") format("truetype"), url("assets/webfonts/35DBB8_7_0.svg#wf") format("svg"); }
+
+@font-face { font-family: 'ZonaPro-Black'; src: url("assets/webfonts//35DBB8_0_unhinted_0.woff2") format("woff2"), url("assets/webfonts//35DBB8_0_unhinted_0.woff") format("woff"), url("assets/webfonts//35DBB8_0_unhinted_0.ttf") format("truetype"); }
+
+@font-face { font-family: 'ZonaPro-Bold'; src: url("assets/webfonts//35DBB8_1_unhinted_0.woff2") format("woff2"), url("assets/webfonts//35DBB8_1_unhinted_0.woff") format("woff"), url("assets/webfonts//35DBB8_1_unhinted_0.ttf") format("truetype"); }
+
+@font-face { font-family: 'ZonaPro-ExtraBold'; src: url("assets/webfonts//35DBB8_2_unhinted_0.woff2") format("woff2"), url("assets/webfonts//35DBB8_2_unhinted_0.woff") format("woff"), url("assets/webfonts//35DBB8_2_unhinted_0.ttf") format("truetype"); }
+
+@font-face { font-family: 'ZonaPro-Hairline'; src: url("assets/webfonts//35DBB8_3_unhinted_0.woff2") format("woff2"), url("assets/webfonts//35DBB8_3_unhinted_0.woff") format("woff"), url("assets/webfonts//35DBB8_3_unhinted_0.ttf") format("truetype"); }
+
+@font-face { font-family: 'ZonaPro-Light'; src: url("assets/webfonts//35DBB8_4_unhinted_0.woff2") format("woff2"), url("assets/webfonts//35DBB8_4_unhinted_0.woff") format("woff"), url("assets/webfonts//35DBB8_4_unhinted_0.ttf") format("truetype"); }
+
+@font-face { font-family: 'ZonaPro-Regular'; src: url("assets/webfonts//35DBB8_5_unhinted_0.woff2") format("woff2"), url("assets/webfonts//35DBB8_5_unhinted_0.woff") format("woff"), url("assets/webfonts//35DBB8_5_unhinted_0.ttf") format("truetype"); }
+
+@font-face { font-family: 'ZonaPro-SemiBold'; src: url("assets/webfonts//35DBB8_6_unhinted_0.woff2") format("woff2"), url("assets/webfonts//35DBB8_6_unhinted_0.woff") format("woff"), url("assets/webfonts//35DBB8_6_unhinted_0.ttf") format("truetype"); }
+
+@font-face { font-family: 'ZonaPro-Thin'; src: url("assets/webfonts//35DBB8_7_unhinted_0.woff2") format("woff2"), url("assets/webfonts//35DBB8_7_unhinted_0.woff") format("woff"), url("assets/webfonts//35DBB8_7_unhinted_0.ttf") format("truetype"); }
+
+.ZonaPro-Black { font-family: ZonaPro-Black; font-weight: normal; font-style: normal; }
+
+.ZonaPro-Bold { font-family: ZonaPro-Bold; font-weight: normal; font-style: normal; }
+
+.ZonaPro-ExtraBold { font-family: ZonaPro-ExtraBold; font-weight: normal; font-style: normal; }
+
+.ZonaPro-Light { font-family: ZonaPro-Light; font-weight: normal; font-style: normal; }
+
+.ZonaPro-Regular { font-family: ZonaPro-Regular; font-weight: normal; font-style: normal; }
+
+.ZonaPro-SemiBold { font-family: ZonaPro-SemiBold; font-weight: normal; font-style: normal; }
+
+.ZonaPro-Thin { font-family: ZonaPro-Thin; font-weight: normal; font-style: normal; }
+
+h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 2rem; font-weight: normal; font-family: "ZonaPro-SemiBold", Helvetica, Arial, sans-serif; color: #4a3c77; }
 
 h1 { font-size: 4.0rem; line-height: 1.2; letter-spacing: -.1rem; }
 
@@ -163,7 +195,7 @@ p { margin: 0 0 10px 0; }
 
 p:last-of-type { margin-bottom: 0; }
 
-b, strong { font-family: 'Zona Pro Semi Bold'; }
+b, strong { font-family: 'ZonaPro-SemiBold'; }
 
 /* Modules */
 /* Skeleton V2.0.4 Copyright 2014, Dave Gamache www.getskeleton.com Free to use under the MIT license. http://www.opensource.org/licenses/mit-license.php 12/9/2014 Sass Version by Seth Coelen https://github.com/whatsnewsaes */
@@ -684,7 +716,7 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #site-navigation .menu-primary-container ul li:hover .sub-menu { background-color: #4a3c77; }
 
-#site-navigation .menu-primary-container ul li a { text-decoration: none; color: white; font-family: "Zona Pro Semi Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; padding: 10px 15px; }
+#site-navigation .menu-primary-container ul li a { text-decoration: none; color: white; font-family: "ZonaPro-SemiBold", Helvetica, Arial, sans-serif; padding: 10px 15px; }
 
 #site-navigation .menu-primary-container ul li:last-of-type a { text-transform: uppercase; border: 1px solid white; }
 
@@ -801,7 +833,7 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .sociallinks ul li { margin: 0 5px 0 0; display: inline-block; }
 
-.sociallinks ul li a { background-color: white; color: #4a3c77; font-size: 16px; width: 32px; height: 32px; padding: 0; display: block; text-align: center; border-radius: 50%; line-height: 1; }
+.sociallinks ul li a { background-color: white; color: #4a3c77 !important; font-size: 16px; width: 32px; height: 32px; padding: 0; display: block; text-align: center; border-radius: 50%; line-height: 1; }
 
 .sociallinks ul li a svg { margin-bottom: 0; padding: 8px 0px; display: inline-block; }
 
@@ -952,7 +984,7 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .page.enroll .gform_wrapper ul li.gfield, .page.new-student .gform_wrapper ul li.gfield { margin-top: 0; padding-top: 0; margin-bottom: 40px; }
 
-.page.enroll .gform_wrapper .top_label .gfield_label, .page.new-student .gform_wrapper .top_label .gfield_label { display: -moz-inline-stack; display: inline-block; line-height: 1; clear: both; margin-bottom: 15px; border-bottom: 1px solid #eee; display: block; padding-bottom: 10px; text-transform: uppercase; font-family: "Zona Pro Semi Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 17px; }
+.page.enroll .gform_wrapper .top_label .gfield_label, .page.new-student .gform_wrapper .top_label .gfield_label { display: -moz-inline-stack; display: inline-block; line-height: 1; clear: both; margin-bottom: 15px; border-bottom: 1px solid #eee; display: block; padding-bottom: 10px; text-transform: uppercase; font-family: "ZonaPro-SemiBold", Helvetica, Arial, sans-serif; font-size: 17px; }
 
 .page.enroll .gform_wrapper .gform_page_footer, .page.new-student .gform_wrapper .gform_page_footer { margin: 20px 0 0 0; padding: 40px 0 0 0; width: 100%; border-top: 1px dotted black; }
 
@@ -1061,7 +1093,7 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .account #personal-information-form .gform_wrapper ul li.gfield { margin-top: 0; padding-top: 0; margin-bottom: 40px; }
 
-.account #personal-information-form .gform_wrapper .top_label .gfield_label { display: -moz-inline-stack; display: inline-block; line-height: 1; clear: both; margin-bottom: 15px; border-bottom: 1px solid #eee; display: block; padding-bottom: 10px; text-transform: uppercase; font-family: "Zona Pro Semi Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 17px; }
+.account #personal-information-form .gform_wrapper .top_label .gfield_label { display: -moz-inline-stack; display: inline-block; line-height: 1; clear: both; margin-bottom: 15px; border-bottom: 1px solid #eee; display: block; padding-bottom: 10px; text-transform: uppercase; font-family: "ZonaPro-SemiBold", Helvetica, Arial, sans-serif; font-size: 17px; }
 
 .account #personal-information-form .gform_wrapper .gform_page_footer { margin: 20px 0 0 0; padding: 40px 0 0 0; width: 100%; border-top: 1px dotted black; }
 
@@ -1088,11 +1120,11 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #prefooter h2, #prefooter a { color: white; }
 
-#prefooter .company-info img, #prefooter .company-info svg { margin-bottom: 20px; width: 75%; display: block; }
+#prefooter .company-info img, #prefooter .company-info svg { margin-bottom: 20px; width: 75%; display: inline-block; }
 
 #prefooter .stories .story { margin-bottom: 20px; }
 
-#prefooter .stories .story h4 { margin-bottom: 0; font-size: 18px; font-family: 'Zona Pro Semi Bold'; color: white; }
+#prefooter .stories .story h4 { margin-bottom: 0; font-size: 18px; font-family: "ZonaPro-SemiBold", Helvetica, Arial, sans-serif; color: white; }
 
 #colophon { font-size: 13px; padding: 60px 0; background-color: #784987; display: block; color: white; }
 

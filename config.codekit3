@@ -87,281 +87,114 @@
 		"oAP": "\/archive.php",
 		"oF": 0
 		},
-	"\/assets\/fonts\/font.css": {
+	"\/assets\/fonts\/35DBB0_0_0.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/35DBB0_0_0.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/35DBB0_1_0.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/35DBB0_1_0.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/35DBB0_2_0.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/35DBB0_2_0.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/35DBB0_3_0.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/35DBB0_3_0.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/35DBB0_4_0.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/35DBB0_4_0.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/35DBB0_5_0.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/35DBB0_5_0.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/35DBB0_6_0.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/35DBB0_6_0.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/35DBB0_data_unhintedttf.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/fonts\/font-min.css",
+		"oAP": "\/assets\/fonts\/35DBB0_data_unhintedttf-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/assets\/fonts\/Zona Pro Black.eot": {
-		"cB": 0,
-		"ft": 8192,
+	"\/assets\/fonts\/35DBB0_data_unhintedttfwoff2.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro Black.eot",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro Black.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/Zona Pro Black.svg",
+		"oAP": "\/assets\/fonts\/35DBB0_data_unhintedttfwoff2-min.css",
 		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oS": 3
 		},
-	"\/assets\/fonts\/Zona Pro Black.ttf": {
-		"cB": 0,
-		"ft": 8192,
+	"\/assets\/fonts\/35DBB0_data_unhintedwoff.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro Black.ttf",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro Black.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro Black.woff",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro Bold.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro Bold.eot",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro Bold.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/Zona Pro Bold.svg",
+		"oAP": "\/assets\/fonts\/35DBB0_data_unhintedwoff-min.css",
 		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oS": 3
 		},
-	"\/assets\/fonts\/Zona Pro Bold.ttf": {
-		"cB": 0,
-		"ft": 8192,
+	"\/assets\/fonts\/35DBB0_datattf.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro Bold.ttf",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro Bold.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro Bold.woff",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro ExtraBold.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro ExtraBold.eot",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro ExtraBold.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/Zona Pro ExtraBold.svg",
+		"oAP": "\/assets\/fonts\/35DBB0_datattf-min.css",
 		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oS": 3
 		},
-	"\/assets\/fonts\/Zona Pro ExtraBold.ttf": {
-		"cB": 0,
-		"ft": 8192,
+	"\/assets\/fonts\/35DBB0_datattfwoff2.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro ExtraBold.ttf",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro ExtraBold.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro ExtraBold.woff",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro Light.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro Light.eot",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro Light.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/Zona Pro Light.svg",
+		"oAP": "\/assets\/fonts\/35DBB0_datattfwoff2-min.css",
 		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oS": 3
 		},
-	"\/assets\/fonts\/Zona Pro Light.ttf": {
-		"cB": 0,
-		"ft": 8192,
+	"\/assets\/fonts\/35DBB0_datawoff.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro Light.ttf",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro Light.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro Light.woff",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro Regular.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro Regular.eot",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro Regular.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/Zona Pro Regular.svg",
+		"oAP": "\/assets\/fonts\/35DBB0_datawoff-min.css",
 		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/fonts\/Zona Pro Regular.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro Regular.ttf",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro Regular.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro Regular.woff",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro SemiBold.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro SemiBold.eot",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro SemiBold.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/Zona Pro SemiBold.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/fonts\/Zona Pro SemiBold.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro SemiBold.ttf",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro SemiBold.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro SemiBold.woff",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro Thin.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro Thin.eot",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro Thin.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/Zona Pro Thin.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/fonts\/Zona Pro Thin.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro Thin.ttf",
-		"oF": 0
-		},
-	"\/assets\/fonts\/Zona Pro Thin.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/Zona Pro Thin.woff",
-		"oF": 0
-		},
-	"\/assets\/fonts\/ZonaPro-Black-preview.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/ZonaPro-Black-preview.html",
-		"oF": 0
-		},
-	"\/assets\/fonts\/ZonaPro-Bold-preview.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/ZonaPro-Bold-preview.html",
-		"oF": 0
-		},
-	"\/assets\/fonts\/ZonaPro-ExtraBold-preview.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/ZonaPro-ExtraBold-preview.html",
-		"oF": 0
-		},
-	"\/assets\/fonts\/ZonaPro-Light-preview.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/ZonaPro-Light-preview.html",
-		"oF": 0
-		},
-	"\/assets\/fonts\/ZonaPro-Regular-preview.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/ZonaPro-Regular-preview.html",
-		"oF": 0
-		},
-	"\/assets\/fonts\/ZonaPro-SemiBold-preview.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/ZonaPro-SemiBold-preview.html",
-		"oF": 0
-		},
-	"\/assets\/fonts\/ZonaPro-Thin-preview.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/fonts\/ZonaPro-Thin-preview.html",
-		"oF": 0
+		"oS": 3
 		},
 	"\/assets\/img\/bottom-strip-home.png": {
 		"ft": 32768,
@@ -544,6 +377,26 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/assets\/js\/customizer-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/MyFontsWebfontsKit-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/MyFontsWebfontsKit-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/MyFontsWebfontsKit.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/MyFontsWebfontsKit-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1399,6 +1252,485 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/assets\/webfonts\/35DBB8_0_0.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_0_0.eot",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_0_0.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/webfonts\/35DBB8_0_0.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/webfonts\/35DBB8_0_0.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_0_0.ttf",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_0_0.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_0_0.woff",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_0_0.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_0_0.woff2",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_0_unhinted_0.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_0_unhinted_0.ttf",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_0_unhinted_0.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_0_unhinted_0.woff",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_0_unhinted_0.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_0_unhinted_0.woff2",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_1_0.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_1_0.eot",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_1_0.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/webfonts\/35DBB8_1_0.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/webfonts\/35DBB8_1_0.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_1_0.ttf",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_1_0.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_1_0.woff",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_1_0.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_1_0.woff2",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_1_unhinted_0.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_1_unhinted_0.ttf",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_1_unhinted_0.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_1_unhinted_0.woff",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_1_unhinted_0.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_1_unhinted_0.woff2",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_2_0.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_2_0.eot",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_2_0.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/webfonts\/35DBB8_2_0.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/webfonts\/35DBB8_2_0.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_2_0.ttf",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_2_0.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_2_0.woff",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_2_0.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_2_0.woff2",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_2_unhinted_0.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_2_unhinted_0.ttf",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_2_unhinted_0.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_2_unhinted_0.woff",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_2_unhinted_0.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_2_unhinted_0.woff2",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_3_0.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_3_0.eot",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_3_0.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/webfonts\/35DBB8_3_0.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/webfonts\/35DBB8_3_0.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_3_0.ttf",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_3_0.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_3_0.woff",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_3_0.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_3_0.woff2",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_3_unhinted_0.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_3_unhinted_0.ttf",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_3_unhinted_0.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_3_unhinted_0.woff",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_3_unhinted_0.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_3_unhinted_0.woff2",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_4_0.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_4_0.eot",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_4_0.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/webfonts\/35DBB8_4_0.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/webfonts\/35DBB8_4_0.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_4_0.ttf",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_4_0.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_4_0.woff",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_4_0.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_4_0.woff2",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_4_unhinted_0.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_4_unhinted_0.ttf",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_4_unhinted_0.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_4_unhinted_0.woff",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_4_unhinted_0.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_4_unhinted_0.woff2",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_5_0.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_5_0.eot",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_5_0.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/webfonts\/35DBB8_5_0.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/webfonts\/35DBB8_5_0.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_5_0.ttf",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_5_0.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_5_0.woff",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_5_0.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_5_0.woff2",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_5_unhinted_0.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_5_unhinted_0.ttf",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_5_unhinted_0.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_5_unhinted_0.woff",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_5_unhinted_0.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_5_unhinted_0.woff2",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_6_0.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_6_0.eot",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_6_0.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/webfonts\/35DBB8_6_0.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/webfonts\/35DBB8_6_0.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_6_0.ttf",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_6_0.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_6_0.woff",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_6_0.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_6_0.woff2",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_6_unhinted_0.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_6_unhinted_0.ttf",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_6_unhinted_0.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_6_unhinted_0.woff",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_6_unhinted_0.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_6_unhinted_0.woff2",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_7_0.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_7_0.eot",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_7_0.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/webfonts\/35DBB8_7_0.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/webfonts\/35DBB8_7_0.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_7_0.ttf",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_7_0.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_7_0.woff",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_7_0.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_7_0.woff2",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_7_unhinted_0.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_7_unhinted_0.ttf",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_7_unhinted_0.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_7_unhinted_0.woff",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/35DBB8_7_unhinted_0.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/35DBB8_7_unhinted_0.woff2",
+		"oF": 0
+		},
+	"\/assets\/webfonts\/svg_test.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/webfonts\/svg_test.html",
+		"oF": 0
 		},
 	"\/comments.php": {
 		"cB": 0,
