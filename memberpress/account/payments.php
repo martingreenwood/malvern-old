@@ -57,7 +57,7 @@ if(!empty($payments)) {
 }
 else {
   ?><div class="mp-wrapper mp-no-subs"><?php
-    _ex('You have no completed payments to display.', 'ui', 'memberpress');
+    _ex('You have no payments to display. If you believe this is incorrect please contact us.', 'ui', 'memberpress');
   ?></div><?php
 }
 
