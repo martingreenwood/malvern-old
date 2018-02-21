@@ -173,3 +173,23 @@ function mepr_add_memberassets_tab_content($action) {
 	endif;
 }
 add_action('mepr_account_nav_content', 'mepr_add_memberassets_tab_content');
+
+
+function custom_menu_page_removing() {
+	global $current_user;
+	wp_get_current_user();
+
+	$email = (string) $current_user->user_email;
+	$emailDomain = explode('@', $email);
+	$emailDomain = $emailDomain[1];
+
+	if ($emailDomain !== 'wearebeard.com') {
+		remove_menu_page( 'themes.php' );                 //Appearance
+		remove_menu_page( 'plugins.php' );                //Plugins
+		remove_menu_page( 'tools.php' );                  //Tools
+		remove_menu_page( 'options-general.php' );                  //Tools
+		remove_menu_page( 'edit.php?post_type=acf-field-group' );                  //Tools
+		remove_menu_page( 'users.php' );                  //Tools
+	}
+}
+add_action( 'admin_menu', 'custom_menu_page_removing' );
