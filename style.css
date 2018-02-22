@@ -928,6 +928,8 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .page .maincopy.left { text-align: left; }
 
+.page .sections ul { margin-top: 20px; }
+
 .page .sections ul li { margin-bottom: 1rem; list-style-type: disc; list-style-position: outside; margin-left: 16px; }
 
 .page .sections .element { text-align: left; }
