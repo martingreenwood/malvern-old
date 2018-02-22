@@ -309,6 +309,16 @@
 
 	.sections {
 
+		ul {
+			
+			 li {
+		 		margin-bottom: 1rem;
+				list-style-type: disc;
+				list-style-position: outside;
+				margin-left: 16px;
+			 }
+		}
+
 		.element {
 			text-align: left;
 
