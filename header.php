@@ -37,11 +37,15 @@
 				<div class="site-branding">
 					<div class="logo desktop">
 						<?php $logo = get_field( 'logo', 'options' ); ?>
-						<img src="<?php echo $logo['url']; ?>" alt="">
+						<a href="<?php echo home_url(); ?>">
+							<img src="<?php echo $logo['url']; ?>" alt="">
+						</a>
 					</div>
 					<div class="logo small">
 						<?php $logo_sticky_mobile = get_field( 'logo_sticky_mobile', 'options' ); ?>
-						<img src="<?php echo $logo_sticky_mobile['url']; ?>" alt="">
+						<a href="<?php echo home_url(); ?>">
+							<img src="<?php echo $logo_sticky_mobile['url']; ?>" alt="">
+						</a>
 					</div>
 				</div>
 
