@@ -942,6 +942,8 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .page.our-team .sections.support-staff { background: #4a3c77; padding: 60px 0; color: white; margin-top: 60px; }
 
+.page.our-team .sections.support-staff a { color: inherit; }
+
 .page.our-team .sections.support-staff h1, .page.our-team .sections.support-staff h2, .page.our-team .sections.support-staff h3, .page.our-team .sections.support-staff h4, .page.our-team .sections.support-staff h5, .page.our-team .sections.support-staff p { color: white; }
 
 .page.our-team .sections.support-staff .maincopy { border-color: white; }
