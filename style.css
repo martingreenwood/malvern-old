@@ -1143,3 +1143,9 @@ th:last-child, td:last-child { padding-right: 0; }
 @media (min-width: 550px) { #colophon .footer-nav ul li { margin: 0 0 10px 10px; } }
 
 #colophon .footer-nav ul li a { text-decoration: none; color: inherit; }
+
+#colophon .acred { float: right; float: right; width: 100%; }
+
+#colophon .acred ul { list-style: none; margin: 0; text-align: right; margin-top: 15px; }
+
+#colophon .acred ul li { margin: 0; width: 55px; }

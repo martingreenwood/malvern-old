@@ -111,6 +111,20 @@
 							'menu_id'        => 'footer-menu',
 						) );
 					?>
+					<?php if( have_rows('accreditation_logos','options') ): ?>
+						<div class="acred">
+							<ul>
+						<?php while ( have_rows('accreditation_logos','options') ) : the_row(); ?>
+							<li>
+								<a href="<?php the_sub_field( 'url' ); ?>">
+									<?php $alogo = get_sub_field( 'logo' ); ?>
+									<img src="<?php echo $alogo['url']; ?>" alt="">
+								</a>
+							</li>
+						<?php endwhile; ?>
+							</ul>
+						</div>
+					<?php endif; ?>
 				</div>
 				
 			</div>
