@@ -200,6 +200,54 @@
                                     "min": "",
                                     "max": ""
                                 },
+                                "5a94465bc0c13": {
+                                    "key": "5a94465bc0c13",
+                                    "name": "file",
+                                    "label": "File",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5a94465bc0c14",
+                                            "label": "File",
+                                            "name": "file",
+                                            "type": "file",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "array",
+                                            "library": "all",
+                                            "min_size": "",
+                                            "max_size": "",
+                                            "mime_types": ""
+                                        },
+                                        {
+                                            "key": "field_5a94465bc0c15",
+                                            "label": "Link Text",
+                                            "name": "link_text",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
                                 "5a69cbb6e9905": {
                                     "key": "5a69cbb6e9905",
                                     "name": "map",
@@ -292,5 +340,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1519384022
+    "modified": 1519666798
 }
