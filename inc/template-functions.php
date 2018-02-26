@@ -144,17 +144,25 @@ function mepr_add_memberassets_tab_content($action) {
 	<div id="member-assets-form">
 
 		<?php 
+			$user_info = get_userdata(get_current_user_id()); 
+			$user_roles = current($user_info->roles);
+		?>
+
+		<?php 
 		$args = array(
 			'numberposts'	=> -1,
 			'post_type'		=> 'downloads',
-			'meta_key'		=> 'role_lock',
-			'meta_value'	=> 'conductor'
 		);
 		$loop = new WP_Query($args); 
 		
 		if ($loop->have_posts()):
 		while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		<?php 
+			$role_lock = get_field( 'role_lock' ); 
+			$role_lock = current($role_lock);
+		?>
 		
+		<?php if ($role_lock == $user_roles): ?>
 		<div class="index">
 			<?php
 			if( have_rows('files') ):
@@ -163,7 +171,7 @@ function mepr_add_memberassets_tab_content($action) {
 				?>
 				<dl>
 					<dt>
-						<?php the_sub_field( 'name' ); ?> <span><?php the_field( 'role_lock' ); ?></span>
+						<?php the_sub_field( 'name' ); ?>
 					</dt>
 					<dd>
 						<a href="<?php $file['url'] ?>" target="_blank">
@@ -176,6 +184,7 @@ function mepr_add_memberassets_tab_content($action) {
 			endif;
 			?>
 		</div>
+		<?php endif; ?>
 		<?php endwhile; ?>
 	<?php else: ?>
 		<div class="index">

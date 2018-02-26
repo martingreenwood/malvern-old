@@ -1872,6 +1872,13 @@
 		"oAP": "\/page-account.php",
 		"oF": 0
 		},
+	"\/page-downloads.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-downloads.php",
+		"oF": 0
+		},
 	"\/page-enroll.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1990,6 +1997,13 @@
 		"oAP": "\/style-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/template-parts\/content-downloads.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-downloads.php",
+		"oF": 0
 		},
 	"\/template-parts\/content-enroll-new.php": {
 		"cB": 0,
