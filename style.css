@@ -1000,9 +1000,15 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .page.enroll .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio], .page.new-student .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] { margin-top: 0px; }
 
-.page.enroll .logmein, .page.new-student .logmein { float: left; width: 48%; margin-right: 2%; }
+.page.enroll .logmein, .page.new-student .logmein { float: left; width: 100%; margin-bottom: 20px; }
 
-.page.enroll .new-stu, .page.new-student .new-stu { float: left; width: 48%; background: #4a3c77; padding: 30px; box-sizing: border-box; color: white; text-align: center; }
+@media (min-width: 550px) { .page.enroll .logmein, .page.new-student .logmein { margin-right: 2%; margin-bottom: 0; width: 48%; } }
+
+.page.enroll h3.error, .page.new-student h3.error { color: red; font-size: 18px; margin-top: 10px; }
+
+.page.enroll .new-stu, .page.new-student .new-stu { float: left; width: 100%; background: #4a3c77; padding: 30px; box-sizing: border-box; color: white; text-align: center; }
+
+@media (min-width: 550px) { .page.enroll .new-stu, .page.new-student .new-stu { width: 48%; } }
 
 .page.enroll .new-stu h1, .page.enroll .new-stu h2, .page.enroll .new-stu h3, .page.enroll .new-stu a, .page.new-student .new-stu h1, .page.new-student .new-stu h2, .page.new-student .new-stu h3, .page.new-student .new-stu a { color: white; }
 
@@ -1059,6 +1065,14 @@ th:last-child, td:last-child { padding-right: 0; }
 /*===============================
 =            Account            =
 ===============================*/
+.account #banner { text-align: center; }
+
+.account #banner h1 { margin-bottom: 5px; }
+
+.account #banner h2 { margin-bottom: 0; }
+
+.account #banner .cell img { display: inline-block; margin-bottom: 10px; border-radius: 50%; }
+
 .account #member-assets-form .index { text-align: left; background: white; border: 1px solid #999; }
 
 .account #member-assets-form .index dl { margin: 0; padding: 20px; border-bottom: 1px solid #999; }

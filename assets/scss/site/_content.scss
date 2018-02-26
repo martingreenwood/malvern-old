@@ -582,18 +582,34 @@
 
 		.logmein {
 			float: left;
-			width: 48%;
-			margin-right: 2%;
+			width: 100%;
+			margin-bottom: 20px;
+			
+			@media (#{$bp-larger-than-phablet}) {
+				margin-right: 2%;
+				margin-bottom: 0;
+				width: 48%;
+			}
+		}
+
+		h3.error {
+			color: red;
+			font-size: 18px;
+			margin-top: 10px;
 		}
 
 		.new-stu {
 			float: left;
-			width: 48%;
+			width: 100%;
 		    background: $primary-color;
 			padding: 30px;
 			box-sizing: border-box;
 			color: white;
 			text-align: center;
+
+			@media (#{$bp-larger-than-phablet}) {
+				width: 48%;
+			}
 
 			h1, h2, h3, a {
 				color: white;
@@ -759,7 +775,24 @@
 .account {
 
 	#banner {
-		// height: 30vh;
+		text-align: center;
+
+		h1 {
+			margin-bottom: 5px;
+		}
+
+
+		h2 {
+			margin-bottom: 0;
+		}
+
+		.cell {
+			img {
+				display: inline-block;
+				margin-bottom: 10px;
+				border-radius: 50%;
+			}
+		}
 	}
 
 	#member-assets-form {

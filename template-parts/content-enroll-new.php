@@ -16,6 +16,9 @@
 		<div class="logmein">
 			<h3>Existing Student?</h3>
 			<p>If you are an exsiting student, please login to re enroll.</p>
+			<?php if ($_GET['login'] === 'failed'): ?>
+				<h3 class="error">Sorry, there seems to be an issue with your username/password. Please try again.</h3>
+			<?php endif; ?>
 			<?php
 			$args = array(
 				'echo'           => true,

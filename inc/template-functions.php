@@ -102,9 +102,31 @@ function mepr_add_memberassets_tab($user) {
 }
 add_action('mepr_account_nav', 'mepr_add_memberassets_tab');
 
+//ADD A SUPPORT TAB TO THE NAV MENU
+function mepr_add_memberimg_tab($user) {
+	$support_active = (isset($_GET['action']) && $_GET['action'] == '')?'mepr-active-nav-tab':'';
+	?>
+	<span class="mepr-nav-item member-img <?php echo $support_active; ?>">
+		<a href="<?php echo home_url( '/' ); ?>account/?action=member-img">My Picture</a>
+	</span>
+	<?php
+}
+add_action('mepr_account_nav', 'mepr_add_memberimg_tab');
+
 //YOU CAN DELETE EVERYTHING BELOW THIS LINE -- IF YOU PLAN TO REDIRECT
 //THE USER TO A DIFFERENT PAGE INSTEAD OF KEEPING THEM ON THE SAME PAGE
 //ADD THE CONTENT FOR THE NEW SUPPORT TAB ABOVE
+function mepr_add_img_tab_content($action) {
+	if($action == 'member-img'): //Update this 'premium-support' to match what you put above (?action=premium-support)
+	?>
+	<div id="member-img-form">
+		<?php echo do_shortcode( '[avatar_upload]' ); ?>
+	</div>
+	<?php
+	endif;
+}
+add_action('mepr_account_nav_content', 'mepr_add_img_tab_content');
+
 function mepr_add_personalinformation_tab_content($action) {
 	if($action == 'personal-information'): //Update this 'premium-support' to match what you put above (?action=premium-support)
 	?>

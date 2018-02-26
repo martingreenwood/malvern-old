@@ -882,3 +882,16 @@ function save_personal_profile_fields( $user_id ) {
 	update_user_meta( $user_id, 'AnyOtherInformation', $_POST['AnyOtherInformation'] );
 	update_user_meta( $user_id, 'AnyOtherInformationText', $_POST['AnyOtherInformationText'] );
 }
+
+
+
+add_action( 'wp_login_failed', 'my_front_end_login_fail' );  // hook failed login
+
+function my_front_end_login_fail( $username ) {
+   $referrer = $_SERVER['HTTP_REFERER'];  // where did the post submission come from?
+   // if there's a valid referrer, and it's not the default log-in screen
+   if ( !empty($referrer) && !strstr($referrer,'wp-login') && !strstr($referrer,'wp-admin') ) {
+      wp_redirect( $referrer . '?login=failed' );  // let's append some information (login=failed) to the URL for the theme to use
+      exit;
+   }
+}

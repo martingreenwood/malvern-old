@@ -86,6 +86,21 @@
 					<a href="<?php the_field( 'banner_link', get_option( 'page_for_posts' ) ); ?>" title="Find out more">Find out more</a>
 					<?php endif; ?>
 
+				<?php elseif (is_page( 'account' )): ?>
+					
+
+					<?php
+					  if ( has_wp_user_avatar(get_current_user_id()) ) {
+					    echo get_wp_user_avatar(get_current_user_id(), 96);
+					  }
+					?>
+
+					<?php $user_info = get_userdata(get_current_user_id()); ?>
+					<h1><?php echo $user_info->first_name .  " " . $user_info->last_name; ?></h1>
+					<?php if (get_field( 'banner_text' )): ?>
+					<h2><?php the_field( 'banner_text' ); ?></h2>
+					<?php endif; ?>
+
 				<?php else: ?>
 
 					<?php if (get_field( 'banner_text' )): ?>
