@@ -666,7 +666,7 @@ function add_last_nav_item($items, $args) {
 		if (is_user_logged_in()) {
 			$homelink = '<a href="'. home_url( '/account' ) .'" title="my Account">My Account</a>';
 		} else {
-			$homelink = '<a href="'. home_url( '/account' ) .'" title="my Account">Login</a>';
+			$homelink = '<a href="'. home_url( '/login' ) .'" title="my Account">Login</a>';
 		}
 		$items = $items;
 		$items .= '<li class="login menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9999">'.$homelink.'</li>';
