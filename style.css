@@ -907,6 +907,13 @@ th:last-child, td:last-child { padding-right: 0; }
 /*============================
 =            MEMB            =
 ============================*/
+.take-part .element h3 { font-size: 24px; margin: 20px 0; }
+
+.take-part .element .link { margin-top: 20px; }
+
+/*============================
+=            MEMB            =
+============================*/
 .single-memberpressproduct #banner { height: 40vh; background: url(assets/img/inner-bg.jpg); background-size: cover; }
 
 .single-memberpressproduct .mepr-signup-form.mepr-form { padding: 40px; background: white; margin: 40px 0 0 0; }
