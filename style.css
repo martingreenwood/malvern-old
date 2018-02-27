@@ -975,51 +975,51 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .page.our-courses .element .text h1, .page.our-courses .element .text h2, .page.our-courses .element .text h3 { font-size: 1.6em; }
 
-.page.enroll .maincopy, .page.new-student .maincopy { border-bottom: 0; padding-bottom: 0px; margin-bottom: 0px; }
+.page.enrol .maincopy, .page.enroll .maincopy, .page.new-student .maincopy { border-bottom: 0; padding-bottom: 0px; margin-bottom: 0px; }
 
-.page.enroll .ui-datepicker-title select, .page.new-student .ui-datepicker-title select { margin-top: 2.5%; height: auto; padding: inherit; background: inherit; border-radius: 0; }
+.page.enrol .ui-datepicker-title select, .page.enroll .ui-datepicker-title select, .page.new-student .ui-datepicker-title select { margin-top: 2.5%; height: auto; padding: inherit; background: inherit; border-radius: 0; }
 
-.page.enroll .gform_wrapper, .page.new-student .gform_wrapper { background: white; padding: 40px; margin: 40px 0 0 0; }
+.page.enrol .gform_wrapper, .page.enroll .gform_wrapper, .page.new-student .gform_wrapper { background: white; padding: 40px; margin: 40px 0 0 0; }
 
-.page.enroll .gform_wrapper .gf_page_steps, .page.new-student .gform_wrapper .gf_page_steps { margin-bottom: 40px; padding-bottom: 20px; }
+.page.enrol .gform_wrapper .gf_page_steps, .page.enroll .gform_wrapper .gf_page_steps, .page.new-student .gform_wrapper .gf_page_steps { margin-bottom: 40px; padding-bottom: 20px; }
 
-.page.enroll .gform_wrapper ul.gfield_checkbox, .page.enroll .gform_wrapper ul.gfield_radio, .page.new-student .gform_wrapper ul.gfield_checkbox, .page.new-student .gform_wrapper ul.gfield_radio { margin: auto; padding: 0; }
+.page.enrol .gform_wrapper ul.gfield_checkbox, .page.enrol .gform_wrapper ul.gfield_radio, .page.enroll .gform_wrapper ul.gfield_checkbox, .page.enroll .gform_wrapper ul.gfield_radio, .page.new-student .gform_wrapper ul.gfield_checkbox, .page.new-student .gform_wrapper ul.gfield_radio { margin: auto; padding: 0; }
 
-.page.enroll .gform_wrapper ul.gfield_checkbox li, .page.enroll .gform_wrapper ul.gfield_radio li, .page.new-student .gform_wrapper ul.gfield_checkbox li, .page.new-student .gform_wrapper ul.gfield_radio li { margin: 0; line-height: 2; }
+.page.enrol .gform_wrapper ul.gfield_checkbox li, .page.enrol .gform_wrapper ul.gfield_radio li, .page.enroll .gform_wrapper ul.gfield_checkbox li, .page.enroll .gform_wrapper ul.gfield_radio li, .page.new-student .gform_wrapper ul.gfield_checkbox li, .page.new-student .gform_wrapper ul.gfield_radio li { margin: 0; line-height: 2; }
 
-.page.enroll .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label, .page.new-student .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label { color: #ccc; }
+.page.enrol .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label, .page.enroll .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label, .page.new-student .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label { color: #ccc; }
 
-.page.enroll .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .page.new-student .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) { font-size: inherit; font-family: inherit; padding: 7px 12px; letter-spacing: normal; }
+.page.enrol .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .page.enroll .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .page.new-student .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) { font-size: inherit; font-family: inherit; padding: 7px 12px; letter-spacing: normal; }
 
-.page.enroll .gform_wrapper input[type='email'], .page.enroll .gform_wrapper input[type='number'], .page.enroll .gform_wrapper input[type='search'], .page.enroll .gform_wrapper input[type='text'], .page.enroll .gform_wrapper input[type='tel'], .page.enroll .gform_wrapper input[type='url'], .page.enroll .gform_wrapper input[type='password'], .page.enroll .gform_wrapper textarea, .page.enroll .gform_wrapper select, .page.new-student .gform_wrapper input[type='email'], .page.new-student .gform_wrapper input[type='number'], .page.new-student .gform_wrapper input[type='search'], .page.new-student .gform_wrapper input[type='text'], .page.new-student .gform_wrapper input[type='tel'], .page.new-student .gform_wrapper input[type='url'], .page.new-student .gform_wrapper input[type='password'], .page.new-student .gform_wrapper textarea, .page.new-student .gform_wrapper select { min-height: 38px; padding: 7px 12px; background-color: #fff; border: 1px solid #cccccc; border-radius: 0px; box-shadow: none; box-sizing: border-box; height: auto; }
+.page.enrol .gform_wrapper input[type='email'], .page.enrol .gform_wrapper input[type='number'], .page.enrol .gform_wrapper input[type='search'], .page.enrol .gform_wrapper input[type='text'], .page.enrol .gform_wrapper input[type='tel'], .page.enrol .gform_wrapper input[type='url'], .page.enrol .gform_wrapper input[type='password'], .page.enrol .gform_wrapper textarea, .page.enrol .gform_wrapper select, .page.enroll .gform_wrapper input[type='email'], .page.enroll .gform_wrapper input[type='number'], .page.enroll .gform_wrapper input[type='search'], .page.enroll .gform_wrapper input[type='text'], .page.enroll .gform_wrapper input[type='tel'], .page.enroll .gform_wrapper input[type='url'], .page.enroll .gform_wrapper input[type='password'], .page.enroll .gform_wrapper textarea, .page.enroll .gform_wrapper select, .page.new-student .gform_wrapper input[type='email'], .page.new-student .gform_wrapper input[type='number'], .page.new-student .gform_wrapper input[type='search'], .page.new-student .gform_wrapper input[type='text'], .page.new-student .gform_wrapper input[type='tel'], .page.new-student .gform_wrapper input[type='url'], .page.new-student .gform_wrapper input[type='password'], .page.new-student .gform_wrapper textarea, .page.new-student .gform_wrapper select { min-height: 38px; padding: 7px 12px; background-color: #fff; border: 1px solid #cccccc; border-radius: 0px; box-shadow: none; box-sizing: border-box; height: auto; }
 
-.page.enroll .gform_wrapper select, .page.new-student .gform_wrapper select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padding: 7px 12px; background-color: #fff; border: 1px solid #cccccc; box-shadow: none; box-sizing: border-box; height: auto; background-image: url(assets/img/down-chevron.svg); background-position: 98% 50%; background-repeat: no-repeat; background-size: auto 20px; }
+.page.enrol .gform_wrapper select, .page.enroll .gform_wrapper select, .page.new-student .gform_wrapper select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padding: 7px 12px; background-color: #fff; border: 1px solid #cccccc; box-shadow: none; box-sizing: border-box; height: auto; background-image: url(assets/img/down-chevron.svg); background-position: 98% 50%; background-repeat: no-repeat; background-size: auto 20px; }
 
-.page.enroll .gform_wrapper ul li.gfield, .page.new-student .gform_wrapper ul li.gfield { margin-top: 0; padding-top: 0; margin-bottom: 40px; }
+.page.enrol .gform_wrapper ul li.gfield, .page.enroll .gform_wrapper ul li.gfield, .page.new-student .gform_wrapper ul li.gfield { margin-top: 0; padding-top: 0; margin-bottom: 40px; }
 
-.page.enroll .gform_wrapper .top_label .gfield_label, .page.new-student .gform_wrapper .top_label .gfield_label { display: -moz-inline-stack; display: inline-block; line-height: 1; clear: both; margin-bottom: 15px; border-bottom: 1px solid #eee; display: block; padding-bottom: 10px; text-transform: uppercase; font-family: "ZonaPro-SemiBold", Helvetica, Arial, sans-serif; font-size: 17px; }
+.page.enrol .gform_wrapper .top_label .gfield_label, .page.enroll .gform_wrapper .top_label .gfield_label, .page.new-student .gform_wrapper .top_label .gfield_label { display: -moz-inline-stack; display: inline-block; line-height: 1; clear: both; margin-bottom: 15px; border-bottom: 1px solid #eee; display: block; padding-bottom: 10px; text-transform: uppercase; font-family: "ZonaPro-SemiBold", Helvetica, Arial, sans-serif; font-size: 17px; }
 
-.page.enroll .gform_wrapper .gform_page_footer, .page.new-student .gform_wrapper .gform_page_footer { margin: 20px 0 0 0; padding: 40px 0 0 0; width: 100%; border-top: 1px dotted black; }
+.page.enrol .gform_wrapper .gform_page_footer, .page.enroll .gform_wrapper .gform_page_footer, .page.new-student .gform_wrapper .gform_page_footer { margin: 20px 0 0 0; padding: 40px 0 0 0; width: 100%; border-top: 1px dotted black; }
 
-.page.enroll .gform_wrapper .gform_page_footer input[type="submit"], .page.enroll .gform_wrapper .gform_page_footer input[type="reset"], .page.enroll .gform_wrapper .gform_page_footer input[type="button"], .page.new-student .gform_wrapper .gform_page_footer input[type="submit"], .page.new-student .gform_wrapper .gform_page_footer input[type="reset"], .page.new-student .gform_wrapper .gform_page_footer input[type="button"] { display: inline-block; color: white; background-color: #784987; border-radius: 0px; border: none; }
+.page.enrol .gform_wrapper .gform_page_footer input[type="submit"], .page.enrol .gform_wrapper .gform_page_footer input[type="reset"], .page.enrol .gform_wrapper .gform_page_footer input[type="button"], .page.enroll .gform_wrapper .gform_page_footer input[type="submit"], .page.enroll .gform_wrapper .gform_page_footer input[type="reset"], .page.enroll .gform_wrapper .gform_page_footer input[type="button"], .page.new-student .gform_wrapper .gform_page_footer input[type="submit"], .page.new-student .gform_wrapper .gform_page_footer input[type="reset"], .page.new-student .gform_wrapper .gform_page_footer input[type="button"] { display: inline-block; color: white; background-color: #784987; border-radius: 0px; border: none; }
 
-.page.enroll .gform_wrapper .gform_page_footer input[type="submit"]:hover, .page.enroll .gform_wrapper .gform_page_footer input[type="reset"]:hover, .page.enroll .gform_wrapper .gform_page_footer input[type="button"]:hover, .page.new-student .gform_wrapper .gform_page_footer input[type="submit"]:hover, .page.new-student .gform_wrapper .gform_page_footer input[type="reset"]:hover, .page.new-student .gform_wrapper .gform_page_footer input[type="button"]:hover { color: white; }
+.page.enrol .gform_wrapper .gform_page_footer input[type="submit"]:hover, .page.enrol .gform_wrapper .gform_page_footer input[type="reset"]:hover, .page.enrol .gform_wrapper .gform_page_footer input[type="button"]:hover, .page.enroll .gform_wrapper .gform_page_footer input[type="submit"]:hover, .page.enroll .gform_wrapper .gform_page_footer input[type="reset"]:hover, .page.enroll .gform_wrapper .gform_page_footer input[type="button"]:hover, .page.new-student .gform_wrapper .gform_page_footer input[type="submit"]:hover, .page.new-student .gform_wrapper .gform_page_footer input[type="reset"]:hover, .page.new-student .gform_wrapper .gform_page_footer input[type="button"]:hover { color: white; }
 
-.page.enroll .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio], .page.new-student .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] { margin-top: 0px; }
+.page.enrol .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio], .page.enroll .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio], .page.new-student .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] { margin-top: 0px; }
 
-.page.enroll .logmein, .page.new-student .logmein { float: left; width: 100%; margin-bottom: 20px; }
+.page.enrol .logmein, .page.enroll .logmein, .page.new-student .logmein { float: left; width: 100%; margin-bottom: 20px; }
 
-@media (min-width: 550px) { .page.enroll .logmein, .page.new-student .logmein { margin-right: 2%; margin-bottom: 0; width: 48%; } }
+@media (min-width: 550px) { .page.enrol .logmein, .page.enroll .logmein, .page.new-student .logmein { margin-right: 2%; margin-bottom: 0; width: 48%; } }
 
-.page.enroll h3.error, .page.new-student h3.error { color: red; font-size: 18px; margin-top: 10px; }
+.page.enrol h3.error, .page.enroll h3.error, .page.new-student h3.error { color: red; font-size: 18px; margin-top: 10px; }
 
-.page.enroll .new-stu, .page.new-student .new-stu { float: left; width: 100%; background: #4a3c77; padding: 30px; box-sizing: border-box; color: white; text-align: center; }
+.page.enrol .new-stu, .page.enroll .new-stu, .page.new-student .new-stu { float: left; width: 100%; background: #4a3c77; padding: 30px; box-sizing: border-box; color: white; text-align: center; }
 
-@media (min-width: 550px) { .page.enroll .new-stu, .page.new-student .new-stu { width: 48%; } }
+@media (min-width: 550px) { .page.enrol .new-stu, .page.enroll .new-stu, .page.new-student .new-stu { width: 48%; } }
 
-.page.enroll .new-stu h1, .page.enroll .new-stu h2, .page.enroll .new-stu h3, .page.enroll .new-stu a, .page.new-student .new-stu h1, .page.new-student .new-stu h2, .page.new-student .new-stu h3, .page.new-student .new-stu a { color: white; }
+.page.enrol .new-stu h1, .page.enrol .new-stu h2, .page.enrol .new-stu h3, .page.enrol .new-stu a, .page.enroll .new-stu h1, .page.enroll .new-stu h2, .page.enroll .new-stu h3, .page.enroll .new-stu a, .page.new-student .new-stu h1, .page.new-student .new-stu h2, .page.new-student .new-stu h3, .page.new-student .new-stu a { color: white; }
 
-.page.enroll .new-stu a, .page.new-student .new-stu a { display: block; margin-top: 20px; background: white; color: black; text-decoration: none; font-weight: bolder; text-transform: uppercase; text-align: center; padding: 10px; line-height: 1; }
+.page.enrol .new-stu a, .page.enroll .new-stu a, .page.new-student .new-stu a { display: block; margin-top: 20px; background: white; color: black; text-decoration: none; font-weight: bolder; text-transform: uppercase; text-align: center; padding: 10px; line-height: 1; }
 
 /*===============================
 =            COURSES            =
