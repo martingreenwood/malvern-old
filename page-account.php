@@ -122,7 +122,7 @@ get_header(); ?>
 												?>
 												<div class="text">
 													<?php $file = get_sub_field( 'file' ); ?>
-													<a class="link" href="<?php echo $file['url']; ?>" title="<?php the_sub_field('link_text'); ?>"><?php the_sub_field('link_text'); ?></a>
+													<a target="_blank" class="link" href="<?php echo $file['url']; ?>" title="<?php the_sub_field('link_text'); ?>"><?php the_sub_field('link_text'); ?></a>
 												</div>
 												<?php
 
