@@ -101,6 +101,12 @@
 					<h2><?php the_field( 'banner_text' ); ?></h2>
 					<?php endif; ?>
 
+
+				<?php elseif ( is_404() ): ?>
+
+					<h1>404</h1>
+					<h2>Page Not Found</h2>
+
 				<?php else: ?>
 
 					<?php if (get_field( 'banner_text' )): ?>
