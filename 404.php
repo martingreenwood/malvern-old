@@ -12,17 +12,15 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-			<?php if (have_posts()): ?>
 			<div class="container maincopy">
-			<?php
-			while ( have_posts() ) : the_post();
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				get_template_part( 'template-parts/content', 'page' );
+				<div class="entry-content">
 
-			endwhile; // End of the loop.
-			?>
+				</div>
+
+				</article>
 			</div>
-			<?php endif ?>
 
 		</main>
 	</div>

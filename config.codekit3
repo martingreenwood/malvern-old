@@ -1879,11 +1879,11 @@
 		"oAP": "\/page-downloads.php",
 		"oF": 0
 		},
-	"\/page-enroll.php": {
+	"\/page-enrol.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/page-enroll.php",
+		"oAP": "\/page-enrol.php",
 		"oF": 0
 		},
 	"\/page-new-student.php": {
