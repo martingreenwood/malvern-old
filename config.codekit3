@@ -196,17 +196,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"\/assets\/img\/bottom-strip-home.png": {
-		"ft": 32768,
-		"iS": 37458,
-		"oA": 0,
-		"oAP": "\/assets\/img\/bottom-strip-home.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/assets\/img\/bottom-strip-old.png": {
 		"ft": 32768,
 		"iS": 36363,
@@ -329,17 +318,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"\/assets\/img\/top-strip.png": {
-		"ft": 32768,
-		"iS": 17804,
-		"oA": 0,
-		"oAP": "\/assets\/img\/top-strip.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"\/assets\/img\/Untitled-1.svg": {
 		"ft": 2097152,
