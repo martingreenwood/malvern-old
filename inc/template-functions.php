@@ -164,9 +164,10 @@ function mepr_studentdetails_content($action) {
 	if($action == 'student-details'): //Update this 'premium-support' to match what you put above (?action=premium-support)
 	?>
 	<div id="student-details">
-		<a class="button" href="<?php echo home_url( '/enrol' ); ?>">Enrol Another Child</a>
-		<br>
 		<?php echo do_shortcode( '[gravityview id="806"]' ); ?>
+		<div class="btnhlder">
+			<a class="button" href="<?php echo home_url( '/enrol' ); ?>">Enrol Another Child</a>
+		</div>
 	</div>
 	<?php
 	endif;
@@ -180,7 +181,9 @@ function mepr_add_personalinformation_tab_content($action) {
 
 		<?php echo do_shortcode( '[gravityview id="803"]' ); ?>
 
-		<a class="newpifbutton button" href="#newpif">New Personal Information Form</a>
+		<div class="btnhlder">
+			<a class="button" href="#newpif">New Personal Information Form</a>
+		</div>
 		<div id="newpif" style="display: none;">
 			<?php echo do_shortcode( '[gravityform id="6" title="false" description="false" ajax="true"]' ); ?>
 		</div>

@@ -819,6 +819,18 @@
     	text-align: left;
 	}
 
+	.btnhlder {
+		text-align: right;
+
+		a {
+			background: #4a3c77;
+			color: white;
+			font-size: inherit;
+			border: 0;
+			border-radius: 0;
+		}
+	}
+
 	.gv-section {
     	color: $primary-color;
     	margin-bottom: 5px !important;
