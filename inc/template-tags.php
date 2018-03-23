@@ -260,8 +260,8 @@ add_action('acf/init', 'my_acf_init');
 
 
 
-add_action( 'show_user_profile', 'extra_user_profile_fields' );
-add_action( 'edit_user_profile', 'extra_user_profile_fields' );
+//add_action( 'show_user_profile', 'extra_user_profile_fields' );
+//add_action( 'edit_user_profile', 'extra_user_profile_fields' );
 
 function extra_user_profile_fields( $user ) { ?>
 	<h2><?php _e("Application / Enrolment Details", "blank"); ?></h2>
@@ -463,8 +463,8 @@ function extra_user_profile_fields( $user ) { ?>
 }
 
 
-add_action( 'personal_options_update', 'save_extra_user_profile_fields' );
-add_action( 'edit_user_profile_update', 'save_extra_user_profile_fields' );
+//add_action( 'personal_options_update', 'save_extra_user_profile_fields' );
+//add_action( 'edit_user_profile_update', 'save_extra_user_profile_fields' );
 
 function save_extra_user_profile_fields( $user_id ) {
 	if ( !current_user_can( 'edit_user', $user_id ) ) { 
@@ -664,7 +664,7 @@ function add_last_nav_item($items, $args) {
 	if( $args->theme_location == 'menu-1') {
     
 		if (is_user_logged_in()) {
-			$homelink = '<a href="'. home_url( '/account' ) .'" title="my Account">My Account</a>';
+			$homelink = '<a href="'. home_url( '/account?action=subscriptions' ) .'" title="my Account">My Account</a>';
 		} else {
 			$homelink = '<a href="'. home_url( '/login' ) .'" title="my Account">Login</a>';
 		}
@@ -679,8 +679,8 @@ add_filter( 'wp_nav_menu_items', 'add_last_nav_item', 10, 2 );
 
 
 
-add_action( 'show_user_profile', 'personal_profile_fields' );
-add_action( 'edit_user_profile', 'personal_profile_fields' );
+//add_action( 'show_user_profile', 'personal_profile_fields' );
+//add_action( 'edit_user_profile', 'personal_profile_fields' );
 
 function personal_profile_fields( $user ) { ?>
 	<h2><?php _e("Personal Information", "blank"); ?></h2>
@@ -831,8 +831,8 @@ function personal_profile_fields( $user ) { ?>
 }
 
 
-add_action( 'personal_options_update', 'save_personal_profile_fields' );
-add_action( 'edit_user_profile_update', 'save_personal_profile_fields' );
+//add_action( 'personal_options_update', 'save_personal_profile_fields' );
+//add_action( 'edit_user_profile_update', 'save_personal_profile_fields' );
 
 function save_personal_profile_fields( $user_id ) {
 	if ( !current_user_can( 'edit_user', $user_id ) ) { 

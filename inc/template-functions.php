@@ -81,6 +81,28 @@ function filesize_formatted($path)
 
 
 //ADD A SUPPORT TAB TO THE NAV MENU
+function mepr_mydetails_tab($user) {
+	$support_active = (isset($_GET['action']) && $_GET['action'] == 'my-details')?'mepr-active-nav-tab':'';
+	?>
+	<span class="mepr-nav-item my-details <?php echo $support_active; ?>">
+		<a href="<?php echo home_url( '/' ); ?>account/?action=my-details">My Details</a>
+	</span>
+	<?php
+}
+add_action('mepr_account_nav', 'mepr_mydetails_tab');
+
+//ADD A SUPPORT TAB TO THE NAV MENU
+function mepr_studentdetails_tab($user) {
+	$support_active = (isset($_GET['action']) && $_GET['action'] == 'student-details')?'mepr-active-nav-tab':'';
+	?>
+	<span class="mepr-nav-item student-details <?php echo $support_active; ?>">
+		<a href="<?php echo home_url( '/' ); ?>account/?action=student-details">Student Details</a>
+	</span>
+	<?php
+}
+add_action('mepr_account_nav', 'mepr_studentdetails_tab');
+
+//ADD A SUPPORT TAB TO THE NAV MENU
 function mepr_add_personalinformation_tab($user) {
 	$support_active = (isset($_GET['action']) && $_GET['action'] == 'personal-information')?'mepr-active-nav-tab':'';
 	?>
@@ -104,7 +126,7 @@ add_action('mepr_account_nav', 'mepr_add_memberassets_tab');
 
 //ADD A SUPPORT TAB TO THE NAV MENU
 function mepr_add_memberimg_tab($user) {
-	$support_active = (isset($_GET['action']) && $_GET['action'] == '')?'mepr-active-nav-tab':'';
+	$support_active = (isset($_GET['action']) && $_GET['action'] == 'member-img')?'mepr-active-nav-tab':'';
 	?>
 	<span class="mepr-nav-item member-img <?php echo $support_active; ?>">
 		<a href="<?php echo home_url( '/' ); ?>account/?action=member-img">My Picture</a>
@@ -127,11 +149,44 @@ function mepr_add_img_tab_content($action) {
 }
 add_action('mepr_account_nav_content', 'mepr_add_img_tab_content');
 
+function mepr_mydetails_content($action) {
+	if($action == 'my-details'): //Update this 'premium-support' to match what you put above (?action=premium-support)
+	?>
+	<div id="my-details">
+		<?php echo do_shortcode( '[gravityview id="790"]' ); ?>
+	</div>
+	<?php
+	endif;
+}
+add_action('mepr_account_nav_content', 'mepr_mydetails_content');
+
+function mepr_studentdetails_content($action) {
+	if($action == 'student-details'): //Update this 'premium-support' to match what you put above (?action=premium-support)
+	?>
+	<div id="student-details">
+		<?php echo do_shortcode( '[gravityview id="806"]' ); ?>
+
+		<a class="button" href="<?php echo home_url( '/enrol' ); ?>">Enrol Another Child</a>
+
+	</div>
+	<?php
+	endif;
+}
+add_action('mepr_account_nav_content', 'mepr_studentdetails_content');
+
 function mepr_add_personalinformation_tab_content($action) {
 	if($action == 'personal-information'): //Update this 'premium-support' to match what you put above (?action=premium-support)
 	?>
 	<div id="personal-information-form">
-		<?php echo do_shortcode( '[gravityform id="6" title="false" description="false" ajax="true"]' ); ?>
+
+		<?php echo do_shortcode( '[gravityview id="803"]' ); ?>
+
+		<a class="newpifbutton button" href="#newpif">New Personal Information Form</a>
+		<div id="newpif" style="display: none;">
+			<?php echo do_shortcode( '[gravityform id="6" title="false" description="false" ajax="true"]' ); ?>
+		</div>
+
+
 	</div>
 	<?php
 	endif;

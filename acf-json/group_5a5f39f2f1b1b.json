@@ -28,6 +28,11 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "team"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "gravityview"
             }
         ]
     ],
@@ -39,5 +44,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1516190218
+    "modified": 1521731987
 }

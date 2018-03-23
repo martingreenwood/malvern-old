@@ -7,7 +7,7 @@
 		"uuidString": "5D91B198-5421-47A9-B7CB-A2A2AE977F58"
 		}
 	],
-"creatorBuild": "26268",
+"creatorBuild": "26330",
 "files": {
 	"\/404.php": {
 		"cB": 0,
@@ -15,6 +15,14 @@
 		"oA": 0,
 		"oAP": "\/404.php",
 		"oF": 0
+		},
+	"\/acf-json\/group_5a55da5abb9cc.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_5a55da5abb9cc-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"\/acf-json\/group_5a56042ac8295.json": {
 		"ft": 524288,
@@ -196,6 +204,17 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/assets\/img\/bottom-strip-home.png": {
+		"ft": 32768,
+		"iS": 59893,
+		"oA": 0,
+		"oAP": "\/assets\/img\/bottom-strip-home.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/bottom-strip-old.png": {
 		"ft": 32768,
 		"iS": 36363,
@@ -318,6 +337,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/assets\/img\/top-strip.png": {
+		"ft": 32768,
+		"iS": 35643,
+		"oA": 0,
+		"oAP": "\/assets\/img\/top-strip.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/assets\/img\/Untitled-1.svg": {
 		"ft": 2097152,
@@ -1862,6 +1892,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/page-enrol.php",
+		"oF": 0
+		},
+	"\/page-new-account.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-new-account.php",
 		"oF": 0
 		},
 	"\/page-new-student.php": {

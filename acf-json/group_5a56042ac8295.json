@@ -499,6 +499,11 @@
                 "param": "options_page",
                 "operator": "==",
                 "value": "nsso-options"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "gravityview"
             }
         ]
     ],
@@ -510,5 +515,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1519399819
+    "modified": 1521731945
 }

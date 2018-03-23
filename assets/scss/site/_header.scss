@@ -8,48 +8,48 @@
 * Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
 
-#loader {	
-	background-color: #eeeeee;
-	background-image: url(assets/img/logo.svg);
-	background-repeat: no-repeat;
-	background-size: 200px;
-	background-position: 50%;
+/* This is a compiled file, you should be editing the file in the templates directory */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
 
-	width: 100vw;
-	height: 100vh;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 99999;
-	transition: all 500ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 
-	#loading {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 
-	#progress{
-		height: 10px;
-		background: $primary-color;
-		position: absolute;
-		width: 0;                /* will be increased by JS */
-		top: 0;
-	}
+  -webkit-transform: translate3d(0, -50px, 0);
+  -ms-transform: translate3d(0, -50px, 0);
+  transform: translate3d(0, -50px, 0);
 
-	#progstat{
-		font-size: 0.7em;
-		letter-spacing: 3px;
-		position: absolute;
-		top: 0;
-		margin-top: 20px;
-		width: 100%;
-		text-align:center;
-		color: $primary-color;
-	}
+  -webkit-transition: -webkit-transform .5s ease-out;
+  -ms-transition: -webkit-transform .5s ease-out;
+  transition: transform .5s ease-out;
 }
+
+.pace.pace-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.pace .pace-progress {
+  display: block;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 10px;
+  background: $primary-color;
+
+  pointer-events: none;
+}
+
 
 #masthead {
 	position: fixed;
@@ -90,6 +90,7 @@
 		background-color: #fff;
 		z-index: 102;
 		height: 96px;
+		display: block;
 
 		.toggled {
 			.hamburger {

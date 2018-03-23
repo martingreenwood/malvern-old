@@ -454,7 +454,7 @@
 	=            ENROL / NEW STUDENT            =
 	===========================================*/
 
-	&.enrol, &.enroll, &.new-student {
+	&.enrol, &.enroll, &.new-student, &.new-account {
 
 		.maincopy {
 			border-bottom: 0;
@@ -615,6 +615,19 @@
 			color: red;
 			font-size: 18px;
 			margin-top: 10px;
+		}
+
+		.linform {
+			margin-top: 20px;
+
+			.login-username, .login-password {
+				float: left;
+				width: 50%;
+
+				input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
+					width: 98%;
+				}
+			}
 		}
 
 		.new-stu {
@@ -793,6 +806,27 @@
 
 .account {
 
+	.gv-right {
+    	text-align: left;
+	}
+
+	.gv-section {
+    	color: $primary-color;
+    	margin-bottom: 5px !important;
+		margin-top: 20px !important;
+	}
+
+	.gv-field-label {
+    	padding-right: 5px;
+    	font-weight: bold;
+	}
+
+	.gv-list-view-footer {
+		border-top: 0px solid #ddd;
+		background-color: #f9f9f9;
+		padding: 10px 20px 20px 20px;
+	}
+
 	#banner {
 		text-align: center;
 
@@ -812,6 +846,16 @@
 				border-radius: 50%;
 			}
 		}
+	}
+
+	#my-details {
+    	background: white;
+    	padding: 40px;
+    	margin: 40px 0 0 0;
+
+    	tfoot {
+    		display: none;
+    	}
 	}
 
 	#member-assets-form {
@@ -878,6 +922,9 @@
 	}
 
 	#personal-information-form {
+	    background: white;
+	    padding: 40px;
+	    margin: 40px 0 0 0;
 	   
 	   .gform_wrapper {
 			background: white;

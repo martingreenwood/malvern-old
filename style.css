@@ -758,13 +758,12 @@ th:last-child, td:last-child { padding-right: 0; }
 #site-navigation.toggled .menu-primary-container #primary-menu li .sub-menu li a { color: white; }
 
 /* Skeleton V2.0.4 Copyright 2014, Dave Gamache www.getskeleton.com Free to use under the MIT license. http://www.opensource.org/licenses/mit-license.php 12/9/2014 Sass Version by Seth Coelen https://github.com/whatsnewsaes */
-#loader { background-color: #eeeeee; background-image: url(assets/img/logo.svg); background-repeat: no-repeat; background-size: 200px; background-position: 50%; width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 99999; transition: all 500ms; }
+/* This is a compiled file, you should be editing the file in the templates directory */
+.pace { -webkit-pointer-events: none; pointer-events: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; position: fixed; top: 0; left: 0; width: 100%; -webkit-transform: translate3d(0, -50px, 0); -ms-transform: translate3d(0, -50px, 0); transform: translate3d(0, -50px, 0); -webkit-transition: -webkit-transform .5s ease-out; -ms-transition: -webkit-transform .5s ease-out; transition: transform .5s ease-out; }
 
-#loader #loading { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.pace.pace-active { -webkit-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
 
-#loader #progress { height: 10px; background: #4a3c77; position: absolute; width: 0; /* will be increased by JS */ top: 0; }
-
-#loader #progstat { font-size: 0.7em; letter-spacing: 3px; position: absolute; top: 0; margin-top: 20px; width: 100%; text-align: center; color: #4a3c77; }
+.pace .pace-progress { display: block; position: fixed; z-index: 2000; top: 0; right: 100%; width: 100%; height: 10px; background: #4a3c77; pointer-events: none; }
 
 #masthead { position: fixed; left: 0; right: 0; top: 0; z-index: 51; height: 234px; background-color: transparent; -webkit-transition: top .5s linear 0s, background 0.5s linear 0s; -moz-transition: top .5s linear 0s, background 0.5s linear 0s; -ms-transition: top .5s linear 0s, background 0.5s linear 0s; -o-transition: top .5s linear 0s, background 0.5s linear 0s; transition: top .5s linear 0s, background 0.5s linear 0s; }
 
@@ -774,7 +773,7 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #masthead.hidden { top: -234px; -webkit-transition: top .5s linear 0s, background 0.5s linear 0s; -moz-transition: top .5s linear 0s, background 0.5s linear 0s; -ms-transition: top .5s linear 0s, background 0.5s linear 0s; -o-transition: top .5s linear 0s, background 0.5s linear 0s; transition: top .5s linear 0s, background 0.5s linear 0s; }
 
-#masthead.fixed { position: fixed; top: 0px; background-color: #fff; z-index: 102; height: 96px; }
+#masthead.fixed { position: fixed; top: 0px; background-color: #fff; z-index: 102; height: 96px; display: block; }
 
 #masthead.fixed .toggled .hamburger .hamburger-inner, #masthead.fixed .toggled .hamburger .hamburger-inner::before, #masthead.fixed .toggled .hamburger .hamburger-inner::after { background-color: white; }
 
@@ -975,51 +974,57 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .page.our-courses .element .text h1, .page.our-courses .element .text h2, .page.our-courses .element .text h3 { font-size: 1.6em; }
 
-.page.enrol .maincopy, .page.enroll .maincopy, .page.new-student .maincopy { border-bottom: 0; padding-bottom: 0px; margin-bottom: 0px; }
+.page.enrol .maincopy, .page.enroll .maincopy, .page.new-student .maincopy, .page.new-account .maincopy { border-bottom: 0; padding-bottom: 0px; margin-bottom: 0px; }
 
-.page.enrol .ui-datepicker-title select, .page.enroll .ui-datepicker-title select, .page.new-student .ui-datepicker-title select { margin-top: 2.5%; height: auto; padding: inherit; background: inherit; border-radius: 0; }
+.page.enrol .ui-datepicker-title select, .page.enroll .ui-datepicker-title select, .page.new-student .ui-datepicker-title select, .page.new-account .ui-datepicker-title select { margin-top: 2.5%; height: auto; padding: inherit; background: inherit; border-radius: 0; }
 
-.page.enrol .gform_wrapper, .page.enroll .gform_wrapper, .page.new-student .gform_wrapper { background: white; padding: 40px; margin: 40px 0 0 0; }
+.page.enrol .gform_wrapper, .page.enroll .gform_wrapper, .page.new-student .gform_wrapper, .page.new-account .gform_wrapper { background: white; padding: 40px; margin: 40px 0 0 0; }
 
-.page.enrol .gform_wrapper .gf_page_steps, .page.enroll .gform_wrapper .gf_page_steps, .page.new-student .gform_wrapper .gf_page_steps { margin-bottom: 40px; padding-bottom: 20px; }
+.page.enrol .gform_wrapper .gf_page_steps, .page.enroll .gform_wrapper .gf_page_steps, .page.new-student .gform_wrapper .gf_page_steps, .page.new-account .gform_wrapper .gf_page_steps { margin-bottom: 40px; padding-bottom: 20px; }
 
-.page.enrol .gform_wrapper ul.gfield_checkbox, .page.enrol .gform_wrapper ul.gfield_radio, .page.enroll .gform_wrapper ul.gfield_checkbox, .page.enroll .gform_wrapper ul.gfield_radio, .page.new-student .gform_wrapper ul.gfield_checkbox, .page.new-student .gform_wrapper ul.gfield_radio { margin: auto; padding: 0; }
+.page.enrol .gform_wrapper ul.gfield_checkbox, .page.enrol .gform_wrapper ul.gfield_radio, .page.enroll .gform_wrapper ul.gfield_checkbox, .page.enroll .gform_wrapper ul.gfield_radio, .page.new-student .gform_wrapper ul.gfield_checkbox, .page.new-student .gform_wrapper ul.gfield_radio, .page.new-account .gform_wrapper ul.gfield_checkbox, .page.new-account .gform_wrapper ul.gfield_radio { margin: auto; padding: 0; }
 
-.page.enrol .gform_wrapper ul.gfield_checkbox li, .page.enrol .gform_wrapper ul.gfield_radio li, .page.enroll .gform_wrapper ul.gfield_checkbox li, .page.enroll .gform_wrapper ul.gfield_radio li, .page.new-student .gform_wrapper ul.gfield_checkbox li, .page.new-student .gform_wrapper ul.gfield_radio li { margin: 0; line-height: 2; }
+.page.enrol .gform_wrapper ul.gfield_checkbox li, .page.enrol .gform_wrapper ul.gfield_radio li, .page.enroll .gform_wrapper ul.gfield_checkbox li, .page.enroll .gform_wrapper ul.gfield_radio li, .page.new-student .gform_wrapper ul.gfield_checkbox li, .page.new-student .gform_wrapper ul.gfield_radio li, .page.new-account .gform_wrapper ul.gfield_checkbox li, .page.new-account .gform_wrapper ul.gfield_radio li { margin: 0; line-height: 2; }
 
-.page.enrol .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label, .page.enroll .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label, .page.new-student .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label { color: #ccc; }
+.page.enrol .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label, .page.enroll .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label, .page.new-student .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label, .page.new-account .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label { color: #ccc; }
 
-.page.enrol .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .page.enroll .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .page.new-student .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) { font-size: inherit; font-family: inherit; padding: 7px 12px; letter-spacing: normal; }
+.page.enrol .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .page.enroll .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .page.new-student .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .page.new-account .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) { font-size: inherit; font-family: inherit; padding: 7px 12px; letter-spacing: normal; }
 
-.page.enrol .gform_wrapper input[type='email'], .page.enrol .gform_wrapper input[type='number'], .page.enrol .gform_wrapper input[type='search'], .page.enrol .gform_wrapper input[type='text'], .page.enrol .gform_wrapper input[type='tel'], .page.enrol .gform_wrapper input[type='url'], .page.enrol .gform_wrapper input[type='password'], .page.enrol .gform_wrapper textarea, .page.enrol .gform_wrapper select, .page.enroll .gform_wrapper input[type='email'], .page.enroll .gform_wrapper input[type='number'], .page.enroll .gform_wrapper input[type='search'], .page.enroll .gform_wrapper input[type='text'], .page.enroll .gform_wrapper input[type='tel'], .page.enroll .gform_wrapper input[type='url'], .page.enroll .gform_wrapper input[type='password'], .page.enroll .gform_wrapper textarea, .page.enroll .gform_wrapper select, .page.new-student .gform_wrapper input[type='email'], .page.new-student .gform_wrapper input[type='number'], .page.new-student .gform_wrapper input[type='search'], .page.new-student .gform_wrapper input[type='text'], .page.new-student .gform_wrapper input[type='tel'], .page.new-student .gform_wrapper input[type='url'], .page.new-student .gform_wrapper input[type='password'], .page.new-student .gform_wrapper textarea, .page.new-student .gform_wrapper select { min-height: 38px; padding: 7px 12px; background-color: #fff; border: 1px solid #cccccc; border-radius: 0px; box-shadow: none; box-sizing: border-box; height: auto; }
+.page.enrol .gform_wrapper input[type='email'], .page.enrol .gform_wrapper input[type='number'], .page.enrol .gform_wrapper input[type='search'], .page.enrol .gform_wrapper input[type='text'], .page.enrol .gform_wrapper input[type='tel'], .page.enrol .gform_wrapper input[type='url'], .page.enrol .gform_wrapper input[type='password'], .page.enrol .gform_wrapper textarea, .page.enrol .gform_wrapper select, .page.enroll .gform_wrapper input[type='email'], .page.enroll .gform_wrapper input[type='number'], .page.enroll .gform_wrapper input[type='search'], .page.enroll .gform_wrapper input[type='text'], .page.enroll .gform_wrapper input[type='tel'], .page.enroll .gform_wrapper input[type='url'], .page.enroll .gform_wrapper input[type='password'], .page.enroll .gform_wrapper textarea, .page.enroll .gform_wrapper select, .page.new-student .gform_wrapper input[type='email'], .page.new-student .gform_wrapper input[type='number'], .page.new-student .gform_wrapper input[type='search'], .page.new-student .gform_wrapper input[type='text'], .page.new-student .gform_wrapper input[type='tel'], .page.new-student .gform_wrapper input[type='url'], .page.new-student .gform_wrapper input[type='password'], .page.new-student .gform_wrapper textarea, .page.new-student .gform_wrapper select, .page.new-account .gform_wrapper input[type='email'], .page.new-account .gform_wrapper input[type='number'], .page.new-account .gform_wrapper input[type='search'], .page.new-account .gform_wrapper input[type='text'], .page.new-account .gform_wrapper input[type='tel'], .page.new-account .gform_wrapper input[type='url'], .page.new-account .gform_wrapper input[type='password'], .page.new-account .gform_wrapper textarea, .page.new-account .gform_wrapper select { min-height: 38px; padding: 7px 12px; background-color: #fff; border: 1px solid #cccccc; border-radius: 0px; box-shadow: none; box-sizing: border-box; height: auto; }
 
-.page.enrol .gform_wrapper select, .page.enroll .gform_wrapper select, .page.new-student .gform_wrapper select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padding: 7px 12px; background-color: #fff; border: 1px solid #cccccc; box-shadow: none; box-sizing: border-box; height: auto; background-image: url(assets/img/down-chevron.svg); background-position: 98% 50%; background-repeat: no-repeat; background-size: auto 20px; }
+.page.enrol .gform_wrapper select, .page.enroll .gform_wrapper select, .page.new-student .gform_wrapper select, .page.new-account .gform_wrapper select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padding: 7px 12px; background-color: #fff; border: 1px solid #cccccc; box-shadow: none; box-sizing: border-box; height: auto; background-image: url(assets/img/down-chevron.svg); background-position: 98% 50%; background-repeat: no-repeat; background-size: auto 20px; }
 
-.page.enrol .gform_wrapper ul li.gfield, .page.enroll .gform_wrapper ul li.gfield, .page.new-student .gform_wrapper ul li.gfield { margin-top: 0; padding-top: 0; margin-bottom: 40px; }
+.page.enrol .gform_wrapper ul li.gfield, .page.enroll .gform_wrapper ul li.gfield, .page.new-student .gform_wrapper ul li.gfield, .page.new-account .gform_wrapper ul li.gfield { margin-top: 0; padding-top: 0; margin-bottom: 40px; }
 
-.page.enrol .gform_wrapper .top_label .gfield_label, .page.enroll .gform_wrapper .top_label .gfield_label, .page.new-student .gform_wrapper .top_label .gfield_label { display: -moz-inline-stack; display: inline-block; line-height: 1; clear: both; margin-bottom: 15px; border-bottom: 1px solid #eee; display: block; padding-bottom: 10px; text-transform: uppercase; font-family: "ZonaPro-SemiBold", Helvetica, Arial, sans-serif; font-size: 17px; }
+.page.enrol .gform_wrapper .top_label .gfield_label, .page.enroll .gform_wrapper .top_label .gfield_label, .page.new-student .gform_wrapper .top_label .gfield_label, .page.new-account .gform_wrapper .top_label .gfield_label { display: -moz-inline-stack; display: inline-block; line-height: 1; clear: both; margin-bottom: 15px; border-bottom: 1px solid #eee; display: block; padding-bottom: 10px; text-transform: uppercase; font-family: "ZonaPro-SemiBold", Helvetica, Arial, sans-serif; font-size: 17px; }
 
-.page.enrol .gform_wrapper .gform_page_footer, .page.enroll .gform_wrapper .gform_page_footer, .page.new-student .gform_wrapper .gform_page_footer { margin: 20px 0 0 0; padding: 40px 0 0 0; width: 100%; border-top: 1px dotted black; }
+.page.enrol .gform_wrapper .gform_page_footer, .page.enroll .gform_wrapper .gform_page_footer, .page.new-student .gform_wrapper .gform_page_footer, .page.new-account .gform_wrapper .gform_page_footer { margin: 20px 0 0 0; padding: 40px 0 0 0; width: 100%; border-top: 1px dotted black; }
 
-.page.enrol .gform_wrapper .gform_page_footer input[type="submit"], .page.enrol .gform_wrapper .gform_page_footer input[type="reset"], .page.enrol .gform_wrapper .gform_page_footer input[type="button"], .page.enroll .gform_wrapper .gform_page_footer input[type="submit"], .page.enroll .gform_wrapper .gform_page_footer input[type="reset"], .page.enroll .gform_wrapper .gform_page_footer input[type="button"], .page.new-student .gform_wrapper .gform_page_footer input[type="submit"], .page.new-student .gform_wrapper .gform_page_footer input[type="reset"], .page.new-student .gform_wrapper .gform_page_footer input[type="button"] { display: inline-block; color: white; background-color: #784987; border-radius: 0px; border: none; }
+.page.enrol .gform_wrapper .gform_page_footer input[type="submit"], .page.enrol .gform_wrapper .gform_page_footer input[type="reset"], .page.enrol .gform_wrapper .gform_page_footer input[type="button"], .page.enroll .gform_wrapper .gform_page_footer input[type="submit"], .page.enroll .gform_wrapper .gform_page_footer input[type="reset"], .page.enroll .gform_wrapper .gform_page_footer input[type="button"], .page.new-student .gform_wrapper .gform_page_footer input[type="submit"], .page.new-student .gform_wrapper .gform_page_footer input[type="reset"], .page.new-student .gform_wrapper .gform_page_footer input[type="button"], .page.new-account .gform_wrapper .gform_page_footer input[type="submit"], .page.new-account .gform_wrapper .gform_page_footer input[type="reset"], .page.new-account .gform_wrapper .gform_page_footer input[type="button"] { display: inline-block; color: white; background-color: #784987; border-radius: 0px; border: none; }
 
-.page.enrol .gform_wrapper .gform_page_footer input[type="submit"]:hover, .page.enrol .gform_wrapper .gform_page_footer input[type="reset"]:hover, .page.enrol .gform_wrapper .gform_page_footer input[type="button"]:hover, .page.enroll .gform_wrapper .gform_page_footer input[type="submit"]:hover, .page.enroll .gform_wrapper .gform_page_footer input[type="reset"]:hover, .page.enroll .gform_wrapper .gform_page_footer input[type="button"]:hover, .page.new-student .gform_wrapper .gform_page_footer input[type="submit"]:hover, .page.new-student .gform_wrapper .gform_page_footer input[type="reset"]:hover, .page.new-student .gform_wrapper .gform_page_footer input[type="button"]:hover { color: white; }
+.page.enrol .gform_wrapper .gform_page_footer input[type="submit"]:hover, .page.enrol .gform_wrapper .gform_page_footer input[type="reset"]:hover, .page.enrol .gform_wrapper .gform_page_footer input[type="button"]:hover, .page.enroll .gform_wrapper .gform_page_footer input[type="submit"]:hover, .page.enroll .gform_wrapper .gform_page_footer input[type="reset"]:hover, .page.enroll .gform_wrapper .gform_page_footer input[type="button"]:hover, .page.new-student .gform_wrapper .gform_page_footer input[type="submit"]:hover, .page.new-student .gform_wrapper .gform_page_footer input[type="reset"]:hover, .page.new-student .gform_wrapper .gform_page_footer input[type="button"]:hover, .page.new-account .gform_wrapper .gform_page_footer input[type="submit"]:hover, .page.new-account .gform_wrapper .gform_page_footer input[type="reset"]:hover, .page.new-account .gform_wrapper .gform_page_footer input[type="button"]:hover { color: white; }
 
-.page.enrol .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio], .page.enroll .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio], .page.new-student .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] { margin-top: 0px; }
+.page.enrol .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio], .page.enroll .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio], .page.new-student .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio], .page.new-account .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] { margin-top: 0px; }
 
-.page.enrol .logmein, .page.enroll .logmein, .page.new-student .logmein { float: left; width: 100%; margin-bottom: 20px; }
+.page.enrol .logmein, .page.enroll .logmein, .page.new-student .logmein, .page.new-account .logmein { float: left; width: 100%; margin-bottom: 20px; }
 
-@media (min-width: 550px) { .page.enrol .logmein, .page.enroll .logmein, .page.new-student .logmein { margin-right: 2%; margin-bottom: 0; width: 48%; } }
+@media (min-width: 550px) { .page.enrol .logmein, .page.enroll .logmein, .page.new-student .logmein, .page.new-account .logmein { margin-right: 2%; margin-bottom: 0; width: 48%; } }
 
-.page.enrol h3.error, .page.enroll h3.error, .page.new-student h3.error { color: red; font-size: 18px; margin-top: 10px; }
+.page.enrol h3.error, .page.enroll h3.error, .page.new-student h3.error, .page.new-account h3.error { color: red; font-size: 18px; margin-top: 10px; }
 
-.page.enrol .new-stu, .page.enroll .new-stu, .page.new-student .new-stu { float: left; width: 100%; background: #4a3c77; padding: 30px; box-sizing: border-box; color: white; text-align: center; }
+.page.enrol .linform, .page.enroll .linform, .page.new-student .linform, .page.new-account .linform { margin-top: 20px; }
 
-@media (min-width: 550px) { .page.enrol .new-stu, .page.enroll .new-stu, .page.new-student .new-stu { width: 48%; } }
+.page.enrol .linform .login-username, .page.enrol .linform .login-password, .page.enroll .linform .login-username, .page.enroll .linform .login-password, .page.new-student .linform .login-username, .page.new-student .linform .login-password, .page.new-account .linform .login-username, .page.new-account .linform .login-password { float: left; width: 50%; }
 
-.page.enrol .new-stu h1, .page.enrol .new-stu h2, .page.enrol .new-stu h3, .page.enrol .new-stu a, .page.enroll .new-stu h1, .page.enroll .new-stu h2, .page.enroll .new-stu h3, .page.enroll .new-stu a, .page.new-student .new-stu h1, .page.new-student .new-stu h2, .page.new-student .new-stu h3, .page.new-student .new-stu a { color: white; }
+.page.enrol .linform .login-username input[type="email"], .page.enrol .linform .login-username input[type="number"], .page.enrol .linform .login-username input[type="search"], .page.enrol .linform .login-username input[type="text"], .page.enrol .linform .login-username input[type="tel"], .page.enrol .linform .login-username input[type="url"], .page.enrol .linform .login-username input[type="password"], .page.enrol .linform .login-password input[type="email"], .page.enrol .linform .login-password input[type="number"], .page.enrol .linform .login-password input[type="search"], .page.enrol .linform .login-password input[type="text"], .page.enrol .linform .login-password input[type="tel"], .page.enrol .linform .login-password input[type="url"], .page.enrol .linform .login-password input[type="password"], .page.enroll .linform .login-username input[type="email"], .page.enroll .linform .login-username input[type="number"], .page.enroll .linform .login-username input[type="search"], .page.enroll .linform .login-username input[type="text"], .page.enroll .linform .login-username input[type="tel"], .page.enroll .linform .login-username input[type="url"], .page.enroll .linform .login-username input[type="password"], .page.enroll .linform .login-password input[type="email"], .page.enroll .linform .login-password input[type="number"], .page.enroll .linform .login-password input[type="search"], .page.enroll .linform .login-password input[type="text"], .page.enroll .linform .login-password input[type="tel"], .page.enroll .linform .login-password input[type="url"], .page.enroll .linform .login-password input[type="password"], .page.new-student .linform .login-username input[type="email"], .page.new-student .linform .login-username input[type="number"], .page.new-student .linform .login-username input[type="search"], .page.new-student .linform .login-username input[type="text"], .page.new-student .linform .login-username input[type="tel"], .page.new-student .linform .login-username input[type="url"], .page.new-student .linform .login-username input[type="password"], .page.new-student .linform .login-password input[type="email"], .page.new-student .linform .login-password input[type="number"], .page.new-student .linform .login-password input[type="search"], .page.new-student .linform .login-password input[type="text"], .page.new-student .linform .login-password input[type="tel"], .page.new-student .linform .login-password input[type="url"], .page.new-student .linform .login-password input[type="password"], .page.new-account .linform .login-username input[type="email"], .page.new-account .linform .login-username input[type="number"], .page.new-account .linform .login-username input[type="search"], .page.new-account .linform .login-username input[type="text"], .page.new-account .linform .login-username input[type="tel"], .page.new-account .linform .login-username input[type="url"], .page.new-account .linform .login-username input[type="password"], .page.new-account .linform .login-password input[type="email"], .page.new-account .linform .login-password input[type="number"], .page.new-account .linform .login-password input[type="search"], .page.new-account .linform .login-password input[type="text"], .page.new-account .linform .login-password input[type="tel"], .page.new-account .linform .login-password input[type="url"], .page.new-account .linform .login-password input[type="password"] { width: 98%; }
 
-.page.enrol .new-stu a, .page.enroll .new-stu a, .page.new-student .new-stu a { display: block; margin-top: 20px; background: white; color: black; text-decoration: none; font-weight: bolder; text-transform: uppercase; text-align: center; padding: 10px; line-height: 1; }
+.page.enrol .new-stu, .page.enroll .new-stu, .page.new-student .new-stu, .page.new-account .new-stu { float: left; width: 100%; background: #4a3c77; padding: 30px; box-sizing: border-box; color: white; text-align: center; }
+
+@media (min-width: 550px) { .page.enrol .new-stu, .page.enroll .new-stu, .page.new-student .new-stu, .page.new-account .new-stu { width: 48%; } }
+
+.page.enrol .new-stu h1, .page.enrol .new-stu h2, .page.enrol .new-stu h3, .page.enrol .new-stu a, .page.enroll .new-stu h1, .page.enroll .new-stu h2, .page.enroll .new-stu h3, .page.enroll .new-stu a, .page.new-student .new-stu h1, .page.new-student .new-stu h2, .page.new-student .new-stu h3, .page.new-student .new-stu a, .page.new-account .new-stu h1, .page.new-account .new-stu h2, .page.new-account .new-stu h3, .page.new-account .new-stu a { color: white; }
+
+.page.enrol .new-stu a, .page.enroll .new-stu a, .page.new-student .new-stu a, .page.new-account .new-stu a { display: block; margin-top: 20px; background: white; color: black; text-decoration: none; font-weight: bolder; text-transform: uppercase; text-align: center; padding: 10px; line-height: 1; }
 
 /*===============================
 =            COURSES            =
@@ -1072,6 +1077,14 @@ th:last-child, td:last-child { padding-right: 0; }
 /*===============================
 =            Account            =
 ===============================*/
+.account .gv-right { text-align: left; }
+
+.account .gv-section { color: #4a3c77; margin-bottom: 5px !important; margin-top: 20px !important; }
+
+.account .gv-field-label { padding-right: 5px; font-weight: bold; }
+
+.account .gv-list-view-footer { border-top: 0px solid #ddd; background-color: #f9f9f9; padding: 10px 20px 20px 20px; }
+
 .account #banner { text-align: center; }
 
 .account #banner h1 { margin-bottom: 5px; }
@@ -1079,6 +1092,10 @@ th:last-child, td:last-child { padding-right: 0; }
 .account #banner h2 { margin-bottom: 0; }
 
 .account #banner .cell img { display: inline-block; margin-bottom: 10px; border-radius: 50%; }
+
+.account #my-details { background: white; padding: 40px; margin: 40px 0 0 0; }
+
+.account #my-details tfoot { display: none; }
 
 .account #member-assets-form .index { text-align: left; background: white; border: 1px solid #999; }
 
@@ -1101,6 +1118,8 @@ th:last-child, td:last-child { padding-right: 0; }
 .account #member-assets-form .index ul li .name { padding-left: 40px; }
 
 .account #member-assets-form .index ul li .name a { text-decoration: none; }
+
+.account #personal-information-form { background: white; padding: 40px; margin: 40px 0 0 0; }
 
 .account #personal-information-form .gform_wrapper { background: white; padding: 40px; margin: 40px 0 0 0; }
 

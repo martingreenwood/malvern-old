@@ -23,13 +23,6 @@
 <body <?php body_class($pagename); ?>>
 <div id="page" class="site">
 
-	<div id="loader">
-		<div id="loading">
-			<div id="progstat"></div>
-			<div id="progress"></div>
-		</div>
-	</div>
-
 	<header id="masthead" class="site-header">
 		<div class="container">
 			<div class="row">

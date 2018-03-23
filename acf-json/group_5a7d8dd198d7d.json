@@ -30,6 +30,11 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "mp-reminder"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "gravityview"
             }
         ]
     ],
@@ -41,5 +46,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1518177885
+    "modified": 1521731919
 }

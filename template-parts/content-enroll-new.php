@@ -14,11 +14,12 @@
 	<div class="entry-content">
 			
 		<div class="logmein">
-			<h3>Existing Student?</h3>
-			<p>If you are an exsiting student, please login to re enroll.</p>
+			<h3>Existing Account Holder?</h3>
+			<p>If you are an exsiting account holder, please login to enroll your child/chiddren.</p>
 			<?php if ($_GET['login'] === 'failed'): ?>
 				<h3 class="error">Sorry, there seems to be an issue with your username/password. Please try again.</h3>
 			<?php endif; ?>
+			<div class="linform">
 			<?php
 			$args = array(
 				'echo'           => true,
@@ -36,12 +37,13 @@
 			);
 			wp_login_form( $args );
 			?>
+			</div>
 		</div>
 
 		<div class="new-stu">
-			<h3>New Student?</h3>
-			<p>Please follow the link below to enroll as a first time student.</p>
-			<a href="<?php echo home_url( '/new-student' ); ?>" title="">Apply Now</a>
+			<h3>Need an Account?</h3>
+			<p>Please follow the link below to create a new account.</p>
+			<a href="<?php echo home_url( '/new-account' ); ?>" title="">Register Here</a>
 		</div>
 	</div>
 

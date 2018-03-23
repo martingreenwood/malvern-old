@@ -31,6 +31,11 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "downloads"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "gravityview"
             }
         ]
     ],
@@ -42,5 +47,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1519649382
+    "modified": 1521731893
 }

@@ -2,11 +2,11 @@
 
 <div class="mp_wrapper">
   <div id="mepr-account-nav">
-    <span class="mepr-nav-item <?php MeprAccountHelper::active_nav('home'); ?>">
+<!--     <span class="mepr-nav-item <?php MeprAccountHelper::active_nav('home'); ?>">
       <a href="<?php echo MeprHooks::apply_filters('mepr-account-nav-home-link',$account_url.$delim.'action=home'); ?>" id="mepr-account-home"><?php echo MeprHooks::apply_filters('mepr-account-nav-home-label',_x('Home', 'ui', 'memberpress')); ?></a>
-    </span>
+    </span> -->
     <span class="mepr-nav-item <?php MeprAccountHelper::active_nav('subscriptions'); ?>">
-      <a href="<?php echo MeprHooks::apply_filters('mepr-account-nav-subscriptions-link',$account_url.$delim.'action=subscriptions'); ?>" id="mepr-account-subscriptions"><?php echo MeprHooks::apply_filters('mepr-account-nav-subscriptions-label',_x('My Membership', 'ui', 'memberpress')); ?></a></span>
+      <a href="<?php echo MeprHooks::apply_filters('mepr-account-nav-subscriptions-link',$account_url.$delim.'action=subscriptions'); ?>" id="mepr-account-subscriptions"><?php echo MeprHooks::apply_filters('mepr-account-nav-subscriptions-label',_x('Memberships', 'ui', 'memberpress')); ?></a></span>
     <span class="mepr-nav-item <?php MeprAccountHelper::active_nav('payments'); ?>">
       <a href="<?php echo MeprHooks::apply_filters('mepr-account-nav-payments-link',$account_url.$delim.'action=payments'); ?>" id="mepr-account-payments"><?php echo MeprHooks::apply_filters('mepr-account-nav-payments-label',_x('Payments', 'ui', 'memberpress')); ?></a>
     </span>
