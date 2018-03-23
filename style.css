@@ -1081,7 +1081,7 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .account .gv-right { text-align: left; }
 
-.account .btnhlder { text-align: right; }
+.account .btnhlder { text-align: right; display: table; width: 100%; }
 
 .account .btnhlder a { background: #4a3c77; color: white; font-size: inherit; border: 0; border-radius: 0; }
 
