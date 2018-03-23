@@ -164,10 +164,9 @@ function mepr_studentdetails_content($action) {
 	if($action == 'student-details'): //Update this 'premium-support' to match what you put above (?action=premium-support)
 	?>
 	<div id="student-details">
-		<?php echo do_shortcode( '[gravityview id="806"]' ); ?>
-
 		<a class="button" href="<?php echo home_url( '/enrol' ); ?>">Enrol Another Child</a>
-
+		<br>
+		<?php echo do_shortcode( '[gravityview id="806"]' ); ?>
 	</div>
 	<?php
 	endif;
