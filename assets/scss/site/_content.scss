@@ -312,6 +312,23 @@
 
 .page {
 
+	.btnhlder {
+		text-align: center;
+		display: table;
+		width: 100%;
+		margin-top: 40px;
+
+		a {
+			background: $secondary-color;
+			color: white;
+			font-size: inherit;
+			border: 0;
+			border-radius: 0;
+			padding: 10px 30px;
+			height: auto;
+		}
+	}
+
 	#primary {
 		text-align: center;
 	}

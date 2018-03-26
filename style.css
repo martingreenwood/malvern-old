@@ -928,6 +928,10 @@ th:last-child, td:last-child { padding-right: 0; }
 ============================*/
 .page { /*============================ =            TEAM            = ============================*/ /*=============================== =            COURSES            = ===============================*/ /*=========================================== =            ENROL / NEW STUDENT            = ===========================================*/ }
 
+.page .btnhlder { text-align: center; display: table; width: 100%; margin-top: 40px; }
+
+.page .btnhlder a { background: #784987; color: white; font-size: inherit; border: 0; border-radius: 0; padding: 10px 30px; height: auto; }
+
 .page #primary { text-align: center; }
 
 .page .maincopy { border-bottom: 2px solid #4a3c77; padding-bottom: 40px; margin-bottom: 60px; }
