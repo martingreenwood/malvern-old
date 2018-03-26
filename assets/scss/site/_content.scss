@@ -823,13 +823,16 @@
 		text-align: right;
 		display: table;
 		width: 100%;
+		margin-top: 40px;
 
 		a {
-			background: #4a3c77;
+			background: $secondary-color;
 			color: white;
 			font-size: inherit;
 			border: 0;
 			border-radius: 0;
+			padding: 10px 30px;
+			height: auto;
 		}
 	}
 
@@ -850,12 +853,19 @@
 		padding: 10px 20px 20px 20px;
 	}
 
+	.gform_wrapper.gf_browser_chrome .gfield_checkbox li input, .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox], .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
+		margin-top: 0px;
+	}
+
 	.mp_wrapper table.mepr-account-table td {
 		border-bottom: 1px solid #dddddd;
 	}
 
 	#banner {
 		text-align: center;
+		height: 40%;
+		height: 40vh;
+		min-height: 445px;
 
 		h1 {
 			margin-bottom: 5px;

@@ -52,7 +52,7 @@ get_header(); ?>
 				}
 				?>
 				<h1><?php echo $title; ?></h1>
-				<p>If any of the information on file isincorrect, please <a href="mailto:hello@nsso.org?subject=Account information update request.">contact us</a> to get it amended.</p>
+				<p>If any of the information on file is incorrect, please <a href="mailto:hello@nsso.org?subject=Account information update request.">contact us</a> to get it amended.</p>
 			</div>
 			<?php endif ?>
 
@@ -65,6 +65,9 @@ get_header(); ?>
 
 				endwhile; // End of the loop.
 				?>
+					<div class="btnhlder">
+  						<a class="button" href="<?php echo home_url( '/enrol' ); ?>">Enrol your young instrumentalist(s)</a>
+					</div>
 				</div>
 			</div>
 
