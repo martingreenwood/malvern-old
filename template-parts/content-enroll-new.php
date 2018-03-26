@@ -15,7 +15,7 @@
 			
 		<div class="logmein">
 			<h3>Existing Account Holder?</h3>
-			<p>If you are an exsiting account holder, please login to enroll your child/chiddren.</p>
+			<p>If you are an exsiting account holder, please login to enroll your child/children.</p>
 			<?php if ($_GET['login'] === 'failed'): ?>
 				<h3 class="error">Sorry, there seems to be an issue with your username/password. Please try again.</h3>
 			<?php endif; ?>
