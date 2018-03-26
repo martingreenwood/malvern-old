@@ -38,7 +38,6 @@
 				get_the_title()
 			) );
 		?>
-		<a class="more" href="<?php the_permalink( ) ?>" title="Read More">Read More</a>
 	</div>
 
 </article><!-- #post-<?php the_ID(); ?> -->
