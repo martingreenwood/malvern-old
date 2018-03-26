@@ -1095,7 +1095,7 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .account .mp_wrapper table.mepr-account-table td { border-bottom: 1px solid #dddddd; }
 
-.account #banner { text-align: center; height: 40%; height: 40vh; min-height: 445px; }
+.account #banner { text-align: center; height: 30%; height: 30vh; min-height: 300px; }
 
 .account #banner h1 { margin-bottom: 5px; }
 
