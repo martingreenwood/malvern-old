@@ -81,10 +81,6 @@
 
 				<?php elseif (is_page( 'account' )): ?>
 
-					<?php $user_info = get_userdata(get_current_user_id()); ?>
-					<h1>My Account</h1>
-					<h2>Welcome back <?php echo $user_info->first_name .  " " . $user_info->last_name; ?></h2>
-
 
 				<?php elseif ( is_404() ): ?>
 
