@@ -895,3 +895,28 @@ function my_front_end_login_fail( $username ) {
       exit;
    }
 }
+
+
+// Add the filter and pass two arguments ($existing_text and $is_search) to the 
+// modify_gravitview_no_entries_text() function
+add_filter( 'gravitview_no_entries_text', 'modify_gravitview_no_entries_text', 10, 2 );
+/**
+ * Modify the text displayed when there are no entries.
+ * 
+ * Place this code (after <?php) at the bottom of your theme's functions.php file to enable it 
+ * 
+ * @param string $existing_text The existing "No Entries" text
+ * @param bool $is_search  Is the current page a search result, or just a multiple entries screen?
+ */
+function modify_gravitview_no_entries_text( $existing_text, $is_search = false ) {
+	
+	$return = $existing_text;
+	
+	if( $is_search ) {
+		$return = '';
+	} else {
+		$return = "<span class='no-error-msg'>No student data present for this term. Please enrol an instrumentalist or contact us if you believe there is an error.</span>";
+	}
+	
+	return $return;
+}
