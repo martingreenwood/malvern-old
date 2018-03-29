@@ -9,6 +9,14 @@
 
 ?>
 
+<?php if (isset($_GET['signup'])): ?>
+<script type="text/javascript">
+	(function($){
+		swal("Thank you for registering.", "Please complete the NSSO application form to enrol your instrumentalist(s).", "success");
+	})(jQuery);
+</script>
+<?php endif; ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="entry-content">

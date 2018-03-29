@@ -16,3 +16,22 @@ pre > code {
   padding: 1rem 1.5rem;
   white-space: pre;
 }
+
+.swal-button {
+  height: auto;
+  background-color: $secondary-color;
+
+  &:hover, {
+    color: #ffffff;
+    border-color: $primary-color;
+    outline: 0;
+  }
+}
+
+.swal-text {
+  text-align: center;
+}
+
+.swal-overlay {
+  background-color: rgba($primary-color, 0.45);
+}
