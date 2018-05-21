@@ -179,7 +179,7 @@ function mepr_add_personalinformation_tab_content($action) {
 		<?php echo do_shortcode( '[gravityview id="803"]' ); ?>
 
 		<div class="btnhlder">
-			<a class="button" href="#newpif">New Personal Information Form</a>
+			<a class="button newpifbutton" href="#newpif">New Personal Information Form</a>
 		</div>
 		<div id="newpif" style="display: none;">
 			<?php echo do_shortcode( '[gravityform id="6" title="false" description="false" ajax="true"]' ); ?>
