@@ -133,7 +133,7 @@ function mepr_add_memberimg_tab($user) {
 	</span>
 	<?php
 }
-add_action('mepr_account_nav', 'mepr_add_memberimg_tab');
+//add_action('mepr_account_nav', 'mepr_add_memberimg_tab');
 
 //YOU CAN DELETE EVERYTHING BELOW THIS LINE -- IF YOU PLAN TO REDIRECT
 //THE USER TO A DIFFERENT PAGE INSTEAD OF KEEPING THEM ON THE SAME PAGE
@@ -147,7 +147,7 @@ function mepr_add_img_tab_content($action) {
 	<?php
 	endif;
 }
-add_action('mepr_account_nav_content', 'mepr_add_img_tab_content');
+//add_action('mepr_account_nav_content', 'mepr_add_img_tab_content');
 
 function mepr_mydetails_content($action) {
 	if($action == 'my-details'): //Update this 'premium-support' to match what you put above (?action=premium-support)
