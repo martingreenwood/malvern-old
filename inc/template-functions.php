@@ -199,7 +199,7 @@ function mepr_add_memberassets_tab_content($action) {
 
 		<?php 
 			$user_info = get_userdata(get_current_user_id()); 
-			$user_roles = current($user_info->roles);
+			$user_roles = end($user_info->roles);
 		?>
 
 		<?php 
