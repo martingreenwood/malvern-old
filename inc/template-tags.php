@@ -395,14 +395,14 @@ function extra_user_profile_fields( $user ) { ?>
 		</td>
 	</tr>
 	<tr>
-		<th><label for="instrumentalteacher"><?php _e("Instrumental Teacer"); ?></label></th>
+		<th><label for="instrumentalteacher"><?php _e("Instrumental Teacher"); ?></label></th>
 		<td>
 			<input type="text" name="instrumentalteacher" id="instrumentalteacher" value="<?php echo esc_attr( get_the_author_meta( 'instrumentalteacher', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs instrumental teacher."); ?></span>
 		</td>
 	</tr>
 	<tr>
-		<th><label for="instrumentalteacheremail"><?php _e("Instrumental Teacer Email"); ?></label></th>
+		<th><label for="instrumentalteacheremail"><?php _e("Instrumental Teacher Email"); ?></label></th>
 		<td>
 			<input type="text" name="instrumentalteacheremail" id="instrumentalteacheremail" value="<?php echo esc_attr( get_the_author_meta( 'instrumentalteacheremail', $user->ID ) ); ?>" class="regular-text" /><br />
 			<span class="description"><?php _e("Please enter your childs instrumental teacher email."); ?></span>
@@ -915,7 +915,7 @@ function modify_gravitview_no_entries_text( $existing_text, $is_search = false )
 	if( $is_search ) {
 		$return = '';
 	} else {
-		$return = "<span class='no-error-msg'>No student data present for this term. Please enrol an instrumentalist or contact us if you believe there is an error.</span>";
+		$return = "<span class='no-error-msg'>Sorry, no records found.<br><br><small>If you have submitted information and it doesn't display here, please contact us.</small></span>";
 	}
 	
 	return $return;

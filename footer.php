@@ -99,18 +99,13 @@
 			<div class="row">
 
 				<div class="copyright five columns">
-					<p>2010 — <?php echo date("Y"); ?> <?php echo bloginfo( 'name' ); ?></p>
-					<p><?php echo bloginfo( 'name' ); ?> (NSSO) is operated<br>
-					by Malvern College, registered charity no 527528</p>
+					<a href="http://www.malverncollege.org.uk/" title=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/malcol-cmyk-invert.svg" alt=""></a>
+					<p>2010 — <?php echo date("Y"); ?> <?php echo bloginfo( 'name' ); ?><br>
+					<?php echo bloginfo( 'name' ); ?> (NSSO) is operated
+						by Malvern College, registered charity no 527528</p>
 				</div>
 
 				<div class="footer-nav seven columns">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'menu-2',
-							'menu_id'        => 'footer-menu',
-						) );
-					?>
 					<?php if( have_rows('accreditation_logos','options') ): ?>
 						<div class="acred">
 							<ul>
@@ -125,6 +120,12 @@
 							</ul>
 						</div>
 					<?php endif; ?>
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-2',
+							'menu_id'        => 'footer-menu',
+						) );
+					?>
 				</div>
 				
 			</div>

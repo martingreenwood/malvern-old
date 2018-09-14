@@ -52,6 +52,24 @@
 	display: block;
 	color: white;
 
+	.copyright {
+
+		img {
+			width: 72px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 6px;
+			margin-bottom: 5px;
+		}
+
+		p {
+			display: inline-block;
+			widows: 10%;
+			font-size: 12px;
+			vertical-align: middle;
+		}
+	}
+
 	.footer-nav {
 
 		ul {
@@ -90,7 +108,6 @@
 			list-style: none;
 			margin: 0;
 			text-align: right;
-			margin-top: 15px;
 
 			li {
 				margin: 0;

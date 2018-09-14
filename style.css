@@ -1093,6 +1093,18 @@ th:last-child, td:last-child { padding-right: 0; }
 /*===============================
 =            Account            =
 ===============================*/
+a.editme { float: right; padding: 10px 15px; text-decoration: none; text-transform: uppercase; background: #4a3c77; color: white; margin-top: 11px; line-height: 1; }
+
+.single-gravityview .post-navigation { display: none; }
+
+.gv-edit-entry-wrapper h2.gv-edit-entry-title { display: none; }
+
+.gv-edit-entry-wrapper .gv-button-cancel, .gv-edit-entry-wrapper .gv-button-delete, .gv-edit-entry-wrapper .gv-notice a { display: none; }
+
+.gv-edit-entry-wrapper form { background: white; padding: 4rem; }
+
+.gv-edit-entry-wrapper form input[type="email"], .gv-edit-entry-wrapper form input[type="number"], .gv-edit-entry-wrapper form input[type="search"], .gv-edit-entry-wrapper form input[type="text"], .gv-edit-entry-wrapper form input[type="tel"], .gv-edit-entry-wrapper form input[type="url"], .gv-edit-entry-wrapper form input[type="password"], .gv-edit-entry-wrapper form textarea { border: 1px solid #ccc; display: block; width: 100%; }
+
 .account a.button { background: #4a3c77; color: white; font-size: inherit; border: 0; border-radius: 0; float: right; }
 
 .account .gv-right { text-align: left; }
@@ -1103,9 +1115,13 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .account .btnhlder a { background: #784987; color: white; font-size: inherit; border: 0; border-radius: 0; padding: 10px 30px; height: auto; }
 
-.account .gv-section { color: #4a3c77; margin-bottom: 5px !important; margin-top: 20px !important; }
+.account .gv-section { color: #784987; margin-bottom: 5px !important; margin-top: 20px !important; font-size: 16px; }
 
-.account .gv-field-label { padding-right: 5px; font-weight: bold; }
+.account .gv-section .gv-field-label { color: #784987; }
+
+.account .gv-field-label { padding-right: 5px; font-weight: bold; color: #4a3c77; width: 50%; display: inline-block; }
+
+.account p { display: inline-block; }
 
 .account .gv-list-view-footer { border-top: 0px solid #ddd; background-color: #f9f9f9; padding: 10px 20px 20px 20px; }
 
@@ -1123,9 +1139,15 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .account #my-details { background: white; padding: 40px; margin: 40px 0 0 0; }
 
+.account #my-details .gv-grid-col-1-2 { display: inline-block; vertical-align: top; text-align: left; width: 49%; font-size: 13px; }
+
 .account #my-details tfoot { display: none; }
 
+.account .gv-field-8-2 span { width: 100%; }
+
 .account #student-details { background: white; padding: 40px; margin: 40px 0 0 0; }
+
+.account #student-details .gv-grid-col-1-2 { display: inline-block; vertical-align: top; text-align: left; width: 49%; font-size: 13px; }
 
 .account #member-assets-form .index { text-align: left; background: white; border: 1px solid #999; }
 
@@ -1150,6 +1172,10 @@ th:last-child, td:last-child { padding-right: 0; }
 .account #member-assets-form .index ul li .name a { text-decoration: none; }
 
 .account #personal-information-form { background: white; padding: 40px; margin: 40px 0 0 0; }
+
+.account #personal-information-form a:not(.gform_anchor) { float: left; padding: 10px 15px; text-decoration: none; text-transform: uppercase; background: #4a3c77; color: white; margin-top: 11px; line-height: 1; }
+
+.account #personal-information-form .gv-grid-col-1-2 { display: inline-block; vertical-align: top; text-align: left; width: 49%; font-size: 13px; }
 
 .account #personal-information-form .gform_wrapper { background: white; padding: 40px; margin: 40px 0 0 0; }
 
@@ -1191,6 +1217,28 @@ th:last-child, td:last-child { padding-right: 0; }
 
 .account .mepr-account-change-password a { background: #784987; text-decoration: none; color: white; padding: 10px 14px; }
 
+.gv-widget-page-links { text-align: right; }
+
+.gv-widget-page-links ul { margin: 0; }
+
+.gv-widget-page-links ul li { display: inline-grid; }
+
+.gv-widget-page-links ul li span.page-numbers.current { padding: 10px 15px; background: #4a3c77; line-height: 1; color: white; }
+
+.gv-widget-page-links ul li a.page-numbers { background-color: #c0c0c0; color: #333; }
+
+.fees .sections .element.three, .fees .sections .element.four, .fees .sections .element.six, .our-courses .sections .element.three, .our-courses .sections .element.four, .our-courses .sections .element.six { background: white; padding: 2rem; }
+
+.fees .sections .element.three .text, .fees .sections .element.four .text, .fees .sections .element.six .text, .our-courses .sections .element.three .text, .our-courses .sections .element.four .text, .our-courses .sections .element.six .text { margin-top: 2rem; }
+
+.fees .sections .element.three .text a, .fees .sections .element.four .text a, .fees .sections .element.six .text a, .our-courses .sections .element.three .text a, .our-courses .sections .element.four .text a, .our-courses .sections .element.six .text a { text-decoration: none; }
+
+.fees .sections .element.three .text h1, .fees .sections .element.three .text h2, .fees .sections .element.three .text h3, .fees .sections .element.four .text h1, .fees .sections .element.four .text h2, .fees .sections .element.four .text h3, .fees .sections .element.six .text h1, .fees .sections .element.six .text h2, .fees .sections .element.six .text h3, .our-courses .sections .element.three .text h1, .our-courses .sections .element.three .text h2, .our-courses .sections .element.three .text h3, .our-courses .sections .element.four .text h1, .our-courses .sections .element.four .text h2, .our-courses .sections .element.four .text h3, .our-courses .sections .element.six .text h1, .our-courses .sections .element.six .text h2, .our-courses .sections .element.six .text h3 { font-size: 3rem; margin: 0; }
+
+.fees .sections .element.three .text h4, .fees .sections .element.three .text h5, .fees .sections .element.three .text h4, .fees .sections .element.four .text h4, .fees .sections .element.four .text h5, .fees .sections .element.four .text h4, .fees .sections .element.six .text h4, .fees .sections .element.six .text h5, .fees .sections .element.six .text h4, .our-courses .sections .element.three .text h4, .our-courses .sections .element.three .text h5, .our-courses .sections .element.three .text h4, .our-courses .sections .element.four .text h4, .our-courses .sections .element.four .text h5, .our-courses .sections .element.four .text h4, .our-courses .sections .element.six .text h4, .our-courses .sections .element.six .text h5, .our-courses .sections .element.six .text h4 { color: #666; font-weight: 100; font-size: 2rem; font-family: "ZonaPro-Regular", Helvetica, Arial, sans-serif; }
+
+.fees .sections .element.three .text p, .fees .sections .element.four .text p, .fees .sections .element.six .text p, .our-courses .sections .element.three .text p, .our-courses .sections .element.four .text p, .our-courses .sections .element.six .text p { font-size: 1.3rem; }
+
 /* Skeleton V2.0.4 Copyright 2014, Dave Gamache www.getskeleton.com Free to use under the MIT license. http://www.opensource.org/licenses/mit-license.php 12/9/2014 Sass Version by Seth Coelen https://github.com/whatsnewsaes */
 #prefooter { padding: 60px 0; background-color: #4a3c77; color: white; }
 
@@ -1206,6 +1254,10 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #colophon { font-size: 13px; padding: 60px 0; background-color: #784987; display: block; color: white; }
 
+#colophon .copyright img { width: 72px; display: inline-block; vertical-align: middle; margin-right: 6px; margin-bottom: 5px; }
+
+#colophon .copyright p { display: inline-block; widows: 10%; font-size: 12px; vertical-align: middle; }
+
 #colophon .footer-nav ul { list-style: none; float: left; margin-bottom: 0; margin-top: 30px; }
 
 @media (min-width: 550px) { #colophon .footer-nav ul { float: right; margin-top: 0; } }
@@ -1218,6 +1270,6 @@ th:last-child, td:last-child { padding-right: 0; }
 
 #colophon .acred { float: right; float: right; width: 100%; }
 
-#colophon .acred ul { list-style: none; margin: 0; text-align: right; margin-top: 15px; }
+#colophon .acred ul { list-style: none; margin: 0; text-align: right; }
 
 #colophon .acred ul li { margin: 0; width: 55px; }

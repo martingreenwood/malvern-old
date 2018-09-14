@@ -4,6 +4,90 @@
     "fields": [
         {
             "key": "field_5a79708457d01",
+            "label": "MISC",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b6d91cae2436",
+            "label": "Deposit Period Start Date",
+            "name": "deposit_period_start_date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "Ymd",
+            "first_day": 1
+        },
+        {
+            "key": "field_5b6d9262e2437",
+            "label": "Deposit Period End Date",
+            "name": "deposit_period_end_date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "Ymd",
+            "first_day": 1
+        },
+        {
+            "key": "field_5b6d926ce2438",
+            "label": "Full Amount Period Start Date",
+            "name": "full_amount_period_start_date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "Ymd",
+            "first_day": 1
+        },
+        {
+            "key": "field_5b6d969de2439",
+            "label": "Full Amount Period End Date",
+            "name": "full_amount_period_end_date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "Ymd",
+            "first_day": 1
+        },
+        {
+            "key": "field_5b6d91b5e2435",
             "label": "Header",
             "name": "",
             "type": "tab",
@@ -515,5 +599,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1521731945
+    "modified": 1533908775
 }

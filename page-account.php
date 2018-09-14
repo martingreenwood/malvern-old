@@ -66,7 +66,7 @@ get_header(); ?>
 				endwhile; // End of the loop.
 				?>
 					<div class="btnhlder">
-  						<a class="button" href="<?php echo home_url( '/enrol' ); ?>">Enrol another instrumentalist</a>
+  						<a class="button" href="<?php echo home_url( '/enrol' ); ?>">Submit another application</a>
 					</div>
 				</div>
 			</div>

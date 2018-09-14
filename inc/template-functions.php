@@ -154,6 +154,7 @@ function mepr_mydetails_content($action) {
 	?>
 	<div id="my-details">
 		<?php echo do_shortcode( '[gravityview id="790"]' ); ?>
+		<?php echo do_shortcode( '[gv_entry_link action="edit" view_id="790"]' ); ?>
 	</div>
 	<?php
 	endif;
@@ -165,6 +166,7 @@ function mepr_studentdetails_content($action) {
 	?>
 	<div id="student-details">
 		<?php echo do_shortcode( '[gravityview id="806"]' ); ?>
+		<?php echo do_shortcode( '[gv_entry_link action="edit" view_id="806"]' ); ?>
 	</div>
 	<?php
 	endif;
@@ -177,6 +179,7 @@ function mepr_add_personalinformation_tab_content($action) {
 	<div id="personal-information-form">
 
 		<?php echo do_shortcode( '[gravityview id="803"]' ); ?>
+		<?php echo do_shortcode( '[gv_entry_link action="edit" view_id="803"]' ); ?>
 
 		<div class="btnhlder">
 			<a class="button newpifbutton" href="#newpif">New Personal Information Form</a>

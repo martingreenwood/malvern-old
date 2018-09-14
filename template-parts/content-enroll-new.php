@@ -15,7 +15,7 @@
 			
 		<div class="logmein">
 			<h3>Existing Account Holder?</h3>
-			<p>If you are an exsiting account holder, please login to enroll your child/children.</p>
+			<p>If you are an exsiting account holder, please login to fill out an appplication.</p>
 			<?php if ($_GET['login'] === 'failed'): ?>
 				<h3 class="error">Sorry, there seems to be an issue with your username/password. Please try again.</h3>
 			<?php endif; ?>
@@ -41,8 +41,8 @@
 		</div>
 
 		<div class="new-stu">
-			<h3>Need an Account?</h3>
-			<p>Please follow the link below to create a new account.</p>
+			<h3>New to NSSO?</h3>
+			<p>Please click below to create an account and complete the application process.</p>
 			<a href="<?php echo home_url( '/new-account' ); ?>" title="">Register Here</a>
 		</div>
 	</div>

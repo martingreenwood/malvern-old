@@ -17,13 +17,13 @@ get_header(); ?>
 			<?php
 			while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'enroll' );
+				get_template_part( 'template-parts/content', 'reg' );
 
 			endwhile; // End of the loop.
 			?>
 			</div>
 			<?php endif ?>
-
+			
 		</main>
 	</div>
 

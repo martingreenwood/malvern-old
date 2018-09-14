@@ -332,6 +332,27 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/img\/malcol-cmyk-invert.png": {
+		"ft": 32768,
+		"iS": 30473,
+		"oA": 0,
+		"oAP": "\/assets\/img\/malcol-cmyk-invert.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/malcol-cmyk-invert.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/malcol-cmyk-invert.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/img\/right-chevron.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1933,13 +1954,6 @@
 		"oAP": "\/page.php",
 		"oF": 0
 		},
-	"\/phpcs.xml.dist": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/phpcs.xml.dist",
-		"oF": 0
-		},
 	"\/README.md": {
 		"cB": 0,
 		"cS": 0,
@@ -2057,6 +2071,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/template-parts\/content-page.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-reg.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-reg.php",
 		"oF": 0
 		},
 	"\/template-parts\/content-search.php": {

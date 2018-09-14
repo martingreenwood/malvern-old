@@ -836,6 +836,46 @@
 =            Account            =
 ===============================*/
 
+a.editme {
+	float: right;
+	padding: 10px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: #4a3c77;
+	color: white;
+	margin-top: 11px;
+	line-height: 1;
+}
+
+.single-gravityview .post-navigation {
+	display: none;
+}
+
+.gv-edit-entry-wrapper {
+	
+	h2.gv-edit-entry-title {
+		display: none;
+	}
+
+	.gv-button-cancel, 
+	.gv-button-delete, 
+	.gv-notice a
+	{
+		display: none;
+	}
+
+	form {
+		background: white;
+		padding: 4rem;
+
+		input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea {
+			border: 1px solid #ccc;
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
 .account {
 
 	a.button {
@@ -875,15 +915,27 @@
 	}
 
 	.gv-section {
-    	color: $primary-color;
+    	color: $secondary-color;
     	margin-bottom: 5px !important;
 		margin-top: 20px !important;
+		font-size: 16px;
+
+		.gv-field-label {
+			color: $secondary-color;
+		}
 	}
 
 	.gv-field-label {
     	padding-right: 5px;
     	font-weight: bold;
+		color: $primary-color;
+		width: 50%;
+		display: inline-block;
 	}
+
+	p {
+			display: inline-block;
+		}
 
 	.gv-list-view-footer {
 		border-top: 0px solid #ddd;
@@ -928,15 +980,37 @@
     	padding: 40px;
     	margin: 40px 0 0 0;
 
+    	.gv-grid-col-1-2 {
+			display: inline-block;
+			vertical-align: top;
+			text-align: left;
+			width: 49%;
+			font-size: 13px;
+		}
+
     	tfoot {
     		display: none;
     	}
+	}
+
+	.gv-field-8-2 {
+		span {
+			width: 100%;
+		}
 	}
 
 	#student-details {
     	background: white;
     	padding: 40px;
     	margin: 40px 0 0 0;
+
+    	.gv-grid-col-1-2 {
+			display: inline-block;
+			vertical-align: top;
+			text-align: left;
+			width: 49%;
+			font-size: 13px;
+		}
 	}
 
 	#member-assets-form {
@@ -1006,6 +1080,25 @@
 	    background: white;
 	    padding: 40px;
 	    margin: 40px 0 0 0;
+
+	    a:not(.gform_anchor) {
+	    	float: left;
+			padding: 10px 15px;
+			text-decoration: none;
+			text-transform: uppercase;
+			background: #4a3c77;
+			color: white;
+			margin-top: 11px;
+			line-height: 1;
+	    }
+
+	    .gv-grid-col-1-2 {
+			display: inline-block;
+			vertical-align: top;
+			text-align: left;
+			width: 49%;
+			font-size: 13px;
+		}
 	   
 	   .gform_wrapper {
 			background: white;
@@ -1180,3 +1273,67 @@
 }
 
 
+
+
+.gv-widget-page-links {
+	text-align: right;
+
+	ul {
+		margin: 0;
+		
+		li {
+			display: inline-grid;
+
+			span.page-numbers.current {
+				padding: 10px 15px;
+				background: $primary-color;
+				line-height: 1;
+				color: white;
+			}
+
+			a.page-numbers {
+				background-color: #c0c0c0;
+				color: #333;
+			}
+		}
+	}
+}
+
+
+.fees, .our-courses {
+	
+	.sections {
+		
+		.element {
+
+			&.three, &.four, &.six {
+				background: white;
+				padding: 2rem;
+
+				.text {
+					margin-top: 2rem;
+
+					a {
+						text-decoration: none;
+					}
+
+					h1, h2, h3 {
+						font-size: 3rem;
+						margin: 0;
+					}
+
+					h4, h5, h4 {
+						color: #666;
+						font-weight: 100;
+						font-size: 2rem;
+						font-family: "ZonaPro-Regular", Helvetica, Arial, sans-serif;
+					}
+
+					p {
+						font-size: 1.3rem;
+					}
+				}
+			}
+		}
+	}
+}
